@@ -1,0 +1,13 @@
+$ adb shell
+
+$ su
+
+$ cat /proc/mounts
+找到 /system 分区，如 [/dev/block/mmcblk0p9 /system ext4 ro,relatime,barrier=1,data=ordered 0 0] 这个分区可以直接从卡刷包看出
+
+
+继续
+
+$ dd if=/dev/block/mmcblk0p9 of=/sdcard/system.img bs=1024
+
+bs 应该指传输速度，可以不输入。貌似只能提取出来到 /mnt/sdcard/

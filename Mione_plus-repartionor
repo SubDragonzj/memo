@@ -1,0 +1,151 @@
+===============================================================================
+
+# origin partion info
+
+------------------------------------------
+Command (m for help): p
+
+Disk /dev/block/mmcblk0: 4001 MB, 4001366016 bytes
+1 heads, 16 sectors/track, 488448 cylinders
+Units = cylinders of 16 * 512 = 8192 bytes
+
+              Device Boot      Start         End      Blocks  Id System
+/dev/block/mmcblk0p1               1       12801      102400   c Win95 FAT32 (LBA)
+Partition 1 does not end on cylinder boundary
+/dev/block/mmcblk0p2   *       12801       12863         500  4d Unknown
+Partition 2 does not end on cylinder boundary
+/dev/block/mmcblk0p3           12863       13051        1500  51 Unknown
+Partition 3 does not end on cylinder boundary
+/dev/block/mmcblk0p4           13051      488448     3803183+  5 Extended
+Partition 4 does not end on cylinder boundary
+/dev/block/mmcblk0p5           13052       13114         500  47 Unknown
+/dev/block/mmcblk0p6           13114       13370        2048  45 Unknown
+/dev/block/mmcblk0p7           13370       13683        2500  4c Unknown
+/dev/block/mmcblk0p8           13683       14963       10240  48 Unknown
+/dev/block/mmcblk0p9           14963       16243       10240  64 Unknown
+/dev/block/mmcblk0p10          16243       16305         500  46 Unknown
+/dev/block/mmcblk0p11          16305       16368         500  65 Unknown
+/dev/block/mmcblk0p12          16385       16768        3072  4a Unknown
+/dev/block/mmcblk0p13          16769       17152        3072  4b Unknown
+/dev/block/mmcblk0p14          20481       20864        3072  58 Unknown
+/dev/block/mmcblk0p15          20865       48256      219136  83 Linux
+/dev/block/mmcblk0p16          49153       76544      219136  83 Linux
+/dev/block/mmcblk0p17          77825       79104       10240  60 Unknown
+/dev/block/mmcblk0p18          81921       82944        8192  83 Linux
+/dev/block/mmcblk0p19          82945      105984      184320  83 Linux
+/dev/block/mmcblk0p20         105985      488448     3059712  83 Linux
+
+Command (m for help): 
+
+===============================================================================
+
+
+
+$ adb reboot recovery
+
+$ fdisk /dev/block/mmcblk0
+
+
+# 'd' = delete
+# delete 20~15
+
+
+$ d
+
+$ 20
+
+$ d
+
+$ 19
+
+$ d
+
+$ 19
+
+$ d
+
+$ 18
+
+$ d
+
+$ 17
+
+$ d
+
+$ 16
+
+$ d
+
+$ 15
+
+
+# 'n' = new
+# build new partion of 15~20
+
+$ n
+$ 20866  //system0
+$ 86402  //512m
+
+$ n
+$ 86404  //system1
+$ 87684  //10m
+
+$ n
+$ 87686  //recovery
+$ 88965  //default
+
+$ n
+$ 88967  //persist
+$ 89990  //default
+
+$ n
+$ 89992  //cache
+$ 122760  //256m
+
+$ n
+$ 122762  //userdata
+$ 477184
+
+
+# 't' = transfar
+# transfar partion 17 to '60'
+$ t
+$ 17
+$ 60
+
+Command (m for help): p
+
+Disk /dev/block/mmcblk0: 4001 MB, 4001366016 bytes
+1 heads, 16 sectors/track, 488448 cylinders
+Units = cylinders of 16 * 512 = 8192 bytes
+
+              Device Boot      Start         End      Blocks  Id System
+/dev/block/mmcblk0p1               1       12801      102400   c Win95 FAT32 (LBA)
+Partition 1 does not end on cylinder boundary
+/dev/block/mmcblk0p2   *       12801       12863         500  4d Unknown
+Partition 2 does not end on cylinder boundary
+/dev/block/mmcblk0p3           12863       13051        1500  51 Unknown
+Partition 3 does not end on cylinder boundary
+/dev/block/mmcblk0p4           13051      488448     3803183+  5 Extended
+Partition 4 does not end on cylinder boundary
+/dev/block/mmcblk0p5           13052       13114         500  47 Unknown
+/dev/block/mmcblk0p6           13114       13370        2048  45 Unknown
+/dev/block/mmcblk0p7           13370       13683        2500  4c Unknown
+/dev/block/mmcblk0p8           13683       14963       10240  48 Unknown
+/dev/block/mmcblk0p9           14963       16243       10240  64 Unknown
+/dev/block/mmcblk0p10          16243       16305         500  46 Unknown
+/dev/block/mmcblk0p11          16305       16368         500  65 Unknown
+/dev/block/mmcblk0p12          16385       16768        3072  4a Unknown
+/dev/block/mmcblk0p13          16769       17152        3072  4b Unknown
+/dev/block/mmcblk0p14          20481       20864        3072  58 Unknown
+/dev/block/mmcblk0p15          20866       86402      524296  83 Linux
+/dev/block/mmcblk0p16          86404       87684       10248  83 Linux
+/dev/block/mmcblk0p17          87686       88965       10240  60 Unknown
+/dev/block/mmcblk0p18          88967       89990        8192  83 Linux
+/dev/block/mmcblk0p19          89992      122760      262152  83 Linux
+/dev/block/mmcblk0p20         122762      477184     2835384  83 Linux
+
+Command (m for help): 
+$ w
+
+===============================================================================

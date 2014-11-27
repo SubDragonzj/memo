@@ -1,0 +1,8 @@
+#!/bin/bash  
+echo "======start repo syncing======"  
+repo sync -j16 
+while [ $? == 1 ]; do  
+echo "======sync failed, re-syncing again======"  
+sleep 3  
+repo sync -j16
+done

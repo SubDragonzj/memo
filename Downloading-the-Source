@@ -1,0 +1,34 @@
+===========================================================================================
+
+# google document
+
+http://source.android.com/source/downloading.html
+
+===========================================================================================
+
+# Installing Repo
+
+$ mkdir ~/bin
+
+$ PATH=~/bin:$PATH
+
+$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+
+$ chmod a+x ~/bin/repo
+
+===========================================================================================
+
+# Initializing a Repo client
+
+$ mkdir WORKING_DIRECTORY
+
+$ cd WORKING_DIRECTORY
+
+$ repo init -u https://android.googlesource.com/platform/manifest
+
+# To check out a branch other than "master", specify it with -b: 
+repo init -u https://android.googlesource.com/platform/manifest -b android-4.0.1_r1
+
+$ repo sync
+
+===========================================================================================

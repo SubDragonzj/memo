@@ -1,0 +1,7 @@
+从 out/target/product/mione_plus/obj/PACKAGING/target_files_intermediates 找到两个 .zip 文件（e.g：old.zip & new.zip）
+
+
+置于 src/ota/ 下
+
+
+$ ./build/tools/releasetools/ota_from_target_files -i ota/old.zip ota/new.zip ota/update.zip

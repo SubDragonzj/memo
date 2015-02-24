@@ -1,0 +1,308 @@
+framework 目录编译进 nexus 手机的文件功能描述 
+http://blog.csdn.net/arnoldlu/article/details/30481395
+
+    frameworks:  
+    ./bin/am                                          am命令来发送Intent           
+    ./bin/app_process                                 系统进程           
+    ./bin/audioloop                                   多媒体框架读取缓存内容           
+    ./bin/bmgr                                        adb shell命令下对Android Device所有package备份和恢复的操作。         
+    ./bin/bootanimation                               显示开机画面命令           
+    ./bin/bu                                          系统backup manager          
+    ./bin/bugreport                                   bugreport命令，里面包含了各种log信息,大部分log也可以通过直接运行相关的程序来直接获得.           
+    ./bin/decoder                                     decoder命令           
+    ./bin/drmserver                                   video protected          
+    ./bin/dumpstate                                   状态抓取器           
+    ./bin/dumpsys                                     系统抓取器           
+    ./bin/ime                                         ime命令所需jar包，用于查看当前话机输入法列表、设置输入法           
+    ./bin/input                                       input命令所需的jar包，用于模拟按键输入。           
+    ./bin/installd                                    android apk安装最后使用服务installd来实现          
+    ./bin/keystore                                    keystore服务是加解密储存键值的服务。它主要作用就是验证应用程序与签名文件是否一致。           
+    ./bin/keystore_cli                                keystore命令行           
+    ./bin/mediaserver                                 是整个android中media部分的核心和灵魂。几乎所有与多媒体播放相关的内容都放在这里。包括了音视频的编解码以及显示输出           
+    ./bin/omx_tests                                   多媒体框架omx接口 测试          
+    ./bin/pm                                          包管理器           
+    ./bin/record                                      多媒体核心及插件record命令           
+    ./bin/recordvideo                                 多媒体核心及插件 recordvideo命令          
+    ./bin/screencap                                   framebuffer service则调用截屏工具screencap来截屏。那些同步软件也是调用screencap实现截屏的          
+    ./bin/screenshot                                  系统screenshot命令           
+    ./bin/sensorservice                               在Java层Sensor的状态控制由SensorService来负责           
+    ./bin/service                                     配合libandroid_servers.so在话机启动时通过SystemServer以循环闭合管理的方式将各个service添加到ServiceManager中。           
+    ./bin/servicemanager                              servicemanager服务的作用主要是服务管理，所谓的服务管理其实就是获取服务、检查服务、添加服务、枚举所有服务。           
+    ./bin/sf2                                         多媒体核心及插件 recordvideo命令 sf2命令         
+    ./bin/stagefright                                 多媒体框架           
+    ./bin/stream                                      多媒体核心及插件stream命令           
+    ./bin/surfaceflinger                              触摸感应驱动           
+    ./bin/svc                                         可应用来管理wifi,power和data。           
+    ./bin/system_server                               system server库libsystem_server.so->system/lib/libsystem_server.so和system_server可执行程式->system/bin/system_server.          
+    ./bin/testid3                                     多媒体框架           
+    ./xbin/btool                                      backed up to stdout        
+    ./xbin/rawbu                                      Backup data          
+    ./framework/am.jar                                终端下执行am命令时所需的java库           
+    ./framework/android.policy.jar                    锁屏界面需要用到的jar包，该包引用了android.test.runner.jar           
+    ./framework/android.test.runner.jar               测试应用所需的jar包，该包引用了core.jar,core-junit.ajr以及framework.jar           
+    ./framework/bmgr.jar                              adb shell命令下对Android Device所有package备份和恢复的操作时所需的java库。         
+    ./framework/bu.jar                                系统backup manager 所jar包         
+    ./framework/com.android.future.usb.accessory.jar  用于管理USB的上层java库，在系统编译时hardware层会调用到           
+    ./framework/com.android.location.provider.jar     提供位置服务           
+    ./framework/com.android.nfc_extras.jar            NFC外部库。android/nfc/NfcAdapter.java会调用到包中的NfcAdapterExtras.java           
+    ./framework/ext.jar                               android外部三方扩展包           
+    ./framework/framework.jar                         android的sdk中核心代码。           
+    ./framework/ime.jar                               ime命令所需jar包，用于查看当前话机输入法列表、设置输入法           
+    ./framework/input.jar                             input命令所需的jar包，用于模拟按键输入。           
+    ./framework/javax.obex.jar                        java蓝牙API，用于对象交换协议。           
+    ./framework/pm.jar                                执行pm命令所需的jar包           
+    ./framework/services.jar                          话机框架层服务端的编译后jar包，配合libandroid_servers.so在话机启动时通过SystemServer以循环闭合管理的方式将各个service添加到ServiceManager中。           
+    ./framework/svc.jar                               svc命令所需jar包，可应用来管理wifi,power和data。           
+    ./lib/drm/libfwdlockengine.so                        
+    ./lib/egl/libGLES_android.so                      software OpenGL ES library 系统提供纯软件3D加速库       
+    ./lib/libEGL.so                                   Android系统的EGL框架，默认加载OPENGL 库libGLES_android.so          
+    ./lib/libETC1.so                                  the ETC1 host static library       
+    ./lib/libGLESv1_CM.so                             the wrapper OpenGL ES 1.x library      
+    ./lib/libGLESv2.so                                the wrapper OpenGL ES 2.x library      
+    ./lib/libGLESv2_dbg.so                              
+    ./lib/libRS.so                                    render script lib         
+    ./lib/libandroid.so                               Android提供的一些API实际执行时调用的库           
+    ./lib/libandroid_runtime.so                       android运行时库:Android中实现的JNI的主要库           
+    ./lib/libandroid_servers.so                       系统服务组件；和Android中实现的JNI有关的库           
+    ./lib/libaudioeffect_jni.so                       Android与音效有关的库，音效jni接口，涉及到密集运算           
+    ./lib/libaudioflinger.so                          音频过滤器:audioflinger向上处理来自于应用程序的声音相关的所有请求,向下通过AudioHardwareInterface访问硬件           
+    ./lib/libbcc.so                                   Bitcode compiler库：Online JIT compiler, Translate portable bitcode to appropriate machine  
+    ./lib/libbcc.so.sha1                              Calculate SHA1 checksum for libbcc.so and libRS.so     
+    ./lib/libbcinfo.so                                libbcinfo provides bitcode translator   metadate extraction     
+    ./lib/libbinder.so                                Android用于实现binder机制的库，binder用于Android的跨进程通信           
+    ./lib/libcamera_client.so                         摄像头相关的库           
+    ./lib/libcameraservice.so                         摄像头相关的库           
+    ./lib/libclcore.bc                                           
+    ./lib/libdefcontainer_jni.so                      “自动安装位置选择依据”功能使用的native函数的jni接口           
+    ./lib/libdrm1.so                                  drm解析库           
+    ./lib/libdrm1_jni.so                              Android中与drm相关的库           
+    ./lib/libdrmframework.so                          DRM相关，DigitalRightsManagement,内容数字版权加密保护技术           
+    ./lib/libdrmframework_jni.so                      DRM相关           
+    ./lib/libeffects.so                               Android中与媒体相关的库           
+    ./lib/libemoji.so                                 “絵文字”(颜文字)相关库           
+    ./lib/libgui.so                                   Android中与用户界面相关的库           
+    ./lib/libhwui.so                                  Android’s 2D hardware accelerated rendering pipeline      
+    ./lib/libinput.so                                 触摸屏触摸事件相关库           
+    ./lib/libjnigraphics.so                           与绘图有关，对bitmap的访问进行了封装           
+    ./lib/libmedia.so                                 Android的MediaPlay架构的一部分           
+    ./lib/libmedia_jni.so                             MediaPlayer中负责与JNI通信的部分           
+    ./lib/libmediaplayerservice.so                    MediaPlayer架构的一部分，通过继承libmedia.so的类实现服务器的功能           
+    ./lib/libmtp.so                                   MTP(MediaTransferProtocol)媒体传输协议           
+    ./lib/libpowermanager.so                          电源管理库           
+    ./lib/librs_jni.so                                Android中与用户界面有关的库，和launcher有关           
+    ./lib/librtp_jni.so                               Android中和RTP协议相关的库           
+    ./lib/libsensorservice.so                         Android中和传感器有关的库           
+    ./lib/libsoundpool.so                             Android中和声音回放有关的库           
+    ./lib/libstagefright.so                           FFmpeg模块           
+    ./lib/libstagefright_amrnb_common.so              FFmpeg模块           
+    ./lib/libstagefright_avc_common.so                FFmpeg模块           
+    ./lib/libstagefright_enc_common.so                FFmpeg模块           
+    ./lib/libstagefright_foundation.so                FFmpeg模块           
+    ./lib/libstagefright_omx.so                       FFmpeg模块:OMX，openMax           
+    ./lib/libstagefright_soft_aacdec.so               aac音频解码库           
+    ./lib/libstagefright_soft_amrdec.so               amr音频解码库           
+    ./lib/libstagefright_soft_g711dec.so              g711音频解码库           
+    ./lib/libstagefright_soft_h264dec.so              h264音频解码库           
+    ./lib/libstagefright_soft_mp3dec.so               mp3音频解码库           
+    ./lib/libstagefright_soft_mpeg4dec.so             mpeg4音频解码库           
+    ./lib/libstagefright_soft_vorbisdec.so            vorbis音频解码库：OGGVobisOgg           
+    ./lib/libstagefright_soft_vpxdec.so               音频解码库 vpx：VITA 46基础标准由VITA46.0（基础协议）和VITA46.1（VME连接）描述，也称为VPX         
+    ./lib/libstagefright_yuv.so                       颜色编码方法相关           
+    ./lib/libsurfaceflinger.so                        Android显示系统的部件相关库           
+    ./lib/libsurfaceflinger_client.so                 Android显示系统的部件相关库           
+    ./lib/libsystem_server.so                         Android中和系统服务有关的库           
+    ./lib/libui.so                                    Android的GUI(图形用户界面)的中枢           
+    ./lib/libutils.so                                 Android的底层库，这个库以C  实现，提供的API也是C  的。Android的层次的C语言程序和库，大都基于libutils开发。           
+    ./lib/libvariablespeed.so                         声音解码加速相关库           
+    ./lib/libvideoeditor_jni.so                       视频编辑JNI接口库文件           
+    ./lib/libvideoeditorplayer.so                     视频编辑播放器库文件           
+    ./lib/soundfx/libaudiopreprocessing.so            声音库相关。audio preprocessing wrapper         
+    ./lib/soundfx/libbundlewrapper.so                 声音库相关。music bundle wrapper         
+    ./lib/soundfx/libreverbwrapper.so                 声音库相关。reverb的封装           
+    ./lib/soundfx/libvisualizer.so                    声音库相关。Visualizer库       
+      
+    system+external:      
+    bin/adb                                        adb:android debug bridge             
+    bin/applypatch                                 补丁工具               
+    bin/bluetoothd                                                
+    bin/brcm_patchram_plus                                        
+    bin/dalvikvm                                   Dalvik虚拟机宿主               
+    bin/dbus-daemon                                系统BUS总线监控               
+    bin/debuggerd                                  调试器               
+    bin/dexopt                                     dex优化               
+    bin/dhcpcd                                     DHCP服务器               
+    bin/dnsmasq                                    DNS服务工具               
+    bin/fsck_msdos                                 dos文件系统检查工具               
+    bin/gdbserver                                  Remote Server for the GNU Debugger          
+    bin/gzip                                       解压工具               
+    bin/hciattach                                  Hciattach主要用来初始化蓝牙设备               
+    bin/hostapd                                    一个用户态用于AP和认证服务器的守护进程               
+    bin/hostapd_cli                                hostapd_cli,就是一个跟hostapd一起的命令行前台程序               
+    bin/ip                                                        
+    bin/ip6tables                                  ip6tables防火墙的守护进程               
+    bin/iptables                                   iptables防火墙的守护进程               
+    bin/linker                                     加载/链接器linker主要用于实现共享库的加载与链接               
+    bin/logcat                                     logcat命令               
+    bin/logwrapper                                 log wrapper              
+    bin/make_ext4fs                                制作ext4文件系统               
+    bin/mksh                                       某种shell               
+    bin/monkey                                     app测试工具               
+    bin/mtpd                                       MTP(Media Transfer Protocol) daemon            
+    bin/ndc                                        Android中和网络有关的工具               
+    bin/netcfg                                     获取网络信息的工具               
+    bin/netd                                       和网络有关的工具               
+    bin/pand                                       建立wifi热点有关的工具               
+    bin/ping                                       ping               
+    bin/pppd                                       用于Point-to-Point Protocol的守护进程              
+    bin/qemu-props                                 used to set various system properties on boot        
+    bin/qemud                                      QEMU虚拟机               
+    bin/racoon                                     key management daemon             
+    bin/radiooptions                               radiooptions来切换Radio状态               
+    bin/rild                                       RIL(Radio Interface Layer) Deamon            
+    bin/run-as                                     This program runs as set-uid root on Android production devices      
+    bin/schedtest                                  一个调试工具               
+    bin/sdcard                                     磁盘相关的工具               
+    bin/sdptool                                    shell命令：管理工具               
+    bin/send_bug                                   通过mail发送bug的工具               
+    bin/setup_fs                                   ext4_utils工具               
+    bin/showlease                                  dhcpcd相关的工具               
+    bin/simg2img                                   固件压缩工具               
+    bin/smc_pa_ctrl                                               
+    bin/tc                                                        
+    bin/tf_daemon                                                 
+    bin/toolbox                                    toolbox：ls等常用命令               
+    bin/vdc                                        磁盘管理相关命令               
+    bin/vold                                       (Volume Daemon) 负责大容量存储设备挂载和删除的守护进程             
+    bin/wpa_cli                                    wpa_supplicant软件包中包含客户端程序 wpa_cli              
+    bin/wpa_supplicant                             Android中用于处理无线局域网的WPA(2)安全措施的守护进程               
+    lib/bluez-plugin/audio.so                      A2DP/AVRCP协议相关               
+    lib/bluez-plugin/bluetooth-health.so           支持蓝牙设备的健康状况设备库，可使用蓝牙医疗设备               
+    lib/bluez-plugin/input.so                      HID plugin              
+    lib/bluez-plugin/network.so                    network plugin              
+    lib/hw/audio.a2dp.default.so                   A2DP plugin              
+    lib/hw/audio.primary.default.so                The default audio HAL module           
+    lib/hw/audio.primary.tuna.so                   音频动态库               
+    lib/hw/audio_policy.default.so                 The default audio policy            
+    lib/hw/camera.goldfish.so                      相机相关动态库               
+    lib/hw/gps.goldfish.so                         gps相关库               
+    lib/hw/gralloc.default.so                      默认的Gralloc模块               
+    lib/hw/lights.goldfish.so                      screen & keyboard backlights and other LEDs         
+    lib/hw/lights.tuna.so                          screen & keyboard backlights and other LEDs         
+    lib/hw/nfc.tuna.so                             nfc硬件库               
+    lib/hw/sensors.goldfish.so                     sensors硬件库               
+    lib/hw/sensors.tuna.so                         sensors硬件库               
+    lib/libFFTEm.so                                Android使用的一个用于计算FFT(快速傅里叶变换)的库               
+    lib/libI420colorconvert.so                                    
+    lib/libOMX.TI.DUCATI1.MISC.SAMPLE.so           OpenMax相关库               
+    lib/libOMX.TI.DUCATI1.VIDEO.CAMERA.so          OpenMax相关库               
+    lib/libOMX.TI.DUCATI1.VIDEO.DECODER.secure.so  OpenMax相关库               
+    lib/libOMX.TI.DUCATI1.VIDEO.DECODER.so         OpenMax相关库               
+    lib/libOMX.TI.DUCATI1.VIDEO.H264E.so           OpenMax相关库               
+    lib/libOMX.TI.DUCATI1.VIDEO.MPEG4E.so          OpenMax相关库               
+    lib/libOMX_Core.so                             OpenMax相关库               
+    lib/libOpenMAXAL.so                            OpenMax相关库               
+    lib/libOpenSLES.so                             OpenMax相关库               
+    lib/libSR_AudioIn.so                           语音识别语音库               
+    lib/libWnnEngDic.so                            OpenWnn输入法相关               
+    lib/libWnnJpnDic.so                            OpenWnn输入法相关               
+    lib/libaudioutils.so                           媒体库               
+    lib/libbluedroid.so                            Android中和蓝牙(bluetooth)相关的库               
+    lib/libbluetooth.so                            Android中和蓝牙(bluetooth)相关的库               
+    lib/libbluetoothd.so                           Android中和蓝牙(bluetooth)相关的库               
+    lib/libbtio.so                                 Android中和蓝牙(bluetooth)相关的库               
+    lib/libc.so                                    C库               
+    lib/libc_malloc_debug_leak.so                                 
+    lib/libc_malloc_debug_qemu.so                                 
+    lib/libchromium_net.so                         浏览器支持库               
+    lib/libcrypto.so                               加密库               
+    lib/libctest.so                                c  测试库               
+    lib/libcutils.so                               Bionic的一部分，是Android中最基础的库               
+    lib/libdbus.so                                 Dbus，被Android拿来用于进程间通信               
+    lib/libdiskconfig.so                           Android中与储存(磁盘)相关的库               
+    lib/libdl.so                                   Bionic实现的动态链接相关的库               
+    lib/libdomx.so                                                
+    lib/libdvm.so                                  Dalvik虚拟机本体               
+    lib/libexif.so                                 一个处理照片exif信息的命令行工具               
+    lib/libexpat.so                                解析XML文档的开发库               
+    lib/libext2_blkid.so                           Ext2 Filesystem Utilities             
+    lib/libext2_com_err.so                         Ext2 Filesystem Utilities             
+    lib/libext2_e2p.so                             Ext2 Filesystem Utilities             
+    lib/libext2_profile.so                         Ext2 Filesystem Utilities             
+    lib/libext2_uuid.so                            Ext2 Filesystem Utilities             
+    lib/libext2fs.so                               Ext2 Filesystem Utilities             
+    lib/libext4_utils.so                                          
+    lib/libfilterfw.so                             媒体库               
+    lib/libfilterpack_imageproc.so                                
+    lib/libgabi++.so                                            
+    lib/libglib.so                                                
+    lib/libhardware.so                             Android中HAL(硬件抽象层)相关库               
+    lib/libhardware_legacy.so                      Android中HAL(硬件抽象层)相关库               
+    lib/libharfbuzz.so                                            
+    lib/libicui18n.so                              ICU(International Component for Unicode            
+    lib/libicuuc.so                                同样是libicu的一部分               
+    lib/libinvensense_hal.so                                      
+    lib/libion.so                                                 
+    lib/libiprouteutil.so                          Android中与TCP/IP栈相关的库               
+    lib/libjni_latinime.so                         Android中与拉丁字母输入法相关的库               
+    lib/libjni_mosaic.so                                          
+    lib/libjpeg.so                                 处理jpeg图像的相关库               
+    lib/liblog.so                                  有关日志记录的库               
+    lib/libm.so                                    与内存分配回收有关               
+    lib/libmllite.so                               传感器相关的库               
+    lib/libmlplatform.so                           传感器相关的库               
+    lib/libmm_osal.so                                             
+    lib/libnativehelper.so                         Dalvik的一部分，用于注册JNI调用的原生代码函数               
+    lib/libnetlink.so                              RSVP协议开源实现               
+    lib/libnetutils.so                             有关以太网(Ethernet)的模块               
+    lib/libnfc.so                                  libnfc 是一个主要的库，实现了NFC Stack的大部分功能，主要供NFC的服务进程调用             
+    lib/libnfc_jni.so                                             
+    lib/libnfc_ndef.so                             一个很小的函数库，主要是实现NDEF消息的解析，供Framework 调用              
+    lib/libpagemap.so                              pagemap库               
+    lib/libpixelflinger.so                         Pixelflinger是Android系统中为OpenGLES引擎提供的一套软件渲染器               
+    lib/libpower.so                                               
+    lib/libreference-ril.so                        Android中的ril库，负责与基带(baseband)芯片的驱动(经常会被称作‘基带’，‘radio’等)通信的部分               
+    lib/libril.so                                  libril.so是一个辅助功能的库，它为libreference-ril和rild使用               
+    lib/libskia.so                                 Android所采用的SKIA图形引擎               
+    lib/libsonivox.so                              一个电子声音合成器               
+    lib/libspeexresampler.so                       一套主要针对语音的开源音频压缩格式               
+    lib/libsqlite.so                               Sqlite的相关库               
+    lib/libsqlite_jni.so                           Sqlite的相关库，用于JNI通信               
+    lib/libsrec_jni.so                             语音识别库，用于jni通信               
+    lib/libssl.so                                  OpenSSL模块主体               
+    lib/libstagefrighthw.so                        FFmpeg的模块               
+    lib/libstdc++.so                               Bionic的C++库               
+    lib/libstlport.so                              Bionic的C++的STL模版库               
+    lib/libsysutils.so                             Android的核心模块，这里的一个(可能是曾经的)漏洞和zergrush的提权有关               
+    lib/libthread_db.so                            多线程调试有关的库               
+    lib/libtinyalsa.so                             a small library to interface withALSA          
+    lib/libtiutils.so                                             
+    lib/libttscompat.so                            TTS转换库               
+    lib/libttspico.so                              TTS语音相关库               
+    lib/libusbhost.so                                             
+    lib/libvorbisidec.so                           Vorbis解码器(如ogg等)               
+    lib/libwebcore.so                              Webkit网页渲染引擎               
+    lib/libwebrtc_audio_preprocessing.so                          
+    lib/libwilhelm.so                                             
+    lib/libwnndict.so                                             
+    lib/libwpa_client.so                           守护程序操作和得到状态信息和事件通知的控制接口               
+    lib/libz.so                                    zip压缩               
+    xbin/add-property-tag                                         
+    xbin/check-lost+found                                         
+    xbin/dexdump                                   dexdump反编译app               
+    xbin/dhdutil                                                  
+    xbin/hcidump                                   蓝牙协议分析工具               
+    xbin/latencytop                                a tool for software developers identifying system latency happen       
+    xbin/librank                                   Java Library Ranking System库            
+    xbin/micro_bench                               性能测试软件benchmark               
+    xbin/opcontrol                                 用于 Linux 的若干种评测和性能监控工具             
+    xbin/oprofiled                                 用于 Linux 的若干种评测和性能监控工具             
+    xbin/procmem                                   procmem相关               
+    xbin/procrank                                  查看进程使用的内存情况               
+    xbin/sane_schedstat                            Opens /proc/sched_stat and diff's the counters.          
+    xbin/scp                                       文件复制命令               
+    xbin/showmap                                   showmap工具               
+    xbin/showslab                                  showslab工具               
+    xbin/sqlite3                                   一个 SQLite 数据库的命令行接口             
+    xbin/ssh                                       远程连接客户端工具               
+    xbin/strace                                    系统调试工具               
+    xbin/su                                        su命令  

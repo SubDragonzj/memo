@@ -1,0 +1,7079 @@
+http://www.cnblogs.com/scue/p/3738882.html
+Android源代码所有目录生成的Target（编译生成文件反查）
+
+=> build/tools/zipalign:
+out/host/linux-x86/bin/zipalign (host)
+
+=> build/tools/atree:
+out/host/linux-x86/bin/atree (host)
+
+=> build/tools:
+
+=> build/tools/bin2asm:
+out/host/linux-x86/bin/icudata (host)
+
+=> build/tools/check_prereq:
+system/bin/check_prereq
+
+=> build/tools/droiddoc/test/generics:
+test_generics (droid,doc)
+
+=> build/tools/droiddoc/test/stubs:
+test_stubs (droid,doc)
+
+=> build/tools/droiddoc:
+
+=> build/tools/apicheck:
+apicheck|BUILD_SYSTEM/base_rules.mk
+
+=> build/tools/signapk:
+signapk.jar (host,share)
+
+=> build/tools/fs_get_stats:
+out/host/linux-x86/bin/fs_get_stats (host)
+
+=> build/tools/fs_config:
+out/host/linux-x86/bin/fs_config (host)
+
+=> build/tools/rgb2565:
+out/host/linux-x86/bin/rgb2565 (host)
+
+=> build/tools/acp:
+out/host/linux-x86/bin/acp (host)
+
+=> build/target/board:
+
+=> build/target/board/generic_mips:
+
+=> build/libs/host:
+libhost.so (host,static)
+
+=> cts/suite:
+
+=> cts/suite/pts/tools:
+
+=> cts/suite/pts/tools/tradefed:
+(host,prebult)
+
+=> cts/suite/pts:
+
+=> cts/suite/pts/lib:
+
+=> cts/suite/pts/lib/commonutil:
+ptscommonutil.jar (android,static)
+ptscommonutilhost.jar (host,share)
+
+=> cts/suite/pts/deviceTests/ptsutil:
+ptsutil.jar (android,static)
+
+=> cts/suite/pts/deviceTests/dram/jni:
+system/lib/libptsdram_jni.so (share)
+
+=> cts/suite/pts/deviceTests/dram:
+PtsDeviceDram|BUILD_PTS_PACKAGE
+
+=> cts/suite/pts/deviceTests:
+
+=> cts/suite/pts/deviceTests/filesystemperf:
+PtsDeviceFilePerf|BUILD_PTS_PACKAGE
+
+=> cts/suite/pts/deviceTests/ui:
+PtsDeviceUi|BUILD_PTS_PACKAGE
+
+=> cts/suite/pts/hostTests/uihost/control:
+PtsDeviceTaskswitchingControl|BUILD_PTS_PACKAGE
+
+=> cts/suite/pts/hostTests/uihost:
+PtsHostUi|BUILD_PTS_HOST_JAVA_LIBRARY
+
+=> cts/suite/pts/hostTests/uihost/appB:
+PtsDeviceTaskswitchingAppB|BUILD_PTS_PACKAGE
+
+=> cts/suite/pts/hostTests/uihost/appA:
+PtsDeviceTaskswitchingAppA|BUILD_PTS_PACKAGE
+
+=> cts/suite/pts/hostTests:
+
+=> cts/suite/pts/hostTests/ptshostutil:
+ptshostutil.jar (host,share)
+
+=> cts/suite/pts/hostTests/browser:
+PtsHostBrowser|BUILD_PTS_HOST_JAVA_LIBRARY
+
+=> cts/suite/pts/hostTests/browser/browserlauncher:
+PtsDeviceBrowserLauncher|BUILD_PTS_PACKAGE
+
+=> cts/suite/pts/hostTests/bootup:
+PtsHostBootup|BUILD_PTS_HOST_JAVA_LIBRARY
+
+=> cts/suite/audio_quality/test:
+out/host/linux-x86/bin/cts_audio_quality_test (host)
+
+=> cts/suite/audio_quality/client:
+CtsAudioClient.apk
+
+=> cts/suite/audio_quality:
+
+=> cts/suite/audio_quality/lib:
+libcts_audio_quality.so (host,static)
+
+=> cts/suite/audio_quality/executable:
+out/host/linux-x86/bin/cts_audio_quality (host)
+
+=> cts/tools/dex-tools:
+dex-tools.jar (host,share)
+
+=> cts/tools/dasm/src:
+dasm.jar (host,share)
+
+=> cts/tools/dasm:
+dasm|BUILD_SYSTEM/base_rules.mk
+
+=> cts/tools/cts-xml-generator/src:
+cts-xml-generator.jar (host,share)
+
+=> cts/tools/cts-xml-generator:
+cts-xml-generator|BUILD_SYSTEM/base_rules.mk
+
+=> cts/tools:
+
+=> cts/tools/cfassembler:
+cfassembler|BUILD_SYSTEM/base_rules.mk
+cfassembler.jar (host,share)
+
+=> cts/tools/cts-api-coverage/src:
+cts-api-coverage.jar (host,share)
+
+=> cts/tools/cts-api-coverage:
+cts-api-coverage|BUILD_SYSTEM/base_rules.mk
+
+=> cts/tools/cts-native-scanner/src:
+cts-native-scanner.jar (host,share)
+
+=> cts/tools/cts-native-scanner:
+cts-native-scanner|BUILD_SYSTEM/base_rules.mk
+
+=> cts/tools/vm-tests-tf:
+cts-tf-dalvik-buildutil.jar (host,share)
+
+=> cts/tools/tradefed-host:
+cts-tradefed.jar (host,share)
+
+=> cts/tools/tradefed-host/etc:
+(host,prebult)
+
+=> cts/tools/tradefed-host/tests:
+cts-tradefed-tests.jar (host,share)
+
+=> cts/tools/cts-reference-app-lib:
+android.cts.refapp.jar (android,static)
+
+=> cts/tools/utils:
+descGen.jar (host,share)
+
+=> cts/tools/signature-tools:
+signature-tools.jar (host,share)
+(host,prebult)
+(host,prebult)
+(host,prebult)
+(host,prebult)
+(host,prebult)
+
+=> cts/tools/cts-java-scanner/src:
+cts-java-scanner.jar (host,share)
+
+=> cts/tools/cts-java-scanner:
+cts-java-scanner|BUILD_SYSTEM/base_rules.mk
+
+=> cts/tools/device-setup:
+
+=> cts/tools/device-setup/TestDeviceSetup:
+TestDeviceSetup.apk
+ctsdeviceinfolib.jar (host,share)
+
+=> cts/tools/cts-java-scanner-doclet:
+cts-java-scanner-doclet.jar (host,share)
+
+=> cts/libs/vogar-expect:
+vogarexpectlib.jar (host,share)
+
+=> cts/libs/runner:
+ctstestrunner.jar (android,static)
+
+=> cts/libs/util:
+ctsutil.jar (android,static)
+
+=> cts/libs:
+
+=> cts/libs/testserver:
+ctstestserver.jar (android,static)
+
+=> cts/libs/json:
+jsonlib.jar (host,share)
+
+=> cts/apps/cts-usb-accessory:
+out/host/linux-x86/bin/cts-usb-accessory (host)
+
+=> cts/apps:
+
+=> cts/apps/CtsVerifier/jni/cameraanalyzer:
+system/lib/libcameraanalyzer.so (share)
+
+=> cts/apps/CtsVerifier/jni:
+
+=> cts/apps/CtsVerifier/jni/verifier:
+system/lib/libctsverifier_jni.so (share)
+
+=> cts/apps/CtsVerifier:
+CtsVerifier.apk
+
+=> cts/apps/CtsVerifier/lib:
+
+=> cts/apps/CtsVerifier/lib/colorchecker:
+system/lib/libcolorchecker.so (static)
+
+=> cts:
+
+=> cts/tests/jni:
+system/lib/libcts_jni.so (share)
+
+=> cts/tests/acceleration:
+CtsAccelerationTestStubs.apk
+
+=> cts/tests/SignatureTest:
+SignatureTest.apk
+
+=> cts/tests/SignatureTest/tests:
+SignatureTestTests.apk
+
+=> cts/tests/deviceadmin:
+CtsDeviceAdmin.apk
+
+=> cts/tests:
+CtsTestStubs.apk
+
+=> cts/tests/ProcessTest:
+ProcessTests.apk
+
+=> cts/tests/ProcessTest/NoShareUidApp:
+NoShareUidApp.apk
+
+=> cts/tests/ProcessTest/ShareUidApp:
+ShareUidApp.apk
+
+=> cts/tests/uiautomator:
+CtsUiAutomatorTests|BUILD_CTS_UI_JAVA_LIBRARY
+
+=> cts/tests/uiautomator/test-apps/CtsUiAutomatorApp:
+CtsUiAutomatorApp.apk
+
+=> cts/tests/uiautomator/test-apps:
+
+=> cts/tests/tests/location:
+CtsLocationTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/jni:
+CtsJniTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/jni/libjnitest:
+system/lib/libjnitest.so (share)
+
+=> cts/tests/tests/sax:
+CtsSaxTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/drm:
+CtsDrmTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/opengl:
+CtsOpenGLTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/opengl/libopengltest:
+system/lib/libopengltest_jni.so (share)
+
+=> cts/tests/tests/os:
+CtsOsTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/acceleration:
+CtsAccelerationTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/admin:
+CtsAdminTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/security/jni:
+system/lib/libctssecurity_jni.so (share)
+
+=> cts/tests/tests/security:
+CtsSecurityTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/text:
+CtsTextTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/webkit:
+CtsWebkitTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/graphics:
+CtsGraphicsTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/preference:
+CtsPreferenceTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/effect:
+CtsEffectTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/graphics2:
+CtsGraphics2TestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/nativemedia:
+
+=> cts/tests/tests/nativemedia/xa:
+NativeMediaTest_XA|BUILD_CTS_EXECUTABLE
+
+=> cts/tests/tests/nativemedia/sl:
+NativeMediaTest_SL|BUILD_CTS_EXECUTABLE
+
+=> cts/tests/tests/util:
+CtsUtilTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests:
+
+=> cts/tests/tests/preference2:
+CtsPreference2TestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/mediastress/jni:
+system/lib/libctsmediastress_jni.so (share)
+
+=> cts/tests/tests/mediastress:
+CtsMediaStressTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/widget:
+CtsWidgetTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/renderscript:
+CtsRenderscriptTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/media:
+CtsMediaTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/permission2:
+CtsPermission2TestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/theme:
+CtsThemeTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/example:
+CtsExampleTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/content:
+CtsContentTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/permission/jni:
+system/lib/libctspermission_jni.so (share)
+
+=> cts/tests/tests/permission:
+CtsPermissionTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/gesture:
+CtsGestureTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/speech:
+CtsSpeechTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/provider:
+CtsProviderTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/view:
+CtsViewTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/location2:
+CtsLocation2TestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/dpi2:
+CtsDpiTestCases2|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/accessibility:
+CtsAccessibilityTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/openglperf:
+CtsOpenGlPerfTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/hardware:
+CtsHardwareTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/accounts:
+CtsAccountManagerTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/database:
+CtsDatabaseTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/accessibilityservice:
+CtsAccessibilityServiceTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/app:
+CtsAppTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/textureview:
+CtsTextureViewTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/telephony:
+CtsTelephonyTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/bluetooth:
+CtsBluetoothTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/net:
+CtsNetTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/calendarcommon:
+CtsCalendarcommon2TestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/ndef:
+CtsNdefTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/animation:
+CtsAnimationTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/holo:
+CtsHoloTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/uidisolation:
+CtsUidIsolationTestCases|BUILD_CTS_PACKAGE
+
+=> cts/tests/tests/dpi:
+CtsDpiTestCases|BUILD_CTS_PACKAGE
+android.cts.dpi.jar (android,static)
+
+=> cts/tests/accessibility:
+CtsSomeAccessibilityServices.apk
+
+=> cts/tests/accessibilityservice:
+CtsDelegatingAccessibilityService.apk
+
+=> cts/tests/core/runner:
+android.core.tests.runner|BUILD_CTSCORE_PACKAGE
+
+=> cts/tests/core:
+
+=> cts/tests/core/libcore:
+
+=> cts/tests/core/libcore/libcore:
+android.core.tests.libcore.package.libcore|BUILD_CTSCORE_PACKAGE
+
+=> cts/tests/core/libcore/sun:
+android.core.tests.libcore.package.sun|BUILD_CTSCORE_PACKAGE
+
+=> cts/tests/core/libcore/tests:
+android.core.tests.libcore.package.tests|BUILD_CTSCORE_PACKAGE
+
+=> cts/tests/core/libcore/org:
+android.core.tests.libcore.package.org|BUILD_CTSCORE_PACKAGE
+
+=> cts/tests/core/libcore/dalvik:
+android.core.tests.libcore.package.dalvik|BUILD_CTSCORE_PACKAGE
+
+=> cts/tests/core/libcore/com:
+android.core.tests.libcore.package.com|BUILD_CTSCORE_PACKAGE
+
+=> cts/hostsidetests/monkey:
+CtsMonkeyTestCases|BUILD_CTS_HOST_JAVA_LIBRARY
+
+=> cts/hostsidetests/monkey/test-apps:
+
+=> cts/hostsidetests/monkey/test-apps/CtsMonkeyApp2:
+CtsMonkeyApp2.apk
+
+=> cts/hostsidetests/monkey/test-apps/CtsMonkeyApp:
+CtsMonkeyApp.apk
+
+=> cts/hostsidetests:
+
+=> cts/hostsidetests/appsecurity:
+CtsAppSecurityTests|BUILD_CTS_HOST_JAVA_LIBRARY
+
+=> cts/hostsidetests/appsecurity/test-apps/ExternalStorageApp:
+CtsExternalStorageApp.apk
+
+=> cts/hostsidetests/appsecurity/test-apps/AppAccessData:
+CtsAppAccessData.apk
+
+=> cts/hostsidetests/appsecurity/test-apps/MultiUserStorageApp:
+CtsMultiUserStorageApp.apk
+
+=> cts/hostsidetests/appsecurity/test-apps/PermissionDeclareApp:
+CtsPermissionDeclareApp.apk
+
+=> cts/hostsidetests/appsecurity/test-apps/UsePermissionDiffCert:
+CtsUsePermissionDiffCert.apk
+
+=> cts/hostsidetests/appsecurity/test-apps:
+
+=> cts/hostsidetests/appsecurity/test-apps/SimpleAppInstall:
+CtsSimpleAppInstall.apk
+
+=> cts/hostsidetests/appsecurity/test-apps/SimpleAppInstallDiffCert:
+CtsSimpleAppInstallDiffCert.apk
+
+=> cts/hostsidetests/appsecurity/test-apps/TargetInstrumentationApp:
+CtsTargetInstrumentationApp.apk
+
+=> cts/hostsidetests/appsecurity/test-apps/SharedUidInstall:
+CtsSharedUidInstall.apk
+
+=> cts/hostsidetests/appsecurity/test-apps/WriteExternalStorageApp:
+CtsWriteExternalStorageApp.apk
+
+=> cts/hostsidetests/appsecurity/test-apps/AppWithData:
+CtsAppWithData.apk
+
+=> cts/hostsidetests/appsecurity/test-apps/PermissionDeclareAppCompat:
+CtsPermissionDeclareAppCompat.apk
+
+=> cts/hostsidetests/appsecurity/test-apps/InstrumentationAppDiffCert:
+CtsInstrumentationAppDiffCert.apk
+
+=> cts/hostsidetests/appsecurity/test-apps/SharedUidInstallDiffCert:
+CtsSharedUidInstallDiffCert.apk
+
+=> device/google/accessory/arduino:
+
+=> device/google/accessory/demokit:
+
+=> device/google/accessory/demokit/app:
+DemoKit.apk
+
+=> device/sample/apps/client:
+PlatformLibraryClient.apk
+
+=> device/sample/apps:
+
+=> device/sample/apps/SampleEmailPolicy:
+SampleEmailPolicy.apk
+
+=> device/sample/apps/upgrade:
+UpgradeExample.apk
+
+=> device/sample:
+
+=> device/sample/frameworks:
+
+=> device/sample/frameworks/PlatformLibrary/jni:
+system/lib/libplatform_library_jni.so (share)
+
+=> device/sample/frameworks/PlatformLibrary:
+com.example.android.platform_library.jar (android)
+platform_library (droid,doc)
+
+=> device/lge/mako/dumpstate:
+system/lib/libdumpstate.mako.so (static)
+
+=> device/lge/mako/recovery:
+system/lib/librecovery_ui_mako.so (static)
+
+=> device/lge/mako/liblight:
+system/lib/lights.mako.so (share)
+
+=> device/lge/mako:
+wpa_supplicant.conf (prebult)
+
+=> device/lge/mako/charger_touch:
+system/bin/charger_touch
+
+=> device/lge/mako/bdAddrLoader:
+system/bin/bdAddrLoader
+
+=> device/lge/mako/conn_init:
+system/lib/libwfcu.so (share)
+system/bin/conn_init
+WCNSS_qcom_cfg.ini|BUILD_SYSTEM/base_rules.mk
+WCNSS_qcom_wlan_nv.bin|BUILD_SYSTEM/base_rules.mk
+
+=> device/generic/goldfish/audio:
+system/lib/audio.primary.goldfish.so (share)
+
+=> device/generic/goldfish/power:
+system/lib/power.goldfish.so (share)
+
+=> device/lenovo/stuttgart/libs/libfimc:
+libfimc (prebult)
+
+=> device/lenovo/stuttgart/libs:
+
+=> device/lenovo/stuttgart/libs/libsamsungion:
+libsamsungion (prebult)
+
+=> device/lenovo/stuttgart/libs/libUMP:
+libUMP (prebult)
+
+=> device/lenovo/stuttgart/libs/libril:
+system/lib/libril.so (share)
+system/lib/libril_static.so (static)
+
+=> device/lenovo/stuttgart:
+
+=> device/lenovo/stuttgart/DeviceSettings:
+DeviceSettings.apk
+
+=> device/lenovo/stuttgart/tmp/vendor_0807/proprietary:
+
+=> device/lenovo/stuttgart/tmp/vendor_vibe/proprietary:
+
+=> device/lenovo/stuttgart/tmp/stuttgart/proprietary:
+
+=> device/lenovo/stuttgart/preload:
+preload (prebult)
+
+=> device/ti/panda/recovery:
+system/lib/librecovery_ui_panda.so (static)
+
+=> device/ti/panda/audio:
+system/lib/.so (share)
+
+=> device/ti/panda/wl12xx:
+wl1271-fw-2.bin (prebult)
+wl1271-nvs.bin (prebult)
+TIInit_10.6.15.bts|BUILD_SYSTEM/base_rules.mk
+TIInit_7.2.31.bts|BUILD_SYSTEM/base_rules.mk
+TIInit_7.6.15.bts|BUILD_SYSTEM/base_rules.mk
+
+=> device/ti/panda:
+
+=> device/ti/panda/self-extractors:
+
+=> device/common/libbt:
+system/lib/libbt-vendor.so (share)
+
+=> device/common/libbt/conf/moto/wingray:
+bt_vendor.conf (prebult)
+
+=> device/common/libbt/conf/asus/grouper:
+bt_vendor.conf (prebult)
+
+=> device/common/libbt/conf/samsung/crespo:
+bt_vendor.conf (prebult)
+
+=> device/common/libbt/conf/samsung/crespo4g:
+bt_vendor.conf (prebult)
+
+=> device/common/libbt/conf/samsung/maguro:
+bt_vendor.conf (prebult)
+
+=> abi/cpp:
+system/lib/libgabi++.so (share)
+system/lib/libgabi++.so (static)
+
+=> vendor/tmobile/providers/ThemeManager:
+ThemeManager.apk
+
+=> vendor/tmobile/providers/ThemeManager/tests:
+ThemeManagerTests.apk
+
+=> vendor/tmobile/libs/com.tmobile.themes:
+com.tmobile.themes.jar (android,static)
+
+=> vendor/tmobile/apps/ThemeChooser:
+ThemeChooser.apk
+
+=> vendor/lenovo/stuttgart/proprietary:
+
+=> libcore:
+
+=> sdk/eventanalyzer/src:
+eventanalyzer.jar (host,share)
+
+=> sdk/eventanalyzer:
+
+=> sdk/eventanalyzer/etc:
+(host,prebult)
+
+=> sdk/uiautomatorviewer:
+uiautomatorviewer.jar (host,share)
+
+=> sdk/uiautomatorviewer/etc:
+(host,prebult)
+
+=> sdk/emulator/opengl:
+
+=> sdk/emulator/opengl/shared/OpenglOsUtils:
+
+=> sdk/emulator/opengl/shared/OpenglCodecCommon:
+
+=> sdk/emulator/opengl/tests/ut_renderer:
+
+=> sdk/emulator/opengl/tests/EGL_host_wrapper:
+
+=> sdk/emulator/opengl/tests/emulator_test_renderer:
+
+=> sdk/emulator/opengl/tests/ut_rendercontrol_enc:
+
+=> sdk/emulator/opengl/tests/translator_tests/MacCommon:
+
+=> sdk/emulator/opengl/tests/translator_tests/GLES_CM:
+
+=> sdk/emulator/opengl/tests/translator_tests/GLES_V2:
+
+=> sdk/emulator/opengl/tests/ut_rendercontrol_dec:
+
+=> sdk/emulator/opengl/tests/event_injector:
+
+=> sdk/emulator/opengl/host/tools/emugen:
+
+=> sdk/emulator/opengl/host/libs/GLESv2_dec:
+
+=> sdk/emulator/opengl/host/libs/Translator/EGL:
+
+=> sdk/emulator/opengl/host/libs/Translator/GLES_CM:
+
+=> sdk/emulator/opengl/host/libs/Translator/GLcommon:
+
+=> sdk/emulator/opengl/host/libs/Translator/GLES_V2:
+
+=> sdk/emulator/opengl/host/libs/renderControl_dec:
+
+=> sdk/emulator/opengl/host/libs/GLESv1_dec:
+
+=> sdk/emulator/opengl/host/libs/libOpenglRender:
+
+=> sdk/emulator/opengl/host/renderer:
+
+=> sdk/emulator/mksdcard:
+out/host/linux-x86/bin/mksdcard (host)
+
+=> sdk/emulator/qtools:
+out/host/linux-x86/bin/post_trace (host)
+out/host/linux-x86/bin/read_trace (host)
+out/host/linux-x86/bin/check_trace (host)
+out/host/linux-x86/bin/bb_dump (host)
+out/host/linux-x86/bin/bb2sym (host)
+out/host/linux-x86/bin/profile_trace (host)
+out/host/linux-x86/bin/bbprof (host)
+out/host/linux-x86/bin/q2g (host)
+out/host/linux-x86/bin/q2dm (host)
+out/host/linux-x86/bin/coverage (host)
+out/host/linux-x86/bin/stack_dump (host)
+out/host/linux-x86/bin/check_stack (host)
+out/host/linux-x86/bin/hist_trace (host)
+out/host/linux-x86/bin/read_addr (host)
+out/host/linux-x86/bin/read_pid (host)
+out/host/linux-x86/bin/exc_dump (host)
+out/host/linux-x86/bin/read_method (host)
+out/host/linux-x86/bin/profile_pid (host)
+out/host/linux-x86/bin/dump_regions (host)
+
+=> sdk/avdlauncher:
+out/host/linux-x86/bin/avdlauncher (host)
+
+=> sdk/assetstudio:
+assetstudio.jar (host,share)
+
+=> sdk/lint/libs/lint_checks:
+lint_checks.jar (host,share)
+
+=> sdk/lint/libs/lint_checks/tests:
+lint_checks-tests.jar (host,share)
+
+=> sdk/lint/libs:
+
+=> sdk/lint/libs/lint_api:
+lint_api.jar (host,share)
+
+=> sdk/lint:
+
+=> sdk/lint/cli:
+lint.jar (host,share)
+
+=> sdk/lint/cli/etc:
+(host,prebult)
+
+=> sdk/draw9patch:
+draw9patch.jar (host,share)
+
+=> sdk/draw9patch/etc:
+(host,prebult)
+
+=> sdk/screenshot/src:
+screenshot2.jar (host,share)
+
+=> sdk/screenshot:
+
+=> sdk/screenshot/etc:
+(host,prebult)
+
+=> sdk/find_java:
+libfindjava.so (host,static)
+out/host/linux-x86/bin/find_java (host)
+
+=> sdk/sdkmanager/libs:
+
+=> sdk/sdkmanager/libs/sdkuilib:
+sdkuilib.jar (host,share)
+
+=> sdk/sdkmanager/libs/sdkuilib/tests:
+sdkuilib-tests.jar (host,share)
+
+=> sdk/sdkmanager/libs/sdklib:
+sdklib.jar (host,share)
+
+=> sdk/sdkmanager/libs/sdklib/tests:
+sdklib-tests.jar (host,share)
+
+=> sdk/sdkmanager:
+
+=> sdk/sdkmanager/app:
+sdkmanager.jar (host,share)
+
+=> sdk/sdkmanager/app/etc:
+(host,prebult)
+
+=> sdk/sdkmanager/app/tests:
+sdkmanager-tests.jar (host,share)
+
+=> sdk/dumpeventlog/src:
+dumpeventlog.jar (host,share)
+
+=> sdk/dumpeventlog:
+
+=> sdk/dumpeventlog/etc:
+(host,prebult)
+
+=> sdk/annotations:
+annotations.jar (host,share)
+
+=> sdk/find_lock:
+out/host/linux-x86/bin/find_lock (host)
+
+=> sdk/monitor:
+monitor|BUILD_SYSTEM/base_rules.mk
+
+=> sdk/hierarchyviewer/src:
+hierarchyviewer.jar (host,share)
+
+=> sdk/hierarchyviewer:
+
+=> sdk/hierarchyviewer/etc:
+(host,prebult)
+
+=> sdk/layoutlib_api:
+layoutlib_api.jar (host,share)
+
+=> sdk/layoutlib_api/tests:
+common-tests.jar (host,share)
+
+=> sdk/manifmerger:
+manifmerger.jar (host,share)
+
+=> sdk/manifmerger/etc:
+(host,prebult)
+
+=> sdk/manifmerger/tests:
+manifmerger-tests.jar (host,share)
+
+=> sdk/sdk_common:
+sdk_common.jar (host,share)
+
+=> sdk/sdk_common/tests:
+sdk_common-tests.jar (host,share)
+
+=> sdk/traceview/src:
+traceview.jar (host,share)
+
+=> sdk/traceview:
+
+=> sdk/traceview/etc:
+(host,prebult)
+
+=> sdk/chimpchat/test:
+chimpchattest.jar (host,share)
+
+=> sdk/chimpchat/src:
+chimpchat.jar (host,share)
+
+=> sdk/chimpchat:
+
+=> sdk/swtmenubar:
+swtmenubar.jar (host,share)
+
+=> sdk/monkeyrunner/test:
+MonkeyRunnerTest.jar (host,share)
+
+=> sdk/monkeyrunner/src:
+monkeyrunner.jar (host,share)
+
+=> sdk/monkeyrunner:
+
+=> sdk/monkeyrunner/etc:
+(host,prebult)
+
+=> sdk/sdklauncher:
+out/host/linux-x86/bin/sdklauncher (host)
+
+=> sdk/ddms/libs/ddmuilib:
+ddmuilib.jar (host,share)
+
+=> sdk/ddms/libs/ddmuilib/tests:
+ddmuilib-tests.jar (host,share)
+
+=> sdk/ddms/libs:
+
+=> sdk/ddms/libs/ddmlib:
+ddmlib.jar (host,share)
+
+=> sdk/ddms/libs/ddmlib/tests:
+ddmlib-tests.jar (host,share)
+
+=> sdk/ddms:
+
+=> sdk/ddms/app:
+ddms.jar (host,share)
+
+=> sdk/ddms/app/etc:
+(host,prebult)
+
+=> sdk/sdkstats/src:
+sdkstats.jar (host,share)
+
+=> sdk/sdkstats:
+
+=> sdk/ninepatch:
+ninepatch.jar (host,share)
+
+=> sdk/ninepatch/tests:
+ninepatch-tests.jar (host,share)
+
+=> sdk/common:
+common.jar (host,share)
+
+=> sdk/common/tests:
+common-tests.jar (host,share)
+
+=> sdk/device_validator:
+
+=> sdk/device_validator/dvlib:
+dvlib.jar (host,share)
+
+=> sdk/device_validator/dvlib/tests:
+dvlib-tests.jar (host,share)
+
+=> sdk/device_validator/app:
+device_validator.jar (host,share)
+
+=> sdk/device_validator/app/etc:
+(host,prebult)
+
+=> sdk/hierarchyviewer2/libs:
+
+=> sdk/hierarchyviewer2/libs/hierarchyviewerlib/src:
+hierarchyviewerlib.jar (host,share)
+
+=> sdk/hierarchyviewer2/libs/hierarchyviewerlib:
+
+=> sdk/hierarchyviewer2:
+
+=> sdk/hierarchyviewer2/app:
+hierarchyviewer2.jar (host,share)
+
+=> sdk/hierarchyviewer2/app/etc:
+(host,prebult)
+
+=> sdk/rule_api:
+rule_api.jar (host,share)
+
+=> sdk/anttasks:
+anttasks.jar (host,share)
+
+=> sdk/archquery:
+archquery.jar (host,share)
+
+=> bootable/recovery/mmcutils:
+system/lib/libmmcutils.so (static)
+
+=> bootable/recovery/bmlutils:
+system/lib/libbmlutils.so (static)
+
+=> bootable/recovery/utilities:
+parted (prebult)
+sdparted (prebult)
+fat.format (prebult)
+system/lib/libminizip.so (static)
+system/lib/libmake_ext4fs.so (static)
+
+=> bootable/recovery/tools/ota:
+system/bin/add-property-tag
+system/bin/check-lost+found
+
+=> bootable/recovery/tools:
+
+=> bootable/recovery/mtdutils:
+system/lib/libmtdutils.so (static)
+system/lib/libbml_over_mtd.so (static)
+system/bin/bml_over_mtd
+
+=> bootable/recovery/edify:
+out/host/linux-x86/bin/edify (host)
+system/lib/libedify.so (static)
+
+=> bootable/recovery/minui:
+system/lib/libminui.so (static)
+
+=> bootable/recovery:
+system/bin/recovery
+nandroid-md5.sh (prebult)
+killrecovery.sh (prebult)
+system/bin/verifier_test
+
+=> bootable/recovery/updater:
+system/bin/updater
+
+=> bootable/recovery/libcrecovery:
+system/lib/libcrecovery.so (static)
+
+=> bootable/recovery/applypatch:
+system/lib/libapplypatch.so (static)
+system/bin/applypatch
+system/bin/applypatch_static
+out/host/linux-x86/bin/imgdiff (host)
+
+=> bootable/recovery/minelf:
+system/lib/libminelf.so (static)
+
+=> bootable/recovery/flashutils:
+system/lib/libflashutils.so (static)
+system/bin/flash_image
+system/bin/dump_image
+system/bin/erase_image
+system/lib/libflash_image.so (static)
+system/lib/libdump_image.so (static)
+system/lib/liberase_image.so (static)
+system/bin/utility_dump_image
+system/bin/utility_flash_image
+system/bin/utility_erase_image
+
+=> bootable/recovery/minadbd:
+system/lib/libminadbd.so (static)
+
+=> bootable/recovery/dedupe:
+out/host/linux-x86/bin/dedupe (host)
+system/lib/libdedupe.so (static)
+system/bin/utility_dedupe
+
+=> bootable/recovery/minzip:
+system/lib/libminzip.so (static)
+
+=> bootable/recovery/su:
+system/bin/su.recovery
+install-su.sh (prebult)
+run-su-daemon.sh (prebult)
+
+=> bootable/diskinstaller:
+system/bin/diskinstaller
+
+=> bootable/diskinstaller/editdisklbl:
+out/host/linux-x86/bin/editdisklbl (host)
+
+=> frameworks/ex/photoviewer:
+android-common-photoviewer.jar (android,static)
+
+=> frameworks/ex/photoviewer/sample:
+PhotoViewerSample.apk
+
+=> frameworks/ex/variablespeed/jni:
+system/lib/libvariablespeed.so (share)
+
+=> frameworks/ex/variablespeed:
+android-ex-variablespeed.jar (android,static)
+
+=> frameworks/ex/variablespeed/tests:
+AndroidExVariablespeedTests.apk
+
+=> frameworks/ex/chips:
+android-common-chips.jar (android,static)
+
+=> frameworks/ex/chips/tests:
+ChipsTests.apk
+
+=> frameworks/ex/common:
+android-common.jar (android,static)
+
+=> frameworks/ex/common/tests:
+AndroidCommonTests.apk
+
+=> frameworks/ex/carousel/test:
+CarouselWidgetTests.apk
+
+=> frameworks/ex/carousel:
+android-common-carousel.jar (android,static)
+
+=> frameworks/ml/bordeaux/learning:
+system/lib/libbordeaux.so (share)
+bordeaux_learners.jar (android,static)
+
+=> frameworks/ml/bordeaux/learning/stochastic_linear_ranker:
+system/lib/libstochastic_linear.so (static)
+
+=> frameworks/ml/bordeaux/learning/multiclass_pa:
+system/lib/libmulticlass_pa.so (static)
+
+=> frameworks/ml/bordeaux/learning/predictor_histogram:
+
+=> frameworks/ml/bordeaux:
+
+=> frameworks/ml/bordeaux/service:
+bordeaux.apk
+bordeaux_service.jar (android,static)
+bordeaux_whole_service.jar (android,static)
+
+=> frameworks/ml:
+
+=> frameworks/compile/mclinker:
+
+=> frameworks/compile/mclinker/lib/Support:
+libmcldSupport.so (host,static)
+system/lib/libmcldSupport.so (static)
+
+=> frameworks/compile/mclinker/lib/CodeGen:
+libmcldCodeGen.so (host,static)
+system/lib/libmcldCodeGen.so (static)
+
+=> frameworks/compile/mclinker/lib/ADT:
+libmcldADT.so (host,static)
+system/lib/libmcldADT.so (static)
+
+=> frameworks/compile/mclinker/lib/MC:
+libmcldMC.so (host,static)
+system/lib/libmcldMC.so (static)
+
+=> frameworks/compile/mclinker/lib/Target:
+libmcldTarget.so (host,static)
+system/lib/libmcldTarget.so (static)
+
+=> frameworks/compile/mclinker/lib/Target/Mips:
+libmcldMipsTarget.so (host,static)
+system/lib/libmcldMipsTarget.so (static)
+
+=> frameworks/compile/mclinker/lib/Target/Mips/TargetInfo:
+libmcldMipsInfo.so (host,static)
+system/lib/libmcldMipsInfo.so (static)
+
+=> frameworks/compile/mclinker/lib/Target/ARM:
+libmcldARMTarget.so (host,static)
+system/lib/libmcldARMTarget.so (static)
+
+=> frameworks/compile/mclinker/lib/Target/ARM/TargetInfo:
+libmcldARMInfo.so (host,static)
+system/lib/libmcldARMInfo.so (static)
+
+=> frameworks/compile/mclinker/lib/Target/X86:
+libmcldX86Target.so (host,static)
+system/lib/libmcldX86Target.so (static)
+
+=> frameworks/compile/mclinker/lib/Target/X86/TargetInfo:
+libmcldX86Info.so (host,static)
+system/lib/libmcldX86Info.so (static)
+
+=> frameworks/compile/mclinker/lib/LD:
+libmcldLD.so (host,static)
+system/lib/libmcldLD.so (static)
+libmcldLDVariant.so (host,static)
+system/lib/libmcldLDVariant.so (static)
+
+=> frameworks/compile/slang:
+libslang.so (host,static)
+librslib.so (host,static)
+out/host/linux-x86/bin/slang-data (host)
+out/host/linux-x86/bin/llvm-rs-link (host)
+out/host/linux-x86/bin/rs-spec-gen (host)
+out/host/linux-x86/bin/llvm-rs-cc (host)
+
+=> frameworks/compile/slang/BitWriter_2_9:
+libLLVMBitWriter_2_9.so (host,static)
+
+=> frameworks/compile/slang/BitWriter_2_9_func:
+libLLVMBitWriter_2_9_func.so (host,static)
+
+=> frameworks/compile/linkloader:
+system/lib/librsloader.so (static)
+librsloader.so (host,static)
+system/bin/test-librsloader
+out/host/linux-x86/bin/test-librsloader (host)
+system/bin/rsloader
+system/bin/stub-layout-unit-test
+
+=> frameworks/compile/llvm-ndk-cc:
+libndkpc.so (host,static)
+out/host/linux-x86/bin/llvm-ndk-cc (host)
+out/host/linux-x86/bin/llvm-ndk-link (host)
+
+=> frameworks/compile/libbcc/tools:
+
+=> frameworks/compile/libbcc/tools/abcc:
+out/host/linux-x86/bin/abcc (host)
+system/bin/abcc
+
+=> frameworks/compile/libbcc/tools/mcld:
+out/host/linux-x86/bin/mcld (host)
+system/bin/mcld
+
+=> frameworks/compile/libbcc/tools/bcc:
+out/host/linux-x86/bin/bcc (host)
+system/bin/bcc
+
+=> frameworks/compile/libbcc/bcinfo/tools:
+out/host/linux-x86/bin/bcinfo (host)
+
+=> frameworks/compile/libbcc/bcinfo:
+system/lib/libbcinfo.so (share)
+libbcinfo.so (host,share)
+
+=> frameworks/compile/libbcc/bcinfo/Wrap:
+libLLVMWrap.so (host,static)
+system/lib/libLLVMWrap.so (static)
+
+=> frameworks/compile/libbcc/bcinfo/BitReader_2_7:
+libLLVMBitReader_2_7.so (host,static)
+system/lib/libLLVMBitReader_2_7.so (static)
+
+=> frameworks/compile/libbcc/bcinfo/BitReader_3_0:
+libLLVMBitReader_3_0.so (host,static)
+system/lib/libLLVMBitReader_3_0.so (static)
+
+=> frameworks/compile/libbcc:
+system/lib/libbcc.sha1.so (share)
+system/lib/libbcc.so (share)
+libbcc.so (host,share)
+
+=> frameworks/compile/libbcc/lib/Support:
+system/lib/libbccSupport.so (static)
+libbccSupport.so (host,static)
+
+=> frameworks/compile/libbcc/lib/ExecutionEngine:
+system/lib/libbccExecutionEngine.so (static)
+libbccExecutionEngine.so (host,static)
+
+=> frameworks/compile/libbcc/lib:
+
+=> frameworks/compile/libbcc/lib/Renderscript:
+system/lib/libbccRenderscript.so (static)
+libbccRenderscript.so (host,static)
+
+=> frameworks/compile/libbcc/lib/Renderscript/runtime:
+libclcore.bc|
+libclcore_neon.bc|
+
+=> frameworks/compile/libbcc/lib/Core:
+system/lib/libbccCore.so (static)
+libbccCore.so (host,static)
+
+=> frameworks/compile/libbcc/lib/AndroidBitcode:
+system/lib/libbccAndroidBitcode.so (static)
+libbccAndroidBitcode.so (host,static)
+
+=> frameworks/compile/libbcc/runtime:
+system/lib/libbccCompilerRT.so (static)
+
+=> frameworks/rs/cpp:
+system/lib/libRScpp.so (share)
+
+=> frameworks/rs:
+system/lib/libRSDriver.so (share)
+out/host/linux-x86/bin/rsg-generator (host)
+system/lib/libRS.so (share)
+libRS.so (host,static)
+
+=> frameworks/rs/tests:
+system/bin/rstest-compute
+
+=> frameworks/testing/androidtestlib:
+android-test-lib.jar (android,static)
+
+=> frameworks/testing/androidtestlib/tests:
+AndroidTestLibTests.apk
+
+=> frameworks/testing:
+
+=> frameworks/testing/uiautomator:
+
+=> frameworks/testing/uiautomator/library:
+uiautomator.core.jar (android,static)
+uiautomator-stubs (droid,doc)
+android_uiautomator.jar (android,static)
+
+=> frameworks/testing/uiautomator/cmds:
+
+=> frameworks/testing/uiautomator/cmds/uiautomator:
+uiautomator.jar (android)
+uiautomator (prebult)
+
+=> frameworks/testing/uiautomator/utils:
+
+=> frameworks/testing/uiautomator/utils/DummyIME:
+DummyIME.apk
+
+=> frameworks/testing/uiautomator/samples/SkeletonTest:
+uiautomator.skeletontest.jar (android)
+
+=> frameworks/support/renderscript/v8/jni:
+system/lib/librsjni.so (share)
+
+=> frameworks/support/renderscript/v8:
+android.support.v8.renderscript.jar (android,static)
+
+=> frameworks/support/renderscript/v8/rs_support:
+out/host/linux-x86/bin/rsg-generator_support (host)
+system/lib/libRSSupport.so (share)
+libRSSupport|
+
+=> frameworks/support/v4:
+android-support-v4-eclair.jar (android,static)
+android-support-v4-froyo.jar (android,static)
+android-support-v4-gingerbread.jar (android,static)
+android-support-v4-honeycomb.jar (android,static)
+android-support-v4-honeycomb-mr2.jar (android,static)
+android-support-v4-ics.jar (android,static)
+android-support-v4-ics-mr1.jar (android,static)
+android-support-v4-jellybean.jar (android,static)
+android-support-v4-jellybean-mr1.jar (android,static)
+android-support-v4.jar (android,static)
+
+=> frameworks/support/volley:
+volley.jar (android,static)
+
+=> frameworks/support/volley/tests:
+volley_tests.apk
+
+=> frameworks/support/v13:
+android-support-v13-ics-mr1.jar (android,static)
+android-support-v13-ics.jar (android,static)
+android-support-v13.jar (android,static)
+
+=> frameworks/support/v7:
+android-support-v7-gridlayout-r.jar (android,static)
+android-support-v7-gridlayout.jar (android,static)
+
+=> frameworks/wilhelm/src:
+system/lib/libOpenSLESUT.so (static)
+system/lib/libopensles_helper.so (static)
+system/lib/libwilhelm.so (share)
+system/lib/libOpenSLES.so (share)
+system/lib/libOpenMAXAL.so (share)
+
+=> frameworks/wilhelm/tests/mimeUri:
+system/bin/slesTest_playStates
+system/bin/slesTest_playStreamType
+system/bin/slesTest_playUri
+system/bin/slesTest_loopUri
+system/bin/slesTest_playUri2
+system/bin/slesTest_slowDownUri
+system/bin/slesTest_manyPlayers
+system/bin/slesTest_getPositionUri
+
+=> frameworks/wilhelm/tests/native-media/jni:
+system/lib/libnative-media-jni.so (share)
+
+=> frameworks/wilhelm/tests/native-media:
+native-media.apk
+
+=> frameworks/wilhelm/tests/examples:
+system/bin/slesTest_recBuffQueue
+system/bin/slesTest_playFdPath
+system/bin/slesTest_feedback
+system/bin/slesTest_sawtoothBufferQueue
+system/bin/slesTest_eqFdPath
+system/bin/slesTest_eqOutputPath
+system/bin/slesTest_bassboostPath
+system/bin/slesTest_virtualizer
+system/bin/slesTest_effectCapabilities
+system/bin/slesTest_sendToPresetReverb
+system/bin/slesTest_decodeToBuffQueue
+system/bin/slesTest_decodeAac
+system/bin/xaVideoDecoderCapabilities
+
+=> frameworks/wilhelm/tests:
+
+=> frameworks/wilhelm/tests/sandbox/streamSource:
+system/bin/slesTest_playStream
+
+=> frameworks/wilhelm/tests/sandbox:
+system/bin/slesTest_intbufq
+system/bin/slesTest_multiplay
+system/bin/slesTest_engine
+system/bin/slesTest_object
+system/bin/slesTest_configbq
+system/bin/slesTest_reverb
+system/bin/slesTest_srcsink
+system/bin/slesTest_outputmix
+system/bin/slesTest_urimime
+system/bin/slesTest_dim
+system/bin/slesTest_multithread
+system/bin/slesTest_playbq
+system/bin/slesTest_monkey
+system/bin/slesTest_xa
+system/bin/slesTest_dual
+xaplay|
+
+=> frameworks/wilhelm/tests/automated:
+system/bin/BufferQueue_test
+
+=> frameworks/wilhelm/tests/listening:
+system/bin/slesTest_seekTorture
+system/bin/slesTest_playMuteSolo
+
+=> frameworks/native/services/surfaceflinger:
+system/lib/libsurfaceflinger.so (share)
+system/lib/libsurfaceflinger_ddmconnection.so (share)
+
+=> frameworks/native/services/surfaceflinger/tests/resize:
+system/bin/test-resize
+
+=> frameworks/native/services/surfaceflinger/tests/surface:
+system/bin/test-surface
+
+=> frameworks/native/services/surfaceflinger/tests:
+SurfaceFlinger_test (native test)
+
+=> frameworks/native/services/surfaceflinger/tests/transform:
+system/bin/test-transform
+
+=> frameworks/native/services/surfaceflinger/tests/vsync:
+system/bin/test-vsync-events
+
+=> frameworks/native/services/surfaceflinger/tests/screencap:
+system/bin/test-screencap
+
+=> frameworks/native/services/surfaceflinger/tests/waitforvsync:
+system/bin/test-waitforvsync
+
+=> frameworks/native/services/sensorservice:
+system/lib/libsensorservice.so (share)
+
+=> frameworks/native/services/sensorservice/tests:
+system/bin/test-sensorservice
+
+=> frameworks/native/services/powermanager:
+system/lib/libpowermanager.so (share)
+
+=> frameworks/native/opengl/libs/GLES_trace:
+system/lib/libGLES_trace.so (share)
+
+=> frameworks/native/opengl/libs:
+system/lib/libEGL.so (share)
+egl.cfg (prebult)
+system/lib/libGLESv1_CM.so (share)
+system/lib/libGLESv2.so (share)
+libETC1.so (host,static)
+system/lib/libETC1.so (share)
+
+=> frameworks/native/opengl/tests/testLatency:
+TestLatency.apk
+
+=> frameworks/native/opengl/tests/textures:
+system/bin/test-opengl-textures
+
+=> frameworks/native/opengl/tests/linetex:
+system/bin/test-opengl-linetex
+
+=> frameworks/native/opengl/tests/gl_perf:
+system/bin/test-opengl-gl2_perf
+
+=> frameworks/native/opengl/tests/EGLTest:
+system/bin/EGL_test
+
+=> frameworks/native/opengl/tests/swapinterval:
+system/bin/test-opengl-swapinterval
+
+=> frameworks/native/opengl/tests/gl_yuvtex:
+system/bin/test-opengl-gl_yuvtex
+
+=> frameworks/native/opengl/tests/gl2_java:
+GL2Java.apk
+
+=> frameworks/native/opengl/tests/gl2_jni:
+GL2JNI.apk
+system/lib/libgl2jni.so (share)
+
+=> frameworks/native/opengl/tests/gl2_cameraeye:
+GL2CameraEye.apk
+
+=> frameworks/native/opengl/tests/gralloc:
+system/bin/test-opengl-gralloc
+
+=> frameworks/native/opengl/tests/testViewport:
+TestViewport.apk
+
+=> frameworks/native/opengl/tests/testFramerate:
+TestFramerate.apk
+
+=> frameworks/native/opengl/tests/tritex:
+system/bin/test-opengl-tritex
+
+=> frameworks/native/opengl/tests:
+
+=> frameworks/native/opengl/tests/gl2_copyTexImage:
+system/bin/test-opengl-gl2_copyTexImage
+
+=> frameworks/native/opengl/tests/gl2_basic:
+system/bin/test-opengl-gl2_basic
+
+=> frameworks/native/opengl/tests/gl2_yuvtex:
+system/bin/test-opengl-gl2_yuvtex
+
+=> frameworks/native/opengl/tests/lib:
+system/lib/libglTest.so (static)
+
+=> frameworks/native/opengl/tests/gl_basic:
+system/bin/test-opengl-gl_basic
+
+=> frameworks/native/opengl/tests/hwc:
+system/lib/libhwcTest.so (static)
+hwcStress (native test)
+hwcRects (native test)
+hwcColorEquiv (native test)
+hwcCommit (native test)
+
+=> frameworks/native/opengl/tests/configdump:
+system/bin/test-opengl-configdump
+
+=> frameworks/native/opengl/tests/gldual:
+GLDual.apk
+system/lib/libgldualjni.so (share)
+
+=> frameworks/native/opengl/tests/finish:
+system/bin/test-opengl-finish
+
+=> frameworks/native/opengl/tests/gl_perfapp:
+GLPerf.apk
+system/lib/libglperf.so (share)
+
+=> frameworks/native/opengl/tests/filter:
+system/bin/test-opengl-filter
+
+=> frameworks/native/opengl/tests/fillrate:
+system/bin/test-opengl-fillrate
+
+=> frameworks/native/opengl/tests/angeles:
+system/bin/angeles
+
+=> frameworks/native/opengl/tests/gl_jni:
+GLJNI.apk
+system/lib/libgljni.so (share)
+
+=> frameworks/native/opengl/tests/lighting1709:
+LightingTest.apk
+
+=> frameworks/native/opengl/tests/testPauseResume:
+TestEGL.apk
+
+=> frameworks/native/opengl/libagl:
+system/lib/libGLES_android.so (share)
+
+=> frameworks/native/libs/binder:
+system/lib/libbinder.so (share)
+system/lib/libbinder.so (static)
+
+=> frameworks/native/libs/gui:
+system/lib/libgui.so (share)
+
+=> frameworks/native/libs/gui/tests:
+libgui_test (native test)
+
+=> frameworks/native/libs/cpustats:
+system/lib/libcpustats.so (static)
+
+=> frameworks/native/libs/utils:
+libutils.so (host,static)
+lib64utils.so (host,static)
+system/lib/libutils.so (share)
+
+=> frameworks/native/libs/utils/tests:
+
+=> frameworks/native/libs/ui:
+system/lib/libui.so (share)
+
+=> frameworks/native/libs/ui/tests/region:
+system/bin/test-region
+
+=> frameworks/native/libs/ui/tests:
+
+=> frameworks/native/cmds/dumpstate:
+system/bin/dumpstate
+
+=> frameworks/native/cmds/surfaceflinger:
+system/bin/surfaceflinger
+
+=> frameworks/native/cmds/sensorservice:
+system/bin/sensorservice
+
+=> frameworks/native/cmds/dumpsys:
+system/bin/dumpsys
+
+=> frameworks/base/location:
+
+=> frameworks/base/location/lib:
+com.android.location.provider.jar (android)
+com.android.location.provider.xml (prebult)
+
+=> frameworks/base/location/tests/locationtests:
+FrameworksLocationTests.apk
+
+=> frameworks/base/services/jni:
+system/lib/libandroid_servers.so (share)
+
+=> frameworks/base/services/java:
+services.jar (android)
+(droid,doc)
+
+=> frameworks/base/services/tests/servicestests:
+FrameworksServicesTests.apk
+
+=> frameworks/base/services/tests/servicestests/apks/mmac_install_media:
+signed_media|
+
+=> frameworks/base/services/tests/servicestests/apks/mmac_install_platform_2:
+signed_platform_2|
+
+=> frameworks/base/services/tests/servicestests/apks:
+
+=> frameworks/base/services/tests/servicestests/apks/mmac_install_platform:
+signed_platform|
+
+=> frameworks/base/services/common_time:
+system/bin/common_time
+
+=> frameworks/base/services/input:
+system/lib/libinput.so (share)
+
+=> frameworks/base/services/input/tests:
+
+=> frameworks/base/keystore/tests:
+KeyStoreTests.apk
+
+=> frameworks/base/obex:
+javax.obex.jar (android)
+
+=> frameworks/base/sax/tests/saxtests:
+FrameworksSaxTests.apk
+
+=> frameworks/base/drm/jni:
+system/lib/libdrmframework_jni.so (share)
+
+=> frameworks/base/nfc-extras:
+com.android.nfc_extras.jar (android)
+
+=> frameworks/base/nfc-extras/tests:
+NfcExtrasTests.apk
+
+=> frameworks/base/tools/aidl:
+out/host/linux-x86/bin/aidl (host)
+
+=> frameworks/base/tools/layoutlib:
+temp_layoutlib|BUILD_SYSTEM/base_rules.mk
+
+=> frameworks/base/tools/layoutlib/bridge:
+layoutlib.jar (host,share)
+
+=> frameworks/base/tools/layoutlib/bridge/tests:
+layoutlib-tests.jar (host,share)
+
+=> frameworks/base/tools/layoutlib/create:
+layoutlib_create.jar (host,share)
+
+=> frameworks/base/tools/aapt:
+out/host/linux-x86/bin/aapt (host)
+
+=> frameworks/base/tools/validatekeymaps:
+out/host/linux-x86/bin/validatekeymaps (host)
+
+=> frameworks/base/tools/preload/loadclass:
+loadclass.jar (android)
+
+=> frameworks/base/tools/preload:
+preload.jar (host,share)
+
+=> frameworks/base/tools/obbtool:
+out/host/linux-x86/bin/obbtool (host)
+out/host/linux-x86/bin/pbkdf2gen (host)
+
+=> frameworks/base/graphics/jni:
+system/lib/librs_jni.so (share)
+
+=> frameworks/base/graphics/tests/graphicstests:
+FrameworksGraphicsTests.apk
+
+=> frameworks/base/fmradio/jni:
+system/lib/libanalogradiobroadcasting.so (share)
+
+=> frameworks/base/libs/usb:
+com.android.future.usb.accessory.jar (android)
+
+=> frameworks/base/libs/usb/tests/AccessoryChat/accessorychat:
+out/host/linux-x86/bin/accessorychat (host)
+system/bin/accessorychat
+
+=> frameworks/base/libs/usb/tests/AccessoryChat:
+AccessoryChat.apk
+
+=> frameworks/base/libs/hwui:
+
+=> frameworks/base/libs/diskusage:
+system/lib/libdiskusage.so (static)
+
+=> frameworks/base/libs/storage:
+system/lib/libstorage.so (static)
+
+=> frameworks/base/libs/androidfw:
+libandroidfw.so (host,static)
+system/lib/libandroidfw.so (share)
+system/lib/libandroidfw.so (static)
+
+=> frameworks/base/libs/androidfw/tests:
+
+=> frameworks/base:
+framework.jar (android)
+api-stubs (droid,doc)
+doc-comment-check (droid,doc)
+offline-sdk (droid,doc)
+online-sdk (droid,doc)
+ds (droid,doc)
+hidden (droid,doc)
+ext.jar (android)
+
+=> frameworks/base/media/jni/soundpool:
+system/lib/libsoundpool.so (share)
+
+=> frameworks/base/media/jni:
+system/lib/libmedia_jni.so (share)
+
+=> frameworks/base/media/jni/mediaeditor:
+system/lib/libvideoeditor_jni.so (share)
+
+=> frameworks/base/media/jni/audioeffect:
+system/lib/libaudioeffect_jni.so (share)
+
+=> frameworks/base/media/libdrm:
+
+=> frameworks/base/media/libdrm/mobile1:
+system/lib/libdrm1.so (share)
+system/lib/libdrm1_jni.so (share)
+
+=> frameworks/base/media/mca:
+
+=> frameworks/base/media/mca/filterpacks:
+system/lib/libfilterpack_base.so (static)
+system/lib/libfilterpack_imageproc.so (share)
+
+=> frameworks/base/media/mca/samples:
+
+=> frameworks/base/media/mca/samples/CameraEffectsRecordingSample:
+CameraEffectsRecordingSample.apk
+
+=> frameworks/base/media/mca/tests:
+CameraEffectsTests.apk
+
+=> frameworks/base/media/mca/filterfw/jni:
+system/lib/libfilterfw_jni.so (static)
+
+=> frameworks/base/media/mca/filterfw:
+system/lib/libfilterfw.so (share)
+
+=> frameworks/base/media/mca/filterfw/native:
+system/lib/libfilterfw_native.so (static)
+
+=> frameworks/base/media/tests/ScoAudioTest:
+scoaudiotest.apk
+
+=> frameworks/base/media/tests/players:
+system/lib/invoke_mock_media_player.so (share)
+
+=> frameworks/base/media/tests/SoundPoolTest:
+SoundPoolTest.apk
+
+=> frameworks/base/media/tests/omxjpegdecoder:
+system/bin/jpeg_bench
+
+=> frameworks/base/media/tests/MediaFrameworkTest:
+mediaframeworktest.apk
+
+=> frameworks/base/media/tests/MediaDump:
+MediaDump.apk
+
+=> frameworks/base/media/tests/EffectsTest:
+EffectsTest.apk
+
+=> frameworks/base/media/tests/CameraBrowser:
+CameraBrowser.apk
+
+=> frameworks/base/data/keyboards:
+validate_framework_keymaps.apk (phony)
+
+=> frameworks/base/data/etc:
+platform.xml (prebult)
+
+=> frameworks/base/data/fonts:
+DroidSansEthiopic-Regular.ttf (prebult)
+DroidSansTamil-Regular.ttf (prebult)
+DroidSansTamil-Bold.ttf (prebult)
+MTLmr3m.ttf (prebult)
+DroidSansFallback.ttf (prebult)
+
+=> frameworks/base/test-runner:
+android.test.runner.jar (android)
+
+=> frameworks/base/test-runner/tests:
+FrameworkTestRunnerTests.apk
+
+=> frameworks/base/cmds/app_process:
+system/bin/app_process
+system/bin/app_process__asan
+
+=> frameworks/base/cmds/requestsync:
+requestsync.jar (android)
+requestsync (prebult)
+
+=> frameworks/base/cmds/backup:
+system/bin/btool
+
+=> frameworks/base/cmds/servicemanager:
+system/bin/servicemanager
+
+=> frameworks/base/cmds/screenshot:
+system/bin/screenshot
+
+=> frameworks/base/cmds/installd:
+system/lib/libinstalld.so (static)
+system/bin/installd
+
+=> frameworks/base/cmds/installd/tests:
+
+=> frameworks/base/cmds/pm:
+pm.jar (android)
+
+=> frameworks/base/cmds/am:
+am.jar (android)
+
+=> frameworks/base/cmds/bmgr:
+bmgr.jar (android)
+
+=> frameworks/base/cmds/bugreport:
+system/bin/bugreport
+
+=> frameworks/base/cmds/content:
+content.jar (android)
+
+=> frameworks/base/cmds/svc:
+svc.jar (android)
+
+=> frameworks/base/cmds/screencap:
+system/bin/screencap
+
+=> frameworks/base/cmds/system_server:
+system/bin/system_server
+
+=> frameworks/base/cmds/system_server/library:
+system/lib/libsystem_server.so (share)
+
+=> frameworks/base/cmds/bootanimation:
+system/bin/bootanimation
+
+=> frameworks/base/cmds/service:
+system/bin/service
+
+=> frameworks/base/cmds/rawbu:
+system/bin/rawbu
+
+=> frameworks/base/cmds/ip-up-vpn:
+system/bin/ip-up-vpn
+
+=> frameworks/base/cmds/settings:
+settings.jar (android)
+settings (prebult)
+
+=> frameworks/base/cmds/ime:
+ime.jar (android)
+
+=> frameworks/base/cmds/bu:
+bu.jar (android)
+bu (prebult)
+
+=> frameworks/base/cmds/input:
+input.jar (android)
+
+=> frameworks/base/tests/LotsOfApps:
+LotsOfApps.apk
+
+=> frameworks/base/tests/HugeBackup:
+HugeBackup.apk
+
+=> frameworks/base/tests/DumpRenderTree:
+DumpRenderTree.apk
+
+=> frameworks/base/tests/AppLaunch:
+AppLaunch.apk
+
+=> frameworks/base/tests/Assistant:
+Assistant.apk
+
+=> frameworks/base/tests/backup:
+system/bin/backup_helper_test
+BackupTest.apk
+
+=> frameworks/base/tests/WebViewTests:
+WebViewTests.apk
+
+=> frameworks/base/tests/ImfTest:
+ImfTest.apk
+
+=> frameworks/base/tests/ImfTest/tests:
+ImfTestTests.apk
+
+=> frameworks/base/tests/SmokeTest:
+SmokeTestApp.apk
+
+=> frameworks/base/tests/SmokeTest/tests:
+SmokeTest.apk
+
+=> frameworks/base/tests/LargeAssetTest:
+LargeAssetTest.apk
+
+=> frameworks/base/tests/TileBenchmark:
+TileBenchmark.apk
+
+=> frameworks/base/tests/appwidgets/AppWidgetProviderTest:
+AppWidgetProvider.apk
+
+=> frameworks/base/tests/appwidgets/AppWidgetHostTest:
+AppWidgetHostTest.apk
+
+=> frameworks/base/tests/FixVibrateSetting:
+FixVibrateSetting.apk
+
+=> frameworks/base/tests/TtsTests:
+TtsTests.apk
+
+=> frameworks/base/tests/BrowserPowerTest:
+BrowserPowerTests.apk
+
+=> frameworks/base/tests/BiDiTests:
+BiDiTests.apk
+
+=> frameworks/base/tests/SerialChat:
+SerialChat.apk
+
+=> frameworks/base/tests/touchlag:
+system/bin/test-touchlag
+
+=> frameworks/base/tests/permission:
+FrameworkPermissionTests.apk
+
+=> frameworks/base/tests/MemoryUsage:
+MemoryUsage.apk
+
+=> frameworks/base/tests/HwAccelerationTest:
+HwAccelerationTest.apk
+
+=> frameworks/base/tests/BandwidthTests:
+BandwidthEnforcementTest.apk
+
+=> frameworks/base/tests/FrameworkPerf:
+FrameworkPerf.apk
+
+=> frameworks/base/tests/DataIdleTest:
+DataIdleTest.apk
+
+=> frameworks/base/tests/Compatibility:
+AppCompatibilityTest.apk
+
+=> frameworks/base/tests/GridLayoutTest:
+GridLayoutTest.apk
+
+=> frameworks/base/tests/SslLoad:
+SslLoad.apk
+
+=> frameworks/base/tests/LowStorageTest:
+lowstoragetest.apk
+
+=> frameworks/base/tests/BatteryWaster:
+BatteryWaster.apk
+
+=> frameworks/base/tests/DpiTest:
+DensityTest.apk
+
+=> frameworks/base/tests/RenderScriptTests/Fountain:
+RsFountain.apk
+
+=> frameworks/base/tests/RenderScriptTests/MiscSamples:
+RsMiscSamples.apk
+
+=> frameworks/base/tests/RenderScriptTests/tests_v11:
+RSTest_v11.apk
+
+=> frameworks/base/tests/RenderScriptTests/ComputePerf:
+RsComputePerf.apk
+
+=> frameworks/base/tests/RenderScriptTests/ImageProcessing:
+ImageProcessing.apk
+
+=> frameworks/base/tests/RenderScriptTests/ImageProcessing2:
+ImageProcessing2.apk
+
+=> frameworks/base/tests/RenderScriptTests/Balls:
+RsBalls.apk
+
+=> frameworks/base/tests/RenderScriptTests/HelloWorld:
+RsHelloWorld.apk
+
+=> frameworks/base/tests/RenderScriptTests/ShadersTest:
+ShadersTest.apk
+
+=> frameworks/base/tests/RenderScriptTests:
+
+=> frameworks/base/tests/RenderScriptTests/PerfTest:
+PerfTest.apk
+
+=> frameworks/base/tests/RenderScriptTests/SampleTest:
+SampleRS.apk
+
+=> frameworks/base/tests/RenderScriptTests/SurfaceTexture:
+RsSurfaceTextureOpaque.apk
+
+=> frameworks/base/tests/RenderScriptTests/FBOTest:
+FBOTest.apk
+
+=> frameworks/base/tests/RenderScriptTests/FountainFbo:
+RsFountainFbo.apk
+
+=> frameworks/base/tests/RenderScriptTests/tests:
+RSTest.apk
+
+=> frameworks/base/tests/RenderScriptTests/LivePreview:
+PreviewRS.apk
+
+=> frameworks/base/tests/RenderScriptTests/ComputeBenchmark:
+RsComputeBenchmark.apk
+
+=> frameworks/base/tests/RenderScriptTests/ModelViewer:
+ModelViewer.apk
+
+=> frameworks/base/tests/RenderScriptTests/tests_v14:
+RSTest_v14.apk
+
+=> frameworks/base/tests/RenderScriptTests/SceneGraph:
+SceneGraphTest.apk
+
+=> frameworks/base/tests/RenderScriptTests/Fountain_v11:
+Fountain_v11.apk
+
+=> frameworks/base/tests/TransformTest:
+TransformTest.apk
+
+=> frameworks/base/tests/ActivityTests:
+ActivityTest.apk
+
+=> frameworks/base/tests/DumpRenderTree2:
+DumpRenderTree2.apk
+
+=> frameworks/base/tests/StatusBar:
+StatusBarTest.apk
+
+=> frameworks/base/tests/BrowserTestPlugin/jni:
+system/lib/libtestplugin.so (share)
+
+=> frameworks/base/tests/BrowserTestPlugin:
+BrowserTestPlugin.apk
+
+=> frameworks/base/tests/LocationTracker:
+LocationTracker.apk
+
+=> frameworks/base/tests/CoreTests:
+
+=> frameworks/base/tests/CoreTests/android:
+CoreTests.apk
+
+=> frameworks/base/tests/SmokeTestApps:
+SmokeTestTriggerApps.apk
+
+=> frameworks/base/native/graphics/jni:
+system/lib/libjnigraphics.so (share)
+
+=> frameworks/base/native/android:
+system/lib/libandroid.so (share)
+
+=> frameworks/base/policy:
+android.policy.jar (android)
+
+=> frameworks/base/policy/tests:
+FrameworkPolicyTests.apk
+
+=> frameworks/base/voip/jni/rtp:
+system/lib/librtp_jni.so (share)
+
+=> frameworks/base/core/res:
+framework-res.apk
+
+=> frameworks/base/core/jni:
+system/lib/libandroid_runtime.so (share)
+
+=> frameworks/base/core/tests/notificationtests:
+NotificationStressTests.apk
+
+=> frameworks/base/core/tests/bandwidthtests:
+BandwidthTests.apk
+
+=> frameworks/base/core/tests/coretests/EnabledTestApp:
+EnabledTestApp.apk
+
+=> frameworks/base/core/tests/coretests:
+FrameworksCoreTests.apk
+
+=> frameworks/base/core/tests/coretests/apks/install_uses_feature:
+install_uses_feature|
+
+=> frameworks/base/core/tests/coretests/apks/install_loc_auto:
+install_loc_auto|
+
+=> frameworks/base/core/tests/coretests/apks/install_bad_dex:
+install_bad_dex|
+
+=> frameworks/base/core/tests/coretests/apks/install_complete_package_info:
+FrameworkCoreTests_install_complete_package_info.apk
+
+=> frameworks/base/core/tests/coretests/apks:
+
+=> frameworks/base/core/tests/coretests/apks/install_verifier_bad:
+install_verifier_bad|
+
+=> frameworks/base/core/tests/coretests/apks/install_verifier_good:
+install_verifier_good|
+
+=> frameworks/base/core/tests/coretests/apks/install_use_perm_good:
+install_use_perm_good|
+
+=> frameworks/base/core/tests/coretests/apks/install_jni_lib:
+system/lib/libframeworks_coretests_jni.so (share)
+
+=> frameworks/base/core/tests/coretests/apks/install_decl_perm:
+install_decl_perm|
+
+=> frameworks/base/core/tests/coretests/apks/install:
+install|
+
+=> frameworks/base/core/tests/coretests/apks/install_loc_unspecified:
+install_loc_unspecified|
+
+=> frameworks/base/core/tests/coretests/apks/install_loc_sdcard:
+install_loc_sdcard|
+
+=> frameworks/base/core/tests/coretests/apks/install_loc_internal:
+install_loc_internal|
+
+=> frameworks/base/core/tests/coretests/apks/version:
+version_1|
+version_2|
+version_3|
+version_1_diff|
+version_2_diff|
+
+=> frameworks/base/core/tests/coretests/DisabledTestApp:
+DisabledTestApp.apk
+
+=> frameworks/base/core/tests/bluetoothtests:
+BluetoothTests.apk
+
+=> frameworks/base/core/tests/systemproperties:
+FrameworksCoreSystemPropertiesTests.apk
+
+=> frameworks/base/core/tests/overlaytests/OverlayTest:
+OverlayTest.apk
+
+=> frameworks/base/core/tests/overlaytests:
+
+=> frameworks/base/core/tests/overlaytests/OverlayTestOverlay:
+com.android.overlaytest.overlay.apk
+
+=> frameworks/base/core/tests/hosttests:
+
+=> frameworks/base/core/tests/hosttests/test-apps/ExternalLocVersionedTestApp_v2:
+ExternalLocVersionedTestApp_v2.apk
+
+=> frameworks/base/core/tests/hosttests/test-apps/ExternalLocVersionedTestApp_v1:
+ExternalLocVersionedTestApp_v1.apk
+
+=> frameworks/base/core/tests/hosttests/test-apps/ExternalLocPermsFLTestApp:
+ExternalLocPermFLTestApp.apk
+
+=> frameworks/base/core/tests/hosttests/test-apps/VersatileTestApp_Auto:
+VersatileTestApp_Auto.apk
+
+=> frameworks/base/core/tests/hosttests/test-apps/InternalLocTestApp:
+InternalLocTestApp.apk
+
+=> frameworks/base/core/tests/hosttests/test-apps/ExternalLocTestApp:
+ExternalLocTestApp.apk
+
+=> frameworks/base/core/tests/hosttests/test-apps/UpdateExtToIntLocTestApp_v2_int:
+UpdateExtToIntLocTestApp_v2_int.apk
+
+=> frameworks/base/core/tests/hosttests/test-apps:
+
+=> frameworks/base/core/tests/hosttests/test-apps/AutoLocVersionedTestApp_v1:
+AutoLocVersionedTestApp_v1.apk
+
+=> frameworks/base/core/tests/hosttests/test-apps/VersatileTestApp_None:
+VersatileTestApp_None.apk
+
+=> frameworks/base/core/tests/hosttests/test-apps/NoLocVersionedTestApp_v1:
+NoLocVersionedTestApp_v1.apk
+
+=> frameworks/base/core/tests/hosttests/test-apps/UpdateExternalLocTestApp_v2_none:
+UpdateExternalLocTestApp_v2_none.apk
+
+=> frameworks/base/core/tests/hosttests/test-apps/ExternalSharedPerms:
+ExternalSharedPermsTestApp.apk
+
+=> frameworks/base/core/tests/hosttests/test-apps/ExternalSharedPermsFL:
+ExternalSharedPermsFLTestApp.apk
+
+=> frameworks/base/core/tests/hosttests/test-apps/VersatileTestApp_External:
+VersatileTestApp_External.apk
+
+=> frameworks/base/core/tests/hosttests/test-apps/UpdateExternalLocTestApp_v1_ext:
+UpdateExternalLocTestApp_v1_ext.apk
+
+=> frameworks/base/core/tests/hosttests/test-apps/ExternalLocAllPermsTestApp:
+ExternalLocAllPermsTestApp.apk
+
+=> frameworks/base/core/tests/hosttests/test-apps/ExternalSharedPermsDiffKey:
+ExternalSharedPermsDiffKeyTestApp.apk
+
+=> frameworks/base/core/tests/hosttests/test-apps/AutoLocTestApp:
+AutoLocTestApp.apk
+
+=> frameworks/base/core/tests/hosttests/test-apps/VersatileTestApp_Internal:
+VersatileTestApp_Internal.apk
+
+=> frameworks/base/core/tests/hosttests/test-apps/ExternalSharedPermsBT:
+ExternalSharedPermsBTTestApp.apk
+
+=> frameworks/base/core/tests/hosttests/test-apps/DownloadManagerTestApp:
+DownloadManagerTestApp.apk
+
+=> frameworks/base/core/tests/hosttests/test-apps/SimpleTestApp:
+SimpleTestApp.apk
+
+=> frameworks/base/core/tests/hosttests/test-apps/NoLocTestApp:
+NoLocTestApp.apk
+
+=> frameworks/base/core/tests/hosttests/test-apps/AutoLocVersionedTestApp_v2:
+AutoLocVersionedTestApp_v2.apk
+
+=> frameworks/base/core/tests/hosttests/test-apps/NoLocVersionedTestApp_v2:
+NoLocVersionedTestApp_v2.apk
+
+=> frameworks/base/core/tests/hosttests/test-apps/UpdateExtToIntLocTestApp_v1_ext:
+UpdateExtToIntLocTestApp_v1_ext.apk
+
+=> frameworks/base/core/tests/utillib:
+frameworks-core-util-lib.jar (android,static)
+
+=> frameworks/base/core/tests/ConnectivityManagerTest:
+ConnectivityManagerTest.apk
+
+=> frameworks/base/packages/DefaultContainerService/jni:
+system/lib/libdefcontainer_jni.so (share)
+
+=> frameworks/base/packages/DefaultContainerService:
+DefaultContainerService.apk
+
+=> frameworks/base/packages/WAPPushManager:
+WAPPushManager.apk
+
+=> frameworks/base/packages/WAPPushManager/tests:
+WAPPushManagerTests.apk
+
+=> frameworks/base/packages/SettingsProvider:
+SettingsProvider.apk
+
+=> frameworks/base/packages/BackupRestoreConfirmation:
+BackupRestoreConfirmation.apk
+
+=> frameworks/base/packages/FakeOemFeatures:
+FakeOemFeatures.apk
+
+=> frameworks/base/packages/InputDevices:
+InputDevices.apk
+validate_input_devices_keymaps.apk (phony)
+
+=> frameworks/base/packages/VpnDialogs:
+VpnDialogs.apk
+
+=> frameworks/base/packages/FusedLocation:
+FusedLocation.apk
+
+=> frameworks/base/packages/SystemUI:
+SystemUI.apk
+
+=> frameworks/base/packages/SystemUI/tests:
+SystemUITests.apk
+
+=> frameworks/base/packages/SharedStorageBackup:
+SharedStorageBackup.apk
+
+=> frameworks/opt/mailcommon:
+mail-common.jar (android,static)
+
+=> frameworks/opt/mailcommon/tests:
+MailCommonTests.apk
+
+=> frameworks/opt/inputmethodcommon:
+inputmethod-common.jar (android,static)
+
+=> frameworks/opt/vcard:
+com.android.vcard.jar (android,static)
+
+=> frameworks/opt/vcard/tests:
+AndroidVCardTests.apk
+
+=> frameworks/opt/photoviewer:
+libphotoviewer.jar (android,static)
+
+=> frameworks/opt/photoviewer/sample:
+LibPhotoViewerSample.apk
+
+=> frameworks/opt/emoji:
+system/lib/libemoji.so (share)
+
+=> frameworks/opt/mms:
+mms-common.jar (android)
+
+=> frameworks/opt/telephony:
+telephony-common.jar (android)
+
+=> frameworks/opt/telephony/tests/telephonytests:
+FrameworksTelephonyTests.apk
+
+=> frameworks/opt/telephony/tests/telephonymockriltests:
+TelephonyMockRilTests.apk
+
+=> frameworks/opt/telephony/mockril:
+mockrilcontroller.jar (android,static)
+
+=> frameworks/opt/calendar:
+calendar-common.jar (android,static)
+
+=> frameworks/opt/calendar/tests:
+CalendarCommonTests.apk
+
+=> frameworks/av/services/camera/tests/CameraServiceTest:
+CameraServiceTest|
+
+=> frameworks/av/services/camera/libcameraservice:
+system/lib/libcameraservice.so (share)
+
+=> frameworks/av/services/audioflinger:
+system/lib/libscheduling_policy.so (static)
+system/lib/libaudioflinger.so (share)
+system/bin/test-resample
+
+=> frameworks/av/services/audioflinger/audio-resampler:
+system/lib/libaudio-resampler.so (share)
+
+=> frameworks/av/drm/drmserver:
+system/bin/drmserver
+
+=> frameworks/av/drm/libdrmframework:
+system/lib/libdrmframework.so (share)
+
+=> frameworks/av/drm/libdrmframework/plugins:
+
+=> frameworks/av/drm/libdrmframework/plugins/forward-lock:
+
+=> frameworks/av/drm/libdrmframework/plugins/forward-lock/FwdLockEngine:
+system/lib/libfwdlockengine.so (share)
+
+=> frameworks/av/drm/libdrmframework/plugins/forward-lock/internal-format/decoder:
+system/lib/libfwdlock-decoder.so (static)
+
+=> frameworks/av/drm/libdrmframework/plugins/forward-lock/internal-format/converter:
+system/lib/libfwdlock-converter.so (static)
+
+=> frameworks/av/drm/libdrmframework/plugins/forward-lock/internal-format:
+
+=> frameworks/av/drm/libdrmframework/plugins/forward-lock/internal-format/common:
+system/lib/libfwdlock-common.so (static)
+
+=> frameworks/av/drm/libdrmframework/plugins/common/util:
+system/lib/libdrmutility.so (static)
+
+=> frameworks/av/drm/libdrmframework/plugins/common:
+
+=> frameworks/av/drm/libdrmframework/plugins/passthru:
+system/lib/libdrmpassthruplugin.so (share)
+
+=> frameworks/av/drm/common:
+system/lib/libdrmframeworkcommon.so (static)
+
+=> frameworks/av/camera:
+system/lib/libcamera_client.so (share)
+
+=> frameworks/av/tools/resampler_tools:
+out/host/linux-x86/bin/fir (host)
+
+=> frameworks/av/media/libstagefright/httplive:
+system/lib/libstagefright_httplive.so (static)
+
+=> frameworks/av/media/libstagefright/matroska:
+system/lib/libstagefright_matroska.so (static)
+
+=> frameworks/av/media/libstagefright/chromium_http:
+system/lib/libstagefright_chromium_http.so (share)
+
+=> frameworks/av/media/libstagefright:
+system/lib/libstagefright.so (share)
+
+=> frameworks/av/media/libstagefright/omx:
+system/lib/libstagefright_omx.so (share)
+
+=> frameworks/av/media/libstagefright/omx/tests:
+system/bin/omx_tests
+
+=> frameworks/av/media/libstagefright/yuv:
+system/lib/libstagefright_yuv.so (share)
+
+=> frameworks/av/media/libstagefright/wifi-display:
+system/lib/libstagefright_wfd.so (share)
+system/bin/wfd
+system/bin/udptest
+
+=> frameworks/av/media/libstagefright/id3:
+system/lib/libstagefright_id3.so (static)
+system/bin/testid3
+
+=> frameworks/av/media/libstagefright/colorconversion:
+system/lib/libstagefright_color_conversion.so (static)
+
+=> frameworks/av/media/libstagefright/tests:
+system/bin/SurfaceMediaSource_test
+
+=> frameworks/av/media/libstagefright/foundation:
+system/lib/libstagefright_foundation.so (share)
+
+=> frameworks/av/media/libstagefright/rtsp:
+system/lib/libstagefright_rtsp.so (static)
+rtp_test|
+
+=> frameworks/av/media/libstagefright/mpeg2ts:
+system/lib/libstagefright_mpeg2ts.so (static)
+
+=> frameworks/av/media/libstagefright/timedtext/test:
+TimedTextSRTSource_test (native test)
+
+=> frameworks/av/media/libstagefright/timedtext:
+system/lib/libstagefright_timedtext.so (static)
+
+=> frameworks/av/media/libstagefright/codecs/vorbis:
+
+=> frameworks/av/media/libstagefright/codecs/vorbis/dec:
+system/lib/libstagefright_soft_vorbisdec.so (share)
+
+=> frameworks/av/media/libstagefright/codecs:
+
+=> frameworks/av/media/libstagefright/codecs/amrwbenc:
+system/lib/libstagefright_amrwbenc.so (static)
+system/lib/libstagefright_soft_amrwbenc.so (share)
+
+=> frameworks/av/media/libstagefright/codecs/amrwbenc/SampleCode:
+system/bin/AMRWBEncTest
+
+=> frameworks/av/media/libstagefright/codecs/mp3dec:
+system/lib/libstagefright_mp3dec.so (static)
+system/lib/libstagefright_mp3dec_omx.so (static)
+system/lib/libstagefright_soft_mp3dec.so (share)
+
+=> frameworks/av/media/libstagefright/codecs/amrwb:
+system/lib/libstagefright_amrwbdec.so (static)
+
+=> frameworks/av/media/libstagefright/codecs/amrnb:
+
+=> frameworks/av/media/libstagefright/codecs/amrnb/enc:
+system/lib/libstagefright_amrnbenc.so (static)
+system/lib/libstagefright_soft_amrnbenc.so (share)
+
+=> frameworks/av/media/libstagefright/codecs/amrnb/dec:
+system/lib/libstagefright_amrnbdec.so (static)
+system/lib/libstagefright_soft_amrdec.so (share)
+
+=> frameworks/av/media/libstagefright/codecs/amrnb/common:
+system/lib/libstagefright_amrnb_common.so (share)
+
+=> frameworks/av/media/libstagefright/codecs/raw:
+system/lib/libstagefright_soft_rawdec.so (share)
+
+=> frameworks/av/media/libstagefright/codecs/flac:
+
+=> frameworks/av/media/libstagefright/codecs/flac/enc:
+system/lib/libstagefright_soft_flacenc.so (share)
+
+=> frameworks/av/media/libstagefright/codecs/m4v_h263:
+
+=> frameworks/av/media/libstagefright/codecs/m4v_h263/enc:
+system/lib/libstagefright_m4vh263enc.so (static)
+system/lib/libstagefright_soft_mpeg4enc.so (share)
+
+=> frameworks/av/media/libstagefright/codecs/m4v_h263/dec:
+system/lib/libstagefright_m4vh263dec.so (static)
+system/lib/libstagefright_soft_mpeg4dec.so (share)
+
+=> frameworks/av/media/libstagefright/codecs/aacdec:
+system/lib/libstagefright_soft_aacdec.so (share)
+
+=> frameworks/av/media/libstagefright/codecs/aacenc:
+system/lib/libstagefright_aacenc.so (static)
+
+=> frameworks/av/media/libstagefright/codecs/aacenc/SampleCode:
+system/bin/AACEncTest
+
+=> frameworks/av/media/libstagefright/codecs/g711:
+
+=> frameworks/av/media/libstagefright/codecs/g711/dec:
+system/lib/libstagefright_soft_g711dec.so (share)
+
+=> frameworks/av/media/libstagefright/codecs/common:
+system/lib/libstagefright_enc_common.so (share)
+
+=> frameworks/av/media/libstagefright/codecs/on2:
+
+=> frameworks/av/media/libstagefright/codecs/on2/dec:
+system/lib/libstagefright_soft_vpxdec.so (share)
+
+=> frameworks/av/media/libstagefright/codecs/on2/h264dec:
+system/lib/libstagefright_soft_h264dec.so (share)
+system/bin/decoder
+
+=> frameworks/av/media/libstagefright/codecs/avc:
+
+=> frameworks/av/media/libstagefright/codecs/avc/enc:
+system/lib/libstagefright_avcenc.so (static)
+system/lib/libstagefright_soft_h264enc.so (share)
+
+=> frameworks/av/media/libstagefright/codecs/avc/common:
+system/lib/libstagefright_avc_common.so (share)
+
+=> frameworks/av/media/libnbaio:
+system/lib/libnbaio.so (share)
+
+=> frameworks/av/media/libmediaplayerservice/nuplayer:
+system/lib/libstagefright_nuplayer.so (static)
+
+=> frameworks/av/media/libmediaplayerservice:
+system/lib/libmediaplayerservice.so (share)
+
+=> frameworks/av/media/mediaserver:
+system/bin/mediaserver
+
+=> frameworks/av/media/mtp:
+system/lib/libmtp.so (share)
+
+=> frameworks/av/media/common_time:
+system/lib/libcommon_time_client.so (share)
+
+=> frameworks/av/media/libmedia_native:
+system/lib/libmedia_native.so (share)
+
+=> frameworks/av/media/libeffects/visualizer:
+system/lib/libvisualizer.so (share)
+
+=> frameworks/av/media/libeffects/preprocessing:
+system/lib/libaudiopreprocessing.so (share)
+
+=> frameworks/av/media/libeffects/lvm/wrapper:
+system/lib/libbundlewrapper.so (share)
+system/lib/libreverbwrapper.so (share)
+
+=> frameworks/av/media/libeffects/lvm/lib:
+system/lib/libmusicbundle.so (static)
+system/lib/libreverb.so (static)
+
+=> frameworks/av/media/libeffects/factory:
+system/lib/libeffects.so (share)
+
+=> frameworks/av/media/libeffects/downmix:
+system/lib/libdownmix.so (share)
+
+=> frameworks/av/media/libmedia:
+system/lib/libmedia_helper.so (static)
+system/lib/libaudioparameter.so (share)
+system/lib/libmedia.so (share)
+
+=> frameworks/av/cmds/stagefright:
+system/bin/stagefright
+system/bin/record
+system/bin/recordvideo
+system/bin/audioloop
+system/bin/stream
+system/bin/sf2
+system/bin/codec
+
+=> frameworks/av/libvideoeditor/vss/src:
+system/lib/libvideoeditor_core.so (share)
+
+=> frameworks/av/libvideoeditor/vss:
+
+=> frameworks/av/libvideoeditor/vss/stagefrightshells/src:
+system/lib/libvideoeditor_stagefrightshells.so (static)
+
+=> frameworks/av/libvideoeditor/vss/stagefrightshells:
+
+=> frameworks/av/libvideoeditor/vss/mcs/src:
+system/lib/libvideoeditor_mcs.so (static)
+
+=> frameworks/av/libvideoeditor/vss/mcs:
+
+=> frameworks/av/libvideoeditor/vss/video_filters/src:
+system/lib/libvideoeditor_videofilters.so (share)
+
+=> frameworks/av/libvideoeditor/vss/video_filters:
+
+=> frameworks/av/libvideoeditor/vss/3gpwriter/src:
+system/lib/libvideoeditor_3gpwriter.so (static)
+
+=> frameworks/av/libvideoeditor/vss/3gpwriter:
+
+=> frameworks/av/libvideoeditor/osal/src:
+system/lib/libvideoeditor_osal.so (share)
+
+=> frameworks/av/libvideoeditor/osal:
+
+=> frameworks/av/libvideoeditor:
+
+=> frameworks/av/libvideoeditor/lvpp:
+system/lib/libvideoeditorplayer.so (share)
+
+=> external/eyes-free:
+accessibilityvalidator.jar (host,share)
+
+=> external/mesa3d:
+libMesa.so (host,static)
+system/lib/libMesa.so (static)
+out/host/linux-x86/bin/glsl_compiler (host)
+
+=> external/iproute2:
+
+=> external/iproute2/tc:
+system/bin/tc
+
+=> external/iproute2/lib:
+system/lib/libiprouteutil.so (share)
+system/lib/libnetlink.so (share)
+
+=> external/iproute2/ip:
+system/bin/ip
+
+=> external/dhcpcd:
+system/bin/dhcpcd
+system/bin/showlease
+dhcpcd-run-hooks (prebult)
+20-dns.conf (prebult)
+95-configured (prebult)
+
+=> external/koush/Superuser/Superuser/jni:
+system/bin/su
+system/lib/sqlite3.so (static)
+
+=> external/koush/Superuser/Superuser:
+Superuser.apk
+
+=> external/koush/Superuser:
+system/bin/su
+
+=> external/koush/ion/ion:
+ion.jar (android,static)
+
+=> external/koush/AndroidAsync/AndroidAsync:
+AndroidAsync.jar (android,static)
+
+=> external/jmonkeyengine/engine/src/bullet-native/android:
+system/lib/bulletjme.so (share)
+
+=> external/jmonkeyengine:
+jmonkeyengine.jar (android,static)
+
+=> external/tinyxml:
+libtinyxml.so (host,static)
+
+=> external/clang/tools/driver:
+out/host/linux-x86/bin/clang (host)
+
+=> external/clang:
+
+=> external/clang/lib/Lex:
+libclangLex.so (host,static)
+
+=> external/clang/lib/CodeGen:
+libclangCodeGen.so (host,static)
+
+=> external/clang/lib/FrontendTool:
+libclangFrontendTool.so (host,static)
+
+=> external/clang/lib/Headers:
+
+=> external/clang/lib/Sema:
+libclangSema.so (host,static)
+
+=> external/clang/lib/AST:
+libclangAST.so (host,static)
+
+=> external/clang/lib/Basic:
+libclangBasic.so (host,static)
+
+=> external/clang/lib/Driver:
+libclangDriver.so (host,static)
+
+=> external/clang/lib/ARCMigrate:
+libclangARCMigrate.so (host,static)
+
+=> external/clang/lib/Frontend:
+libclangFrontend.so (host,static)
+
+=> external/clang/lib/Rewrite/Core:
+libclangRewriteCore.so (host,static)
+
+=> external/clang/lib/Rewrite/Frontend:
+libclangRewriteFrontend.so (host,static)
+
+=> external/clang/lib/Analysis:
+libclangAnalysis.so (host,static)
+
+=> external/clang/lib/StaticAnalyzer/Core:
+libclangStaticAnalyzerCore.so (host,static)
+
+=> external/clang/lib/StaticAnalyzer/Frontend:
+libclangStaticAnalyzerFrontend.so (host,static)
+
+=> external/clang/lib/StaticAnalyzer/Checkers:
+libclangStaticAnalyzerCheckers.so (host,static)
+
+=> external/clang/lib/Edit:
+libclangEdit.so (host,static)
+
+=> external/clang/lib/Parse:
+libclangParse.so (host,static)
+
+=> external/clang/lib/Serialization:
+libclangSerialization.so (host,static)
+
+=> external/clang/utils/TableGen:
+out/host/linux-x86/bin/clang-tblgen (host)
+
+=> external/doclava:
+doclava.jar (host,share)
+
+=> external/grub:
+system/bin/grub_stage1 (raw)
+system/bin/grub_pre_stage2 (raw)
+system/bin/grub_start_stage2 (raw)
+
+=> external/ping:
+system/bin/ping
+
+=> external/dbus/dbus:
+system/lib/libdbus.so (share)
+
+=> external/dbus/tools:
+system/lib/libdbus-tools-common.so (static)
+system/bin/dbus-monitor
+system/bin/dbus-send
+
+=> external/dbus:
+
+=> external/dbus/bus:
+system/bin/dbus-daemon
+
+=> external/xmp_toolkit/XMPCore:
+xmp_toolkit.jar (android,static)
+
+=> external/xmp_toolkit:
+
+=> external/gtest/test:
+
+=> external/gtest/src:
+libgtest_host.so (host,static)
+libgtest_main_host.so (host,static)
+system/lib/libgtest.so (static)
+system/lib/libgtest_main.so (static)
+
+=> external/gtest:
+
+=> external/guava:
+guava.jar (android,static)
+guavalib.jar (host,share)
+
+=> external/libvorbis:
+system/lib/libvorbis.so (static)
+
+=> external/google:
+libGoogleAnalyticsV2 (prebult)
+
+=> external/gcc-demangle:
+system/lib/libgccdemangle.so (share)
+libgccdemangle.so (host,share)
+system/bin/gccdemangle_test
+out/host/linux-x86/bin/gccdemangle_test (host)
+
+=> external/libpcap:
+system/lib/libpcap.so (static)
+
+=> external/jsilver:
+jsilver.jar (host,share)
+
+=> external/spongycastle/sc-light-jdk15on:
+spongycastle-light-jdk15on.jar (android,static)
+
+=> external/bison:
+out/host/linux-x86/bin/bison (host)
+
+=> external/mdnsresponder:
+system/bin/mdnsd
+system/lib/libmdnssd.so (share)
+system/bin/dnssd
+
+=> external/embunit:
+system/lib/libembunit.so (share)
+
+=> external/genext2fs:
+out/host/linux-x86/bin/genext2fs (host)
+
+=> external/bash/builtins:
+system/lib/libbuiltins.so (static)
+
+=> external/bash:
+system/bin/bash
+
+=> external/bash/lib/readline:
+system/lib/libhistory.so (static)
+system/lib/libreadline.so (static)
+
+=> external/bash/lib:
+
+=> external/bash/lib/sh:
+system/lib/libsh.so (static)
+
+=> external/bash/lib/glob:
+system/lib/libglob.so (static)
+
+=> external/bash/lib/tilde:
+system/lib/libtilde.so (static)
+
+=> external/compiler-rt:
+system/lib/libcompiler-rt.so (static)
+
+=> external/compiler-rt/lib/asan:
+system/lib/libasan.so (static)
+system/lib/libasan_preload.so (share)
+system/bin/asanwrapper
+system/lib/libasan_noinst_test.so (static)
+system/bin/asan_test
+
+=> external/compiler-rt/lib:
+system/lib/libcompiler-rt-builtins.so (static)
+system/lib/libcompiler-rt-extras.so (static)
+
+=> external/okhttp:
+okhttp.jar (android)
+
+=> external/bzip2:
+system/lib/libbz.so (static)
+libbz.so (host,static)
+
+=> external/bouncycastle:
+bouncycastle.jar (android)
+bouncycastle-host.jar (host,share)
+bouncycastle-bcpkix-host.jar (host,share)
+
+=> external/safe-iop:
+system/lib/libsafe_iop.so (static)
+
+=> external/safe-iop/testsuite:
+system/bin/safe_iop_test
+
+=> external/llvm/tools/llc:
+out/host/linux-x86/bin/llc (host)
+system/bin/llc
+
+=> external/llvm/tools/llvm-dis:
+out/host/linux-x86/bin/llvm-dis (host)
+
+=> external/llvm/tools/llvm-as:
+out/host/linux-x86/bin/llvm-as (host)
+
+=> external/llvm/tools/opt:
+out/host/linux-x86/bin/opt (host)
+system/bin/opt
+
+=> external/llvm/tools/llvm-link:
+out/host/linux-x86/bin/llvm-link (host)
+system/bin/llvm-link
+
+=> external/llvm:
+
+=> external/llvm/lib/Support:
+libLLVMSupport.so (host,static)
+system/lib/libLLVMSupport.so (static)
+
+=> external/llvm/lib/CodeGen/AsmPrinter:
+libLLVMAsmPrinter.so (host,static)
+system/lib/libLLVMAsmPrinter.so (static)
+
+=> external/llvm/lib/CodeGen:
+libLLVMCodeGen.so (host,static)
+system/lib/libLLVMCodeGen.so (static)
+
+=> external/llvm/lib/CodeGen/SelectionDAG:
+libLLVMSelectionDAG.so (host,static)
+system/lib/libLLVMSelectionDAG.so (static)
+
+=> external/llvm/lib/Transforms/Vectorize:
+libLLVMVectorize.so (host,static)
+system/lib/libLLVMVectorize.so (static)
+
+=> external/llvm/lib/Transforms/InstCombine:
+libLLVMInstCombine.so (host,static)
+system/lib/libLLVMInstCombine.so (static)
+
+=> external/llvm/lib/Transforms/IPO:
+libLLVMipo.so (host,static)
+system/lib/libLLVMipo.so (static)
+
+=> external/llvm/lib/Transforms/Utils:
+libLLVMTransformUtils.so (host,static)
+system/lib/libLLVMTransformUtils.so (static)
+
+=> external/llvm/lib/Transforms/Scalar:
+libLLVMScalarOpts.so (host,static)
+system/lib/libLLVMScalarOpts.so (static)
+
+=> external/llvm/lib/Transforms/Instrumentation:
+libLLVMInstrumentation.so (host,static)
+system/lib/libLLVMInstrumentation.so (static)
+
+=> external/llvm/lib/ExecutionEngine/JIT:
+libLLVMJIT.so (host,static)
+
+=> external/llvm/lib/Bitcode/Reader:
+libLLVMBitReader.so (host,static)
+system/lib/libLLVMBitReader.so (static)
+
+=> external/llvm/lib/Bitcode/Writer:
+libLLVMBitWriter.so (host,static)
+system/lib/libLLVMBitWriter.so (static)
+
+=> external/llvm/lib/Linker:
+libLLVMLinker.so (host,static)
+system/lib/libLLVMLinker.so (static)
+
+=> external/llvm/lib/Object:
+libLLVMObject.so (host,static)
+system/lib/libLLVMObject.so (static)
+
+=> external/llvm/lib/TableGen:
+libLLVMTableGen.so (host,static)
+
+=> external/llvm/lib/MC:
+libLLVMMC.so (host,static)
+system/lib/libLLVMMC.so (static)
+
+=> external/llvm/lib/MC/MCParser:
+libLLVMMCParser.so (host,static)
+system/lib/libLLVMMCParser.so (static)
+
+=> external/llvm/lib/Analysis/IPA:
+libLLVMipa.so (host,static)
+system/lib/libLLVMipa.so (static)
+
+=> external/llvm/lib/Analysis:
+libLLVMAnalysis.so (host,static)
+system/lib/libLLVMAnalysis.so (static)
+
+=> external/llvm/lib/Target:
+libLLVMTarget.so (host,static)
+system/lib/libLLVMTarget.so (static)
+
+=> external/llvm/lib/Target/Mips:
+libLLVMMipsCodeGen.so (host,static)
+system/lib/libLLVMMipsCodeGen.so (static)
+
+=> external/llvm/lib/Target/Mips/Disassembler:
+system/lib/libLLVMMipsDisassembler.so (static)
+libLLVMMipsDisassembler.so (host,static)
+
+=> external/llvm/lib/Target/Mips/TargetInfo:
+libLLVMMipsInfo.so (host,static)
+system/lib/libLLVMMipsInfo.so (static)
+
+=> external/llvm/lib/Target/Mips/InstPrinter:
+libLLVMMipsAsmPrinter.so (host,static)
+system/lib/libLLVMMipsAsmPrinter.so (static)
+
+=> external/llvm/lib/Target/Mips/AsmParser:
+libLLVMMipsAsmParser.so (host,static)
+system/lib/libLLVMMipsAsmParser.so (static)
+
+=> external/llvm/lib/Target/Mips/MCTargetDesc:
+libLLVMMipsDesc.so (host,static)
+system/lib/libLLVMMipsDesc.so (static)
+
+=> external/llvm/lib/Target/ARM:
+libLLVMARMCodeGen.so (host,static)
+system/lib/libLLVMARMCodeGen.so (static)
+
+=> external/llvm/lib/Target/ARM/Disassembler:
+system/lib/libLLVMARMDisassembler.so (static)
+libLLVMARMDisassembler.so (host,static)
+
+=> external/llvm/lib/Target/ARM/TargetInfo:
+libLLVMARMInfo.so (host,static)
+system/lib/libLLVMARMInfo.so (static)
+
+=> external/llvm/lib/Target/ARM/InstPrinter:
+libLLVMARMAsmPrinter.so (host,static)
+system/lib/libLLVMARMAsmPrinter.so (static)
+
+=> external/llvm/lib/Target/ARM/AsmParser:
+libLLVMARMAsmParser.so (host,static)
+system/lib/libLLVMARMAsmParser.so (static)
+
+=> external/llvm/lib/Target/ARM/MCTargetDesc:
+libLLVMARMDesc.so (host,static)
+system/lib/libLLVMARMDesc.so (static)
+
+=> external/llvm/lib/Target/X86:
+libLLVMX86CodeGen.so (host,static)
+system/lib/libLLVMX86CodeGen.so (static)
+
+=> external/llvm/lib/Target/X86/Utils:
+system/lib/libLLVMX86Utils.so (static)
+libLLVMX86Utils.so (host,static)
+
+=> external/llvm/lib/Target/X86/Disassembler:
+system/lib/libLLVMX86Disassembler.so (static)
+libLLVMX86Disassembler.so (host,static)
+
+=> external/llvm/lib/Target/X86/TargetInfo:
+libLLVMX86Info.so (host,static)
+system/lib/libLLVMX86Info.so (static)
+
+=> external/llvm/lib/Target/X86/InstPrinter:
+system/lib/libLLVMX86AsmPrinter.so (static)
+libLLVMX86AsmPrinter.so (host,static)
+
+=> external/llvm/lib/Target/X86/AsmParser:
+libLLVMX86AsmParser.so (host,static)
+system/lib/libLLVMX86AsmParser.so (static)
+
+=> external/llvm/lib/Target/X86/MCTargetDesc:
+libLLVMX86Desc.so (host,static)
+system/lib/libLLVMX86Desc.so (static)
+
+=> external/llvm/lib/VMCore:
+libLLVMCore.so (host,static)
+system/lib/libLLVMCore.so (static)
+
+=> external/llvm/lib/Archive:
+libLLVMArchive.so (host,static)
+
+=> external/llvm/lib/AsmParser:
+libLLVMAsmParser.so (host,static)
+system/lib/libLLVMAsmParser.so (static)
+
+=> external/llvm/utils/TableGen:
+out/host/linux-x86/bin/tblgen (host)
+
+=> external/llvm/utils/FileCheck:
+out/host/linux-x86/bin/FileCheck (host)
+
+=> external/bsdiff:
+out/host/linux-x86/bin/bsdiff (host)
+out/host/linux-x86/bin/bspatch (host)
+
+=> external/webkit/Source/WebKit:
+
+=> external/webkit/Source/WebKit/android/wds/client:
+out/host/linux-x86/bin/wdsclient (host)
+
+=> external/webkit/Source/ThirdParty/ANGLE:
+
+=> external/webkit/Source/WebCore:
+
+=> external/webkit/Source/WebCore/tests:
+
+=> external/webkit:
+system/lib/libwebcore.so (static)
+system/lib/libangle.so (static)
+system/lib/libwebcore.so (share)
+
+=> external/webkit/Tools/android/webkitmerge:
+out/host/linux-x86/bin/webkitmerge (host)
+
+=> external/qrngd:
+system/bin/qrngd
+system/bin/qrngtest
+
+=> external/cibu-fonts:
+AnjaliNewLipi-light.ttf (prebult)
+
+=> external/heimdall/heimdall/source:
+libusb.so (host,static)
+out/host/linux-x86/bin/heimdall (host)
+
+=> external/heimdall:
+
+=> external/antlr:
+antlr-runtime.jar (host,share)
+
+=> external/tcpdump:
+system/bin/tcpdump
+
+=> external/skia/android_sample/SampleApp:
+SampleApp.apk
+system/lib/libskia-sample.so (share)
+
+=> external/skia:
+system/lib/libskia.so (share)
+system/lib/libskiagpu.so (static)
+system/lib/libskiatess.so (static)
+
+=> external/skia/bench:
+system/bin/skia_bench
+
+=> external/skia/gm:
+system/bin/skia_gm
+
+=> external/skia/tests:
+system/bin/skia_test
+
+=> external/neven:
+system/lib/libFFTEm.so (share)
+
+=> external/v8:
+
+=> external/webp/src:
+
+=> external/webp/src/enc:
+system/lib/libwebp-encode.so (static)
+
+=> external/webp/src/dec:
+system/lib/libwebp-decode.so (static)
+
+=> external/webp:
+
+=> external/libncurses:
+system/lib/libncurses.so (share)
+
+=> external/regex-re2:
+system/lib/libregex-re2.so (static)
+
+=> external/svox/PicoLangInstallerItaIta:
+PicoLangInstaller.apk
+
+=> external/svox/pico/tts:
+system/lib/libttspico_engine.so (static)
+system/lib/libttspico.so (share)
+
+=> external/svox/pico:
+PicoTts.apk
+
+=> external/svox/pico/lib:
+system/lib/libsvoxpico.so (static)
+
+=> external/svox/pico/compat/jni:
+system/lib/libttscompat.so (share)
+
+=> external/svox/PicoLangInstallerFraFra:
+PicoLangInstaller.apk
+
+=> external/svox/PicoLangInstallerEngGbr:
+PicoLangInstaller.apk
+
+=> external/svox:
+
+=> external/svox/PicoLangInstallerEngUsa:
+PicoLangInstaller.apk
+
+=> external/svox/PicoLangInstallerSpaEsp:
+PicoLangInstaller.apk
+
+=> external/svox/PicoLangInstallerDeuDeu:
+PicoLangInstaller.apk
+
+=> external/svox/picolanginstaller:
+PicoLangInstaller.apk
+
+=> external/emma:
+emma.jar (android,static)
+emmalib.jar (host,share)
+
+=> external/apache-xml:
+apache-xml.jar (android)
+
+=> external/dnsmasq/src:
+system/bin/dnsmasq
+
+=> external/dnsmasq:
+
+=> external/zlib:
+system/lib/libz.so (share)
+system/lib/libz.so (static)
+libz.so (host,static)
+libz-host.so (host,share)
+libunz.so (host,static)
+system/lib/libunz.so (static)
+system/bin/gzip
+out/host/linux-x86/bin/minigzip (host)
+
+=> external/iptables/iptables:
+system/lib/libxtables.so (static)
+system/bin/iptables
+system/bin/ip6tables
+
+=> external/iptables:
+
+=> external/iptables/extensions:
+system/lib/libext.so (static)
+system/lib/libext4.so (static)
+system/lib/libext6.so (static)
+
+=> external/iptables/libiptc:
+system/lib/libip4tc.so (static)
+system/lib/libip6tc.so (static)
+
+=> external/fsck_msdos:
+system/bin/fsck_msdos
+
+=> external/aac:
+system/lib/libFraunhoferAAC.so (static)
+
+=> external/speex:
+system/lib/libspeex.so (static)
+system/lib/libspeexresampler.so (share)
+
+=> external/blktrace:
+system/bin/blkparse
+system/bin/blktrace
+system/bin/verify_blkparse
+system/bin/blkrawverify
+
+=> external/blktrace/btt:
+system/bin/btt
+
+=> external/webrtc/src/common_audio/vad:
+system/lib/libwebrtc_vad.so (static)
+
+=> external/webrtc/src/common_audio/resampler:
+system/lib/libwebrtc_resampler.so (static)
+
+=> external/webrtc/src/common_audio/signal_processing:
+system/lib/libwebrtc_spl.so (static)
+
+=> external/webrtc/src/system_wrappers/source:
+system/lib/libwebrtc_system_wrappers.so (static)
+
+=> external/webrtc/src/modules/audio_processing/utility:
+system/lib/libwebrtc_apm_utility.so (static)
+
+=> external/webrtc/src/modules/audio_processing/test/android/apmtest/jni:
+system/lib/apmtest-activity.so (share)
+
+=> external/webrtc/src/modules/audio_processing/agc:
+system/lib/libwebrtc_agc.so (static)
+
+=> external/webrtc/src/modules/audio_processing/aecm:
+system/lib/libwebrtc_aecm.so (static)
+system/lib/libwebrtc_aecm_neon.so (static)
+
+=> external/webrtc/src/modules/audio_processing:
+system/lib/libwebrtc_apm.so (static)
+system/bin/webrtc_apm_process_test
+webrtc_apm_unit_test (native test)
+system/bin/
+(native test)
+
+=> external/webrtc/src/modules/audio_processing/aec:
+system/lib/libwebrtc_aec.so (static)
+
+=> external/webrtc/src/modules/audio_processing/ns:
+system/lib/libwebrtc_ns.so (static)
+system/lib/libwebrtc_ns_neon.so (static)
+
+=> external/webrtc:
+system/lib/libwebrtc_audio_preprocessing.so (share)
+
+=> external/wpa_supplicant_6/wpa_supplicant:
+system/bin/wpa_cli
+system/bin/wpa_supplicant
+system/lib/libwpa_client.so (share)
+
+=> external/wpa_supplicant_6:
+
+=> external/libffi:
+
+=> external/libffi/testsuite:
+
+=> external/opencv:
+system/lib/libcxcore.so (static)
+system/lib/libcv.so (static)
+system/lib/libcvaux.so (static)
+system/lib/libcvml.so (static)
+system/lib/libcvhighgui.so (static)
+system/lib/libopencv.so (static)
+
+=> external/replicaisland:
+com.replica.replicaisland.apk
+
+=> external/quake:
+Quake.apk
+system/lib/libquake.so (share)
+
+=> external/libxml2:
+system/lib/libxml2.so (static)
+system/lib/libxml2.so (share)
+libxml2.so (host,static)
+
+=> external/giflib:
+system/lib/libgif.so (static)
+
+=> external/checkpolicy:
+out/host/linux-x86/bin/checkpolicy (host)
+out/host/linux-x86/bin/checkmodule (host)
+
+=> external/protobuf:
+libprotobuf-java-2.3.0-micro.jar (android,static)
+host-libprotobuf-java-2.3.0-micro.jar (host,share)
+libprotobuf-java-2.3.0-lite.jar (android,static)
+host-libprotobuf-java-2.3.0-lite.jar (host,share)
+system/lib/libprotobuf-cpp-2.3.0-lite.so (static)
+system/lib/libprotobuf-cpp-2.3.0-full.so (static)
+out/host/linux-x86/bin/aprotoc (host)
+
+=> external/ntfs-3g:
+system/lib/libfuse-lite.so (static)
+system/lib/libntfs-3g.so (static)
+system/bin/ntfs-3g
+system/bin/ntfsfix
+system/bin/mkntfs
+
+=> external/jsr305:
+jsr305.jar (android,static)
+jsr305lib.jar (host,share)
+
+=> external/expat:
+libexpat.so (host,static)
+libexpat.so (host,share)
+system/lib/libexpat_static.so (static)
+system/lib/libexpat.so (share)
+
+=> external/openssl:
+
+=> external/qemu/distrib/jpeg-6b:
+system/lib/libjpeg.so (share)
+
+=> external/qemu:
+
+=> external/libyuv:
+system/lib/libyuv_static.so (static)
+
+=> external/google-diff-match-patch:
+diff_match_patch.jar (android,static)
+
+=> external/littlemock:
+littlemock.jar (android,static)
+
+=> external/markdown:
+
+=> external/strace:
+system/bin/strace
+
+=> external/ipsec-tools:
+system/bin/racoon
+system/lib/libipsec.so (static)
+
+=> external/sqlite/dist:
+system/lib/libsqlite.so (share)
+system/bin/sqlite3
+out/host/linux-x86/bin/sqlite3 (host)
+
+=> external/sqlite/android:
+system/lib/libsqlite3_android.so (static)
+system/bin/libsqlite3_phonetic_string_utils_test
+system/bin/libsqlite3_phone_number_utils_test
+
+=> external/ppp/pppd:
+system/bin/pppd
+
+=> external/stlport:
+system/lib/libstlport.so (share)
+system/lib/libstlport_static.so (static)
+
+=> external/e2fsprogs/resize:
+system/bin/resize2fs
+out/host/linux-x86/bin/resize2fs_host (host)
+
+=> external/e2fsprogs:
+
+=> external/e2fsprogs/lib:
+
+=> external/e2fsprogs/lib/e2p:
+system/lib/libext2_e2p.so (share)
+system/lib/libext2_e2p.so (static)
+libext2_e2p_host.so (host,share)
+
+=> external/e2fsprogs/lib/blkid:
+system/lib/libext2_blkid.so (share)
+system/lib/libext2_blkid.so (static)
+libext2_blkid_host.so (host,share)
+
+=> external/e2fsprogs/lib/ext2fs:
+system/lib/libext2fs.so (share)
+system/lib/libext2fs.so (static)
+libext2fs_host.so (host,share)
+
+=> external/e2fsprogs/lib/et:
+system/lib/libext2_com_err.so (share)
+system/lib/libext2_com_err.so (static)
+libext2_com_err_host.so (host,share)
+
+=> external/e2fsprogs/lib/uuid:
+system/lib/libext2_uuid.so (share)
+system/lib/libext2_uuid.so (static)
+libext2_uuid_host.so (host,share)
+
+=> external/e2fsprogs/e2fsck:
+system/lib/libext2_profile.so (share)
+system/lib/libext2_profile.so (static)
+libext2_profile_host.so (host,share)
+system/bin/e2fsck
+system/bin/recovery_e2fsck
+system/bin/utility_e2fsck
+out/host/linux-x86/bin/e2fsck_host (host)
+
+=> external/e2fsprogs/misc:
+system/bin/mke2fs
+system/bin/recovery_mke2fs
+system/bin/utility_mke2fs
+out/host/linux-x86/bin/mke2fs_host (host)
+system/bin/tune2fs
+system/bin/utility_tune2fs
+system/bin/recovery_tune2fs
+out/host/linux-x86/bin/tune2fs_host (host)
+system/bin/badblocks
+out/host/linux-x86/bin/badblocks_host (host)
+
+=> external/elfutils/libelf:
+libelf.so (host,static)
+system/lib/libelf.so (static)
+
+=> external/elfutils:
+
+=> external/elfutils/libdw:
+libdw.so (host,static)
+system/lib/libdw.so (static)
+
+=> external/elfutils/libdwfl:
+libdwfl.so (host,static)
+system/lib/libdwfl.so (static)
+
+=> external/elfutils/libebl:
+libebl.so (host,static)
+system/lib/libebl.so (static)
+
+=> external/linux-tools-perf:
+libperf.so (host,static)
+system/lib/libperf.so (static)
+out/host/linux-x86/bin/perfhost (host)
+system/bin/perf
+
+=> external/libxslt:
+system/lib/libxslt.so (static)
+libxslt.so (host,static)
+
+=> external/jhead:
+system/lib/libexif.so (share)
+system/lib/libexif_jni.so (share)
+
+=> external/dexmaker:
+dexmaker.jar (android,static)
+
+=> external/netperf:
+system/bin/netperf
+system/bin/netserver
+
+=> external/vim/src:
+system/bin/vim
+
+=> external/vim:
+
+=> external/vim/runtime:
+vim|
+
+=> external/libusb/libusb:
+system/lib/libusb.so (share)
+
+=> external/tremolo:
+system/lib/libvorbisidec.so (share)
+
+=> external/junit:
+junit.jar (host,share)
+core-junit.jar (android)
+core-junit-hostdex.jar (host,share)
+junit-runner.jar (android,static)
+junit4-target.jar (android,static)
+
+=> external/sepolicy/tools:
+out/host/linux-x86/bin/checkseapp (host)
+out/host/linux-x86/bin/checkfc (host)
+insertkeys.py (prebult)
+
+=> external/sepolicy/tools/setool:
+setool.jar (host,share)
+(host,prebult)
+
+=> external/sepolicy/tools/setool/tests:
+setool-tests.jar (host,share)
+(host,prebult)
+
+=> external/sepolicy:
+sepolicy|BUILD_SYSTEM/base_rules.mk
+file_contexts|BUILD_SYSTEM/base_rules.mk
+seapp_contexts|BUILD_SYSTEM/base_rules.mk
+property_contexts|BUILD_SYSTEM/base_rules.mk
+selinux-network.sh (prebult)
+mac_permissions.xml|BUILD_SYSTEM/base_rules.mk
+
+=> external/powertop:
+system/bin/powertop
+
+=> external/mksh:
+mkshrc (prebult)
+system/bin/mksh
+
+=> external/libnfc-nci/halimpl/bcm2079x:
+nfc_nci.HAL_SUFFIX|$(BUILD_SHARED_LIBRARY)
+
+=> external/libnfc-nci/halimpl:
+
+=> external/libnfc-nci:
+system/lib/libnfc-nci.so (share)
+
+=> external/apache-http:
+
+=> external/openfst:
+system/lib/libopenfst.so (static)
+
+=> external/flac/libFLAC:
+system/lib/libFLAC.so (static)
+
+=> external/flac:
+
+=> external/libnfc-nxp:
+system/lib/libnfc.so (share)
+system/lib/libnfc_ndef.so (share)
+
+=> external/javasqlite:
+sqlite-jdbc.jar (android,static)
+system/lib/libsqlite_jni.so (share)
+
+=> external/libvpx:
+system/lib/libvpx.so (static)
+
+=> external/lzo:
+system/lib/liblzo-static.so (static)
+system/lib/liblzo.so (share)
+
+=> external/valgrind:
+
+=> external/valgrind/dynamic_annotations:
+system/lib/libdynamic_annotations.so (share)
+libdynamic_annotations-host.so (host,share)
+
+=> external/valgrind/unittest:
+system/bin/racecheck_unittest
+
+=> external/valgrind/main:
+libvex-TARGET_ARCH-linux|$(BUILD_STATIC_LIBRARY)
+libcoregrind-TARGET_ARCH-linux|$(BUILD_STATIC_LIBRARY)
+libreplacemalloc_toolpreload-TARGET_ARCH-linux|$(BUILD_STATIC_LIBRARY)
+vgpreload_core-TARGET_ARCH-linux|$(BUILD_SHARED_LIBRARY)
+memcheck-TARGET_ARCH-linux|$(BUILD_EXECUTABLE)
+vgpreload_memcheck-TARGET_ARCH-linux|$(BUILD_SHARED_LIBRARY)
+cachegrind-TARGET_ARCH-linux|$(BUILD_EXECUTABLE)
+callgrind-TARGET_ARCH-linux|$(BUILD_EXECUTABLE)
+helgrind-TARGET_ARCH-linux|$(BUILD_EXECUTABLE)
+vgpreload_helgrind-TARGET_ARCH-linux|$(BUILD_SHARED_LIBRARY)
+drd-TARGET_ARCH-linux|$(BUILD_EXECUTABLE)
+vgpreload_drd-TARGET_ARCH-linux|$(BUILD_SHARED_LIBRARY)
+massif-TARGET_ARCH-linux|$(BUILD_EXECUTABLE)
+vgpreload_massif-TARGET_ARCH-linux|$(BUILD_SHARED_LIBRARY)
+none-TARGET_ARCH-linux|$(BUILD_EXECUTABLE)
+system/bin/valgrind
+default.supp (prebult)
+
+=> external/valgrind/tsan:
+tsan-TARGET_ARCH-linux|$(BUILD_EXECUTABLE)
+vgpreload_tsan-TARGET_ARCH-linux|$(BUILD_SHARED_LIBRARY)
+
+=> external/stressapptest:
+system/bin/stressapptest
+
+=> external/busybox:
+system/lib/libclearsilverregex.so (static)
+system/lib/libuclibcrpc.so (static)
+system/lib/busybox_prepare.so (static)
+system/lib/libbusybox.so (static)
+system/bin/busybox
+system/bin/static_busybox
+
+=> external/harfbuzz:
+system/lib/libharfbuzz.so (share)
+
+=> external/nano:
+system/bin/nano
+
+=> external/hamcrest:
+hamcrest-host.jar (host,share)
+hamcrest.jar (android,static)
+
+=> external/libogg:
+system/lib/libogg.so (static)
+
+=> external/jdiff:
+jdiff.jar (host,share)
+
+=> external/apache-harmony:
+apache-harmony-tests.jar (android,static)
+
+=> external/libgsm:
+system/lib/libgsm.so (static)
+
+=> external/dropbear:
+ssh|
+scp|
+
+=> external/dropbear/libtommath:
+system/lib/libtommath.so (static)
+
+=> external/dropbear/libtomcrypt:
+system/lib/libtomcrypt.so (static)
+
+=> external/libcap-ng:
+system/lib/libcap-ng.so (share)
+system/bin/pscap
+
+=> external/libnl-headers:
+
+=> external/srtp:
+system/lib/libsrtp_static.so (static)
+
+=> external/openvpn:
+system/bin/openvpn
+
+=> external/hyphenation:
+system/lib/libhyphenation.so (static)
+libhyphenation.so (host,static)
+
+=> external/android-mock:
+android-mock-runtimelib.jar (android,static)
+android-mock-generatorlib.jar (host,share)
+
+=> external/exfat/libexfat:
+system/lib/libexfat.so (static)
+
+=> external/exfat:
+
+=> external/exfat/mkfs:
+system/bin/mkfs.exfat
+
+=> external/exfat/fsck:
+system/bin/fsck.exfat
+
+=> external/exfat/fuse:
+system/bin/mount.exfat
+
+=> external/chromium:
+system/lib/libchromium_net.so (share)
+
+=> external/chromium/third_party/libevent:
+system/lib/libevent.so (static)
+
+=> external/chromium/third_party/modp_b64:
+system/lib/modp_b64.so (static)
+
+=> external/chromium/base/third_party/dmg_fp:
+system/lib/dmg_fp.so (static)
+
+=> external/lohit-fonts:
+Lohit-Bengali.ttf (prebult)
+Lohit-Kannada.ttf (prebult)
+Lohit-Telugu.ttf (prebult)
+
+=> external/jpeg:
+system/lib/libjpeg.so (share)
+
+=> external/astl/src:
+system/lib/libastl.so (static)
+libastl_host.so (host,static)
+
+=> external/astl:
+
+=> external/astl/tests:
+
+=> external/tinyxml2:
+system/lib/libtinyxml2.so (static)
+
+=> external/wpa_supplicant_8/wpa_supplicant:
+system/bin/wpa_cli
+system/bin/wpa_supplicant
+system/lib/libwpa_client.so (share)
+
+=> external/wpa_supplicant_8:
+
+=> external/wpa_supplicant_8/hostapd:
+system/bin/hostapd_cli
+system/bin/hostapd
+
+=> external/oauth/core/src/main/java:
+oauth.jar (android,static)
+
+=> external/easymock:
+easymock.jar (host,share)
+easymocklib.jar (android,static)
+
+=> external/icu4c/stubdata:
+icu.dat (prebult)
+
+=> external/icu4c/i18n:
+system/lib/libicui18n.so (share)
+
+=> external/icu4c/tools:
+
+=> external/icu4c:
+
+=> external/icu4c/common:
+system/lib/libicuuc.so (share)
+
+=> external/wpa_supplicant_8_ti/wpa_supplicant:
+system/bin/wpa_cli
+system/bin/wpa_supplicant
+system/lib/libwpa_client.so (share)
+
+=> external/wpa_supplicant_8_ti:
+
+=> external/wpa_supplicant_8_ti/hostapd:
+system/bin/hostapd_cli
+system/bin/hostapd
+
+=> external/htop:
+system/bin/htop
+
+=> external/fdlibm:
+system/lib/libfdlibm.so (static)
+
+=> external/bluetooth/bluedroid/test:
+
+=> external/bluetooth/bluedroid/test/bluedroidtest:
+system/bin/bdt
+
+=> external/bluetooth/bluedroid:
+
+=> external/bluetooth/bluedroid/hci:
+system/lib/libbt-hci.so (share)
+
+=> external/bluetooth/bluedroid/audio_a2dp_hw:
+system/lib/audio.a2dp.default.so (share)
+
+=> external/bluetooth/bluedroid/utils:
+system/lib/libbt-utils.so (share)
+
+=> external/bluetooth/bluedroid/gki:
+system/lib/libbt-brcm_gki.so (static)
+
+=> external/bluetooth/bluedroid/stack:
+system/lib/libbt-brcm_stack.so (static)
+
+=> external/bluetooth/bluedroid/bta:
+system/lib/libbt-brcm_bta.so (static)
+
+=> external/bluetooth/bluedroid/conf:
+bt_stack.conf (prebult)
+bt_did.conf (prebult)
+auto_pair_devlist.conf (prebult)
+
+=> external/bluetooth/bluedroid/main:
+system/lib/bluetooth.default.so (share)
+
+=> external/netcat:
+system/bin/nc
+
+=> external/srec/srec_jni:
+system/lib/libsrec_jni.so (share)
+
+=> external/srec/tools/make_cfst:
+out/host/linux-x86/bin/make_cfst (host)
+
+=> external/srec/tools:
+
+=> external/srec/tools/parseStringTest:
+out/host/linux-x86/bin/parseStringTest (host)
+
+=> external/srec/tools/grxmlcompile:
+out/host/linux-x86/bin/grxmlcompile (host)
+
+=> external/srec/tools/test_swiarb:
+out/host/linux-x86/bin/test_swiarb (host)
+
+=> external/srec/tools/make_g2g:
+out/host/linux-x86/bin/make_g2g (host)
+
+=> external/srec/tools/make_ve_grammar:
+out/host/linux-x86/bin/make_ve_grammar (host)
+
+=> external/srec/tools/thirdparty:
+
+=> external/srec/tools/thirdparty/OpenFst:
+
+=> external/srec/tools/thirdparty/OpenFst/fst:
+
+=> external/srec/tools/thirdparty/OpenFst/fst/lib:
+libfst.so (host,share)
+
+=> external/srec/tools/dictTest:
+out/host/linux-x86/bin/dictTest (host)
+
+=> external/srec/tools/test_g2g:
+out/host/linux-x86/bin/test_g2g (host)
+
+=> external/srec/audio/test:
+
+=> external/srec/audio/test/AudioHardwareRecord:
+system/bin/AudioHardwareRecord
+
+=> external/srec/audio/test/AudioInRecord:
+system/bin/AudioInRecord
+
+=> external/srec/audio/test/AudioHardwareRecordLoop:
+system/bin/AudioHardwareRecordLoop
+
+=> external/srec/audio:
+
+=> external/srec/audio/AudioIn:
+
+=> external/srec/audio/AudioIn/UNIX/src:
+system/lib/libSR_AudioIn.so (share)
+
+=> external/srec/audio/AudioIn/UNIX:
+
+=> external/srec/seti/sltsEngine:
+common_TARGET|$(BUILD_HOST_SHARED_LIBRARY)
+common_TARGET|$(BUILD_STATIC_LIBRARY)
+
+=> external/srec/seti:
+
+=> external/srec:
+
+=> external/srec/config/en.us:
+out/host/linux-x86/bin/cmu2nuance (host)
+
+=> external/srec/config:
+
+=> external/srec/shared:
+common_TARGET|$(BUILD_HOST_SHARED_LIBRARY)
+common_TARGET|$(BUILD_STATIC_LIBRARY)
+
+=> external/srec/tests:
+
+=> external/srec/portable:
+common_TARGET|$(BUILD_HOST_SHARED_LIBRARY)
+common_TARGET|$(BUILD_STATIC_LIBRARY)
+
+=> external/srec/srec/ca:
+common_TARGET|$(BUILD_HOST_SHARED_LIBRARY)
+common_TARGET|$(BUILD_STATIC_LIBRARY)
+
+=> external/srec/srec/Session:
+common_TARGET|$(BUILD_HOST_SHARED_LIBRARY)
+common_TARGET|$(BUILD_STATIC_LIBRARY)
+
+=> external/srec/srec/test:
+
+=> external/srec/srec/test/SRecTest:
+system/bin/SRecTest
+
+=> external/srec/srec/test/SRecTestAudio:
+system/bin/SRecTestAudio
+
+=> external/srec/srec:
+
+=> external/srec/srec/AcousticState:
+common_TARGET|$(BUILD_HOST_SHARED_LIBRARY)
+common_TARGET|$(BUILD_STATIC_LIBRARY)
+
+=> external/srec/srec/Grammar:
+common_TARGET|$(BUILD_HOST_SHARED_LIBRARY)
+common_TARGET|$(BUILD_STATIC_LIBRARY)
+
+=> external/srec/srec/EventLog:
+common_TARGET|$(BUILD_HOST_SHARED_LIBRARY)
+common_TARGET|$(BUILD_STATIC_LIBRARY)
+
+=> external/srec/srec/Vocabulary:
+common_TARGET|$(BUILD_HOST_SHARED_LIBRARY)
+common_TARGET|$(BUILD_STATIC_LIBRARY)
+
+=> external/srec/srec/Recognizer:
+common_TARGET|$(BUILD_HOST_SHARED_LIBRARY)
+common_TARGET|$(BUILD_STATIC_LIBRARY)
+
+=> external/srec/srec/Semproc:
+common_TARGET|$(BUILD_HOST_SHARED_LIBRARY)
+common_TARGET|$(BUILD_STATIC_LIBRARY)
+
+=> external/srec/srec/AcousticModels:
+common_TARGET|$(BUILD_HOST_SHARED_LIBRARY)
+common_TARGET|$(BUILD_STATIC_LIBRARY)
+
+=> external/srec/srec/Nametag:
+common_TARGET|$(BUILD_HOST_SHARED_LIBRARY)
+common_TARGET|$(BUILD_STATIC_LIBRARY)
+
+=> external/jmdns:
+JmDNS.jar (android,static)
+
+=> external/liblzf:
+liblzf.so (host,static)
+system/lib/liblzf.so (static)
+liblzf.jar (host,share)
+
+=> external/rsync:
+system/bin/rsync
+
+=> external/naver-fonts:
+NanumGothic.ttf (prebult)
+
+=> external/openssh:
+system/lib/libssh.so (share)
+system/bin/ssh
+system/bin/sftp
+system/bin/scp
+system/bin/sshd
+system/bin/ssh-keygen
+sshd_config (prebult)
+start-ssh (prebult)
+
+=> external/javassist:
+javassist.jar (host,share)
+
+=> external/tinyalsa:
+system/lib/libtinyalsa.so (share)
+libtinyalsa.so (host,static)
+system/bin/tinyplay
+system/bin/tinycap
+system/bin/tinymix
+
+=> external/eclipse-windowbuilder/propertysheet:
+propertysheet.jar (host,share)
+
+=> external/mockwebserver:
+mockwebserver.jar (android,static)
+
+=> external/ant-glob:
+ant-glob.jar (host,share)
+
+=> external/fuse/lib:
+system/lib/libfuse.so (static)
+
+=> external/smali/baksmali:
+baksmali.jar (host,share)
+baksmali|BUILD_SYSTEM/base_rules.mk
+
+=> external/smali/smali:
+smali.jar (host,share)
+smali|BUILD_SYSTEM/base_rules.mk
+
+=> external/zxing:
+
+=> external/zxing/core:
+(multi,prebult)
+
+=> external/mtpd:
+system/bin/mtpd
+
+=> external/libselinux:
+system/lib/libselinux.so (static)
+libselinux.so (host,static)
+system/lib/libselinux.so (share)
+
+=> external/libsepol:
+libsepol.so (host,share)
+libsepol.so (host,static)
+out/host/linux-x86/bin/chkcon (host)
+
+=> external/sonivox/arm-wt-22k:
+system/lib/libsonivox.so (share)
+
+=> external/sonivox:
+
+=> external/oprofile/libabi:
+system/lib/liboprofile_abi.so (static)
+liboprofile_abi.so (host,static)
+out/host/linux-x86/bin/opimport (host)
+
+=> external/oprofile/libpopt:
+system/lib/liboprofile_popt.so (static)
+liboprofile_popt.so (host,static)
+
+=> external/oprofile/daemon:
+system/bin/oprofiled
+
+=> external/oprofile/libopt++:
+liboprofile_opt++.so (host,static)
+
+=> external/oprofile/libdb:
+system/lib/liboprofile_db.so (static)
+liboprofile_db.so (host,static)
+
+=> external/oprofile/libregex:
+liboprofile_op_regex.so (host,static)
+
+=> external/oprofile/pp:
+out/host/linux-x86/bin/opreport (host)
+out/host/linux-x86/bin/opannotate (host)
+out/host/linux-x86/bin/opgprof (host)
+out/host/linux-x86/bin/oparchive (host)
+
+=> external/oprofile:
+
+=> external/oprofile/opcontrol:
+system/bin/opcontrol
+
+=> external/oprofile/libpp:
+liboprofile_pp.so (host,static)
+
+=> external/oprofile/libop:
+system/lib/liboprofile_op.so (static)
+liboprofile_op.so (host,static)
+
+=> external/oprofile/libutil++:
+liboprofile_util++.so (host,static)
+
+=> external/oprofile/libutil:
+system/lib/liboprofile_util.so (static)
+liboprofile_util.so (host,static)
+
+=> external/lsof:
+system/lib/liblsof.so (static)
+system/bin/lsof
+system/bin/utility_lsof
+
+=> external/yaffs2:
+out/host/linux-x86/bin/mkyaffs2image (host)
+system/bin/mkyaffs2image
+system/lib/libmkyaffs2image.so (static)
+system/lib/libunyaffs.so (static)
+system/bin/unyaffs
+out/host/linux-x86/bin/unyaffs (host)
+
+=> external/mp4parser:
+mp4parser.jar (android,static)
+
+=> external/libpng:
+libpng.so (host,static)
+system/lib/libpng.so (static)
+system/bin/pngtest
+
+=> external/ping6:
+system/bin/ping6
+
+=> external/freetype:
+system/lib/libft2.so (static)
+
+=> external/gson:
+gson.jar (android,static)
+
+=> external/ganymed-ssh2:
+ganymed-ssh2.jar (android,static)
+
+=> ndk/sources/cpufeatures:
+
+=> ndk/sources/cxx-stl/stlport:
+system/lib/stlport_static.so (static)
+system/lib/stlport_shared.so (share)
+stlport_static|
+stlport_shared|
+
+=> ndk/sources/cxx-stl/system:
+system/lib/libstdc++.so (static)
+
+=> ndk/sources/cxx-stl/gnu-libstdc++:
+gnustl_static|
+gnustl_shared|
+
+=> ndk/sources/cxx-stl/gabi++:
+
+=> ndk/sources/android/cpufeatures:
+system/lib/cpufeatures.so (static)
+
+=> ndk:
+
+=> ndk/tests/build/target-c-includes/jni:
+check_target_c_s|includeBUILD_SHARED_LIBRARY
+
+=> ndk/tests/build/gnustl-force-rtti/jni:
+system/bin/test_gnustl_forced_rtti
+
+=> ndk/tests/build/build-assembly-file/jni:
+system/lib/test-build-assembly.so (share)
+
+=> ndk/tests/build/stlport-src-suffix/jni:
+system/bin/test_stlport
+system/bin/test_stlport_arm
+system/bin/test_stlport_neon
+system/bin/test_stlport_arm_neon
+
+=> ndk/tests/build/import-static/jni:
+system/lib/test_static_imports.so (share)
+
+=> ndk/tests/build/import-static/bar:
+system/lib/libbar.so (static)
+
+=> ndk/tests/build/import-static/foo:
+system/lib/libfoo.so (static)
+
+=> ndk/tests/build/test-inet-defs/jni:
+system/lib/test_inet_defs.so (share)
+
+=> ndk/tests/build/pthread-rwlock-initializer/jni:
+system/lib/test_pthread_rwlock_initializer.so (share)
+
+=> ndk/tests/build/cpp-extensions/jni:
+system/bin/test_cpp_extensions
+
+=> ndk/tests/build/stdint-c++/jni:
+system/lib/test_stdint_c++.so (share)
+
+=> ndk/tests/build/multi-abi/jni:
+system/bin/multi-hello
+
+=> ndk/tests/build/build-mode/jni:
+system/bin/test_build_mode_thumb
+system/bin/test_build_mode_thumb_b
+system/bin/test_build_mode_arm
+system/bin/test_build_mode_arm_b
+system/bin/test_build_mode_thumb2
+system/bin/test_build_mode_thumb2_b
+system/bin/test_build_mode_armv7
+system/bin/test_build_mode_armv7_b
+system/bin/test_build_mode_thumb2_neon
+system/bin/test_build_mode_thumb2_neon_b
+system/bin/test_build_mode_thumb2_neon_c
+system/bin/test_build_mode_armv7_neon
+system/bin/test_build_mode_armv7_neon_b
+system/bin/test_build_mode_armv7_neon_c
+system/bin/test_build_mode_x86
+
+=> ndk/tests/build/ssax-instructions/jni:
+system/lib/ssax_instruction.so (share)
+
+=> ndk/tests/build/gnustl-force-none/jni:
+system/bin/test_gnustl_force_none
+
+=> ndk/tests/build/import-install/jni:
+system/lib/libfoo.so (share)
+
+=> ndk/tests/build/import-install/path2:
+system/lib/libpath2.so (share)
+
+=> ndk/tests/build/import-install/path1:
+system/lib/libpath1.so (share)
+
+=> ndk/tests/build/prebuild-stlport/jni:
+system/bin/build_stlport_static
+system/bin/build_stlport_shared
+
+=> ndk/tests/build/issue34613-neon/jni:
+system/lib/issue34613-neon.so (share)
+
+=> ndk/tests/build/multiple-static-const/jni:
+system/bin/test_multiple_static_const
+
+=> ndk/tests/build/multi-module-path/jni:
+system/bin/multi_path_test
+
+=> ndk/tests/build/multi-module-path/path2/bar:
+system/lib/libbar.so (static)
+
+=> ndk/tests/build/multi-module-path/path1/foo:
+system/lib/libfoo.so (static)
+
+=> ndk/tests/build/gnustl-force-exceptions/jni:
+system/bin/test_gnustl_forced_exceptions
+
+=> ndk/tests/build/fenv/jni:
+system/bin/test_fenv_c
+system/bin/test_fenv_cpp
+
+=> ndk/tests/build/ndk-out/jni:
+system/bin/ndk_out_hello
+
+=> ndk/tests/build/gnustl-force-all/jni:
+system/bin/test_gnustl_forced_all
+
+=> ndk/tests/build/project-properties/jni:
+
+=> ndk/tests/build/ansi/jni:
+system/bin/test_ansi_c
+system/bin/test_ansi_cpp
+
+=> ndk/tests/device/test-gnustl-full/jni:
+system/bin/test_gnustl
+
+=> ndk/tests/device/test-gnustl-2/jni:
+system/bin/test_gnustl_locale
+
+=> ndk/tests/device/test-stlport/jni:
+system/bin/test_stlport
+
+=> ndk/tests/device/test-gnustl-copy_vector_into_a_set/jni:
+system/bin/gnustl_test_copy_vector_into_a_set
+
+=> ndk/tests/device/whole-static-libs/jni:
+system/lib/foo.so (static)
+system/lib/bar.so (share)
+system/bin/test_whole_static_libs
+
+=> ndk/tests/device/test-cpufeatures/jni:
+system/bin/test_cpufeatures
+
+=> ndk/tests/device/issue28598-linker-global-ref/jni:
+system/lib/issue28598_liba.so (share)
+system/bin/issue28598_main
+
+=> ndk/tests/device/test-cxx-init-array/jni:
+system/bin/test_cxx_init_array
+
+=> ndk/tests/device/multi-static-instances/jni:
+system/bin/test_multi_static_instances
+system/bin/test_multi_static_instances_stlport
+system/bin/test_multi_static_instances_gnustl
+
+=> ndk/tests/device/test-compiler-bug-1/jni:
+system/bin/test_compiler_bug1
+
+=> ndk/tests/device/test-basic-exceptions/jni:
+system/bin/test_basic_exceptions
+
+=> ndk/tests/device/static-executable/jni:
+system/bin/static_main
+
+=> ndk/tests/device/test-gnustl-1/jni:
+system/bin/test_gnustl_1
+
+=> ndk/tests/device/test-stlport-rtti/jni:
+system/bin/test_stlport_rtti
+
+=> ndk/tests/device/test-basic-rtti/jni:
+system/bin/test_basic_rtti
+
+=> ndk/tests/device/exceptions-crash/jni:
+system/lib/libfoo_static.so (share)
+system/bin/test_exception_crash_static
+system/lib/libfoo_shared.so (share)
+system/bin/test_exception_crash_shared
+
+=> ndk/tests/device/test-gabi++-guard/jni:
+system/bin/test_guard_variables
+
+=> ndk/tests/device/test-gabi++/jni:
+system/bin/test_gabixx_static_rtti
+system/bin/test_gabixx_shared_rtti
+
+=> ndk/tests/device/issue22165-typeinfo/jni:
+system/lib/issue22165_throwable.so (share)
+system/bin/issue22165_main
+
+=> ndk/tests/device/gnustl-shared-1/jni:
+system/lib/libfoo.so (share)
+system/bin/test_gnustl_shared_link
+
+=> ndk/tests/device/test-stlport-copy_vector_into_a_set/jni:
+system/bin/stlport_test_copy_vector_into_a_set
+
+=> system/extras/fatblock:
+system/bin/fatblock
+
+=> system/extras/procmem:
+system/bin/procmem
+
+=> system/extras/mkimage:
+out/host/linux-x86/bin/mkimage (host)
+
+=> system/extras/latencytop:
+system/bin/latencytop
+
+=> system/extras/libpagemap:
+system/lib/libpagemap.so (share)
+
+=> system/extras:
+
+=> system/extras/micro_bench:
+system/bin/micro_bench
+
+=> system/extras/atrace:
+system/bin/atrace
+
+=> system/extras/cpustats:
+system/bin/cpustats
+
+=> system/extras/sound:
+system/bin/sound
+
+=> system/extras/timeinfo:
+system/bin/timeinfo
+
+=> system/extras/showslab:
+system/bin/showslab
+
+=> system/extras/sane_schedstat:
+system/bin/sane_schedstat
+
+=> system/extras/ext4_utils:
+libext4_utils_host.so (host,static)
+out/host/linux-x86/bin/make_ext4fs (host)
+system/lib/libext4_utils.so (share)
+system/lib/libext4_utils_static.so (static)
+system/bin/make_ext4fs
+system/bin/utility_make_ext4fs
+system/bin/ext2simg
+out/host/linux-x86/bin/ext2simg (host)
+system/bin/setup_fs
+system/bin/ext4fixup
+out/host/linux-x86/bin/ext4fixup (host)
+mkuserimg.sh (prebult)
+
+=> system/extras/tests/framebuffer:
+system/bin/test-fb-refresh
+system/bin/test-fb-simple
+system/bin/test-mdp
+
+=> system/extras/tests/timetest:
+system/bin/timetest
+
+=> system/extras/tests/binder:
+
+=> system/extras/tests/binder/benchmarks:
+system/bin/binderAddInts
+
+=> system/extras/tests/wifi:
+
+=> system/extras/tests/wifi/stress:
+wifiLoadScanAssoc (native test)
+
+=> system/extras/tests/iptables/qtaguid:
+socketTag (native test)
+
+=> system/extras/tests/iptables:
+
+=> system/extras/tests:
+
+=> system/extras/tests/schedtest:
+system/bin/schedtest
+
+=> system/extras/tests/sdcard:
+system/bin/sdcard_perf_test
+
+=> system/extras/tests/cpueater:
+system/bin/cpueater
+system/bin/daemonize
+
+=> system/extras/tests/lib:
+
+=> system/extras/tests/lib/testUtil:
+system/lib/libtestUtil.so (static)
+
+=> system/extras/tests/directiotest:
+system/bin/directiotest
+
+=> system/extras/tests/memtest:
+system/bin/memtest
+
+=> system/extras/tests/fstest:
+system/bin/perm_checker
+perm_checker.conf (prebult)
+
+=> system/extras/tests/icachetest:
+system/bin/icache
+
+=> system/extras/tests/bionic/libstdc++:
+
+=> system/extras/tests/bionic/libc:
+system/bin/test_static_executable_destructor
+out/host/linux-x86/bin/test_static_executable_destructor (host)
+system/lib/libtest_relocs.so (share)
+system/bin/test_relocs
+system/lib/libtest_static_init.so (share)
+system/bin/test_static_init
+system/lib/libdlclosetest1.so (share)
+system/lib/libdlclosetest2.so (share)
+system/bin/test_dlclose_destruction
+system/bin/test_clone
+out/host/linux-x86/bin/test_clone (host)
+system/bin/bench_pthread_shared
+system/bin/bench_pthread_static
+out/host/linux-x86/bin/bench_pthread (host)
+
+=> system/extras/tests/ext4:
+system/bin/corrupt_gdt_free_blocks
+system/bin/set_ext4_err_bit
+system/bin/rand_emmc_perf
+
+=> system/extras/tests/pftest:
+system/bin/pftest
+
+=> system/extras/showmap:
+system/bin/showmap
+
+=> system/extras/bugmailer:
+send_bug.jar (android)
+
+=> system/extras/libublock:
+system/lib/libublock.so (share)
+
+=> system/extras/procrank:
+system/bin/procrank
+
+=> system/extras/librank:
+system/bin/librank
+
+=> system/security/keystore:
+system/bin/keystore
+system/bin/keystore_cli
+system/lib/libkeystore_client.so (share)
+
+=> system/security/keystore-engine:
+system/lib/libkeystore.so (share)
+
+=> system/security/softkeymaster:
+system/lib/keystore.default.so (share)
+
+=> system/vold:
+system/lib/libvold.so (static)
+system/bin/vold
+system/bin/vdc
+
+=> system/vold/tests:
+
+=> system/media/camera/src:
+system/lib/libcamera_metadata.so (share)
+
+=> system/media/camera/tests:
+system/bin/camera_metadata_tests
+
+=> system/media/audio_utils:
+system/lib/libaudioutils.so (share)
+
+=> system/netd:
+system/bin/netd
+system/bin/ndc
+
+=> system/bluetooth/brcm_patchram_plus:
+system/bin/brcm_patchram_plus
+
+=> system/bluetooth/tools:
+system/bin/bttest
+system/bin/socktest
+system/bin/asocket_test
+system/bin/sock_shutdown_test
+system/bin/sock_shutdown_bug_l2cap
+system/bin/sock_shutdown_bug_rfcomm
+system/bin/sock_shutdown_bug_tcp
+system/bin/pipetest
+
+=> system/bluetooth/brfpatch:
+out/host/linux-x86/bin/brfpatch (host)
+
+=> system/bluetooth:
+
+=> system/bluetooth/bluedroid:
+system/lib/libbluedroid.so (share)
+
+=> system/core/libzipfile:
+libzipfile.so (host,static)
+system/lib/libzipfile.so (static)
+out/host/linux-x86/bin/test_zipfile (host)
+
+=> system/core/libnl_2:
+system/lib/libnl_2.so (static)
+system/lib/libnl_2.so (share)
+
+=> system/core/libnetutils:
+system/lib/libnetutils.so (share)
+
+=> system/core/libcutils:
+libcutils.so (host,static)
+lib64cutils.so (host,static)
+system/lib/libcutils.so (static)
+system/lib/libcutils.so (share)
+system/bin/tst_str_parms
+
+=> system/core/libpixelflinger:
+system/lib/libpixelflinger.so (share)
+system/lib/libpixelflinger_static.so (static)
+
+=> system/core/libpixelflinger/tests:
+
+=> system/core/libpixelflinger/tests/codegen:
+system/bin/test-opengl-codegen
+
+=> system/core/logcat:
+system/bin/logcat
+
+=> system/core/libmincrypt/tools:
+dumpkey.jar (host,share)
+
+=> system/core/libmincrypt:
+system/lib/libmincrypt.so (static)
+libmincrypt.so (host,static)
+
+=> system/core/logwrapper:
+system/bin/logwrapper
+
+=> system/core/fastboot:
+out/host/linux-x86/bin/fastboot (host)
+out/host/linux-x86/bin/usbtest (host)
+
+=> system/core/gpttool:
+out/host/linux-x86/bin/gpttool (host)
+
+=> system/core/libsysutils:
+system/lib/libsysutils.so (share)
+
+=> system/core/libcorkscrew:
+system/lib/libcorkscrew.so (share)
+system/bin/libcorkscrew_test
+libcorkscrew.so (host,share)
+out/host/linux-x86/bin/libcorkscrew_test (host)
+
+=> system/core:
+
+=> system/core/libsparse:
+libsparse_host.so (host,static)
+system/lib/libsparse.so (share)
+system/lib/libsparse_static.so (static)
+out/host/linux-x86/bin/simg2img_host (host)
+system/bin/simg2img
+out/host/linux-x86/bin/img2simg_host (host)
+system/bin/img2simg
+out/host/linux-x86/bin/simg2simg (host)
+simg_dump.py (prebult)
+
+=> system/core/sh:
+system/bin/ash
+systembinsh|
+
+=> system/core/sdcard:
+system/bin/sdcard
+
+=> system/core/libion:
+system/lib/libion.so (share)
+system/bin/iontest
+
+=> system/core/toolbox:
+system/bin/toolbox
+
+=> system/core/liblog:
+liblog.so (host,static)
+liblog.so (host,share)
+lib64log.so (host,static)
+system/lib/liblog.so (static)
+system/lib/liblog.so (share)
+
+=> system/core/liblinenoise:
+system/lib/liblinenoise.so (static)
+
+=> system/core/libdiskconfig:
+system/lib/libdiskconfig.so (share)
+libdiskconfig_host.so (host,static)
+
+=> system/core/adb:
+out/host/linux-x86/bin/adb (host)
+system/bin/adbd
+system/bin/adb
+
+=> system/core/libctest:
+system/lib/libctest.so (share)
+
+=> system/core/libsuspend:
+system/lib/libsuspend.so (share)
+system/lib/libsuspend.so (static)
+
+=> system/core/netcfg:
+system/bin/netcfg
+
+=> system/core/libsync:
+system/lib/libsync.so (share)
+system/bin/sync_test
+
+=> system/core/libusbhost:
+libusbhost.so (host,static)
+system/lib/libusbhost.so (share)
+
+=> system/core/init:
+system/bin/init
+
+=> system/core/run-as:
+system/bin/run-as
+
+=> system/core/fs_mgr:
+system/lib/libfs_mgr.so (static)
+system/bin/fs_mgr
+
+=> system/core/charger:
+system/bin/charger
+system_core_charger_notdir$(1)|$(BUILD_PHONY_PACKAGE)
+charger_res_images|
+
+=> system/core/debuggerd:
+system/bin/debuggerd
+system/bin/crasher
+system/bin/vfp-crasher
+
+=> system/core/cpio:
+out/host/linux-x86/bin/mkbootfs (host)
+
+=> system/core/auditd:
+system/bin/auditd
+
+=> system/core/mkbootimg:
+out/host/linux-x86/bin/mkbootimg (host)
+out/host/linux-x86/bin/unpackbootimg (host)
+system/bin/utility_mkbootimg
+system/bin/utility_unpackbootimg
+
+=> system/core/rootdir:
+
+=> prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6:
+
+=> prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6/lib32:
+(host,prebult)
+
+=> prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6:
+
+=> prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6/lib32:
+(host,prebult)
+
+=> prebuilts/tools:
+
+=> prebuilts/tools/darwin-x86/sdl/libs:
+(host,prebult)
+
+=> prebuilts/tools/darwin-x86/sdl:
+
+=> prebuilts/tools/darwin-x86/swt:
+(host,prebult)
+
+=> prebuilts/tools/windows/sdl:
+
+=> prebuilts/tools/windows/swt:
+(host,prebult)
+
+=> prebuilts/tools/linux-x86/sdl/libs:
+(host,prebult)
+
+=> prebuilts/tools/linux-x86/sdl:
+
+=> prebuilts/tools/linux-x86/swt:
+(host,prebult)
+
+=> prebuilts/tools/common/easymock-tools:
+(host,prebult)
+
+=> prebuilts/tools/common/mkidentity:
+mkidentity-prebuilt (prebult)
+
+=> prebuilts/tools/common/eclipse:
+(host,prebult)
+
+=> prebuilts/tools/common/lombok-ast:
+(host,prebult)
+
+=> prebuilts/tools/common/asm-tools:
+(host,prebult)
+
+=> prebuilts/tools/common/cglib:
+(host,prebult)
+
+=> prebuilts/tools/common/osgi:
+(host,prebult)
+
+=> prebuilts/tools/common/objenesis:
+(host,prebult)
+
+=> prebuilts/tools/common/jfreechart:
+(host,prebult)
+
+=> prebuilts/tools/common/ant:
+(host,prebult)
+
+=> prebuilts/tools/common/guava-tools:
+(host,prebult)
+
+=> prebuilts/tools/common/http-client:
+(host,prebult)
+
+=> prebuilts/tools/common/netbeans-visual:
+(host,prebult)
+
+=> prebuilts/tools/common/commons-compress:
+(host,prebult)
+
+=> prebuilts/tools/common/swing-worker:
+(host,prebult)
+
+=> prebuilts/tools/common/freemarker:
+(host,prebult)
+
+=> prebuilts/sdk/tools:
+acp (prebult)
+aidl (prebult)
+aapt (prebult)
+llvm-rs-cc (prebult)
+zipalign (prebult)
+signapk (prebult)
+dx|BUILD_SYSTEM/base_rules.mk
+dx|
+
+=> prebuilts/sdk:
+
+=> prebuilts/ndk:
+
+=> prebuilts/qemu-kernel/x86/pc-bios:
+bios.bin (prebult)
+vgabios-cirrus.bin (prebult)
+
+=> prebuilts/misc:
+
+=> prebuilts/misc/android-mips/gdbserver:
+gdbserver (prebult)
+
+=> prebuilts/misc/android-arm/gdbserver:
+gdbserver (prebult)
+
+=> prebuilts/misc/common/asm:
+(host,prebult)
+
+=> prebuilts/misc/common/antlr:
+(host,prebult)
+
+=> prebuilts/misc/common/commons-cli:
+(host,prebult)
+
+=> prebuilts/misc/common/tradefed:
+tradefed-prebuilt (prebult)
+
+=> prebuilts/misc/common/groovy:
+(host,prebult)
+
+=> prebuilts/misc/common/tools-common:
+(host,prebult)
+
+=> prebuilts/misc/common/jython:
+(host,prebult)
+
+=> prebuilts/misc/common/layoutlib_api:
+(host,prebult)
+
+=> prebuilts/misc/common/jarjar:
+(host,prebult)
+
+=> prebuilts/misc/common/kxml2:
+(host,prebult)
+
+=> prebuilts/misc/common/ninepatch:
+(host,prebult)
+
+=> prebuilts/misc/common/ddmlib:
+ddmlib-prebuilt (prebult)
+
+=> prebuilts/misc/common/json:
+(host,prebult)
+
+=> prebuilts/misc/android-x86/gdbserver:
+gdbserver (prebult)
+
+=> prebuilt:
+
+=> pdk/apps/HelloPDK/jni:
+system/lib/libhellojni_jni.so (share)
+
+=> pdk/apps/HelloPDK:
+HelloPDK.apk
+
+=> pdk/apps/TestingCamera:
+TestingCamera.apk
+
+=> hardware/qcom/camera:
+
+=> hardware/qcom/camera/QCamera:
+
+=> hardware/qcom/camera/QCamera/HAL/test:
+
+=> hardware/qcom/camera/QCamera/HAL:
+
+=> hardware/qcom/camera/QCamera/HAL/core:
+camera_badger.TARGET_BOARD_PLATFORM|$(BUILD_SHARED_LIBRARY)
+
+=> hardware/qcom/camera/QCamera/stack/mm-camera-test:
+system/bin/mm-qcamera-app-badger
+
+=> hardware/qcom/camera/QCamera/stack:
+
+=> hardware/qcom/camera/QCamera/stack/mm-jpeg-interface:
+system/lib/libmmjpeg_interface.so (share)
+
+=> hardware/qcom/camera/QCamera/stack/mm-camera-interface:
+system/lib/libmmcamera_interface.so (share)
+
+=> hardware/qcom/camera/QCamera/HAL2/test:
+
+=> hardware/qcom/camera/QCamera/HAL2:
+
+=> hardware/qcom/camera/QCamera/HAL2/core:
+camera.TARGET_BOARD_PLATFORM|$(BUILD_SHARED_LIBRARY)
+
+=> hardware/qcom/camera/mm-camera-interface:
+system/lib/libmmcamera_interface2.so (share)
+
+=> hardware/qcom/audio/alsa_sound:
+system/lib/audio.primary.msm8960.so (share)
+system/lib/audio_policy.msm8960.so (share)
+alsa.msm8960|
+
+=> hardware/qcom/audio:
+
+=> hardware/qcom/audio/libalsa-intf:
+system/bin/aplay
+system/bin/arec
+system/bin/amix
+system/bin/alsaucm_test
+system/lib/libalsa-intf.so (share)
+
+=> hardware/qcom/media-caf:
+
+=> hardware/qcom/media-caf/mm-video:
+
+=> hardware/qcom/media-caf/mm-video/DivxDrmDecrypt:
+system/lib/libdivxdrmdecrypt.so (share)
+
+=> hardware/qcom/media-caf/mm-video/vidc/venc:
+system/lib/libOmxVenc.so (share)
+system/bin/mm-venc-omx-test720p
+system/bin/mm-video-encdrv-test
+
+=> hardware/qcom/media-caf/mm-video/vidc/vdec:
+system/lib/libOmxVdec.so (share)
+system/bin/mm-vdec-omx-test
+system/bin/mm-video-driver-test
+
+=> hardware/qcom/media-caf/libc2dcolorconvert:
+system/lib/libc2dcolorconvert.so (share)
+
+=> hardware/qcom/media-caf/dashplayer:
+system/lib/libdashplayer.so (share)
+
+=> hardware/qcom/media-caf/QCMediaPlayer:
+qcmediaplayer.jar (android)
+
+=> hardware/qcom/media-caf/mm-core:
+system/lib/libOmxCore.so (share)
+system/lib/libmm-omxcore.so (share)
+
+=> hardware/qcom/media-caf/mm-core/omxcore:
+system/lib/libOmxCore.so (share)
+system/lib/libmm-omxcore.so (share)
+
+=> hardware/qcom/media-caf/libstagefrighthw:
+system/lib/libstagefrighthw.so (share)
+
+=> hardware/qcom/media:
+
+=> hardware/qcom/media/mm-video:
+
+=> hardware/qcom/media/mm-video/DivxDrmDecrypt:
+system/lib/libdivxdrmdecrypt.so (share)
+
+=> hardware/qcom/media/mm-video/vidc/venc:
+system/lib/libOmxVenc.so (share)
+system/bin/mm-venc-omx-test720p
+system/bin/mm-video-encdrv-test
+
+=> hardware/qcom/media/mm-video/vidc/vdec:
+system/lib/libOmxVdec.so (share)
+system/bin/mm-vdec-omx-test
+system/bin/mm-video-driver-test
+
+=> hardware/qcom/media/libc2dcolorconvert:
+system/lib/libc2dcolorconvert.so (share)
+
+=> hardware/qcom/media/dashplayer:
+system/lib/libdashplayer.so (share)
+
+=> hardware/qcom/media/QCMediaPlayer:
+qcmediaplayer.jar (android)
+
+=> hardware/qcom/media/mm-core:
+system/lib/libOmxCore.so (share)
+system/lib/libmm-omxcore.so (share)
+
+=> hardware/qcom/media/mm-core/omxcore:
+system/lib/libOmxCore.so (share)
+system/lib/libmm-omxcore.so (share)
+
+=> hardware/qcom/media/libstagefrighthw:
+system/lib/libstagefrighthw.so (share)
+
+=> hardware/qcom/bt:
+
+=> hardware/qcom/bt/libbt-vendor:
+system/lib/libbt-vendor.so (share)
+
+=> hardware/qcom/display-caf/libqdutils:
+system/lib/libqdutils.so (share)
+system/lib/libqdMetaData.so (share)
+
+=> hardware/qcom/display-caf/libgralloc:
+gralloc.TARGET_BOARD_PLATFORM|$(BUILD_SHARED_LIBRARY)
+system/lib/libmemalloc.so (share)
+
+=> hardware/qcom/display-caf/liblight:
+lights.TARGET_BOARD_PLATFORM|$(BUILD_SHARED_LIBRARY)
+
+=> hardware/qcom/display-caf:
+
+=> hardware/qcom/display-caf/libexternal:
+system/lib/libexternal.so (share)
+
+=> hardware/qcom/display-caf/libhwcomposer:
+hwcomposer.TARGET_BOARD_PLATFORM|$(BUILD_SHARED_LIBRARY)
+
+=> hardware/qcom/display-caf/libcopybit:
+copybit.TARGET_BOARD_PLATFORM|
+
+=> hardware/qcom/display-caf/liboverlay:
+system/lib/liboverlay.so (share)
+
+=> hardware/qcom/display-caf/libgenlock:
+system/lib/libgenlock.so (share)
+
+=> hardware/qcom/display-caf/libtilerenderer:
+system/lib/libtilerenderer.so (share)
+
+=> hardware/qcom/display-caf/libqservice:
+system/lib/libqservice.so (share)
+
+=> hardware/qcom/wlan/qcwcn/wpa_supplicant_8_lib:
+system/lib/lib_driver_cmd_qcwcn.so (static)
+
+=> hardware/qcom/power:
+power.TARGET_BOARD_PLATFORM|$(BUILD_SHARED_LIBRARY)
+
+=> hardware/qcom/audio-caf/alsa_sound:
+system/lib/.so (share)
+system/lib/.so (share)
+
+=> hardware/qcom/audio-caf:
+
+=> hardware/qcom/audio-caf/msm7x30:
+audio.primary.TARGET_BOARD_PLATFORM|$(BUILD_SHARED_LIBRARY)
+audio_policy.TARGET_BOARD_PLATFORM|$(BUILD_SHARED_LIBRARY)
+
+=> hardware/qcom/audio-caf/mm-audio/adec-mp3:
+
+=> hardware/qcom/audio-caf/mm-audio/adec-mp3/sw:
+system/bin/sw-adec-omxmp3-test
+
+=> hardware/qcom/audio-caf/mm-audio/aenc-aac/qdsp6:
+system/lib/libOmxAacEnc.so (share)
+system/bin/mm-aenc-omxaac-test
+
+=> hardware/qcom/audio-caf/mm-audio/aenc-aac:
+
+=> hardware/qcom/audio-caf/mm-audio/adec-amrwb:
+
+=> hardware/qcom/audio-caf/mm-audio/adec-amrwb/sw:
+system/bin/sw-adec-omxamrwb-test
+
+=> hardware/qcom/audio-caf/mm-audio:
+
+=> hardware/qcom/audio-caf/mm-audio/aenc-qcelp13/qdsp6:
+system/lib/libOmxQcelp13Enc.so (share)
+system/bin/mm-aenc-omxqcelp13-test
+
+=> hardware/qcom/audio-caf/mm-audio/aenc-qcelp13:
+
+=> hardware/qcom/audio-caf/mm-audio/adec-amr:
+
+=> hardware/qcom/audio-caf/mm-audio/adec-amr/sw:
+system/bin/sw-adec-omxamr-test
+
+=> hardware/qcom/audio-caf/mm-audio/aenc-amrnb/qdsp6:
+system/lib/libOmxAmrEnc.so (share)
+system/bin/mm-aenc-omxamr-test
+
+=> hardware/qcom/audio-caf/mm-audio/aenc-amrnb:
+
+=> hardware/qcom/audio-caf/mm-audio/aenc-evrc/qdsp6:
+system/lib/libOmxEvrcEnc.so (share)
+system/bin/mm-aenc-omxevrc-test
+
+=> hardware/qcom/audio-caf/mm-audio/aenc-evrc:
+
+=> hardware/qcom/audio-caf/mm-audio/adec-aac:
+
+=> hardware/qcom/audio-caf/mm-audio/adec-aac/sw:
+system/bin/sw-adec-omxaac-test
+
+=> hardware/qcom/audio-caf/audiod:
+system/bin/audiod
+
+=> hardware/qcom/audio-caf/msm8660:
+system/lib/audio.primary.msm8660.so (share)
+system/lib/audio_policy.msm8660.so (share)
+audio_policy.conf (prebult)
+
+=> hardware/qcom/audio-caf/libalsa-intf:
+system/bin/aplay
+system/bin/arec
+system/bin/amix
+system/bin/alsaucm_test
+system/lib/libalsa-intf.so (share)
+
+=> hardware/qcom/keymaster:
+system/lib/keystore.msm8960.so (share)
+
+=> hardware/qcom/display/libqdutils:
+system/lib/libqdutils.so (share)
+
+=> hardware/qcom/display/libgralloc:
+gralloc.TARGET_BOARD_PLATFORM|$(BUILD_SHARED_LIBRARY)
+system/lib/libmemalloc.so (share)
+
+=> hardware/qcom/display/liblight:
+lights.TARGET_BOARD_PLATFORM|$(BUILD_SHARED_LIBRARY)
+
+=> hardware/qcom/display:
+
+=> hardware/qcom/display/libexternal:
+system/lib/libexternal.so (share)
+
+=> hardware/qcom/display/libhwcomposer:
+hwcomposer.TARGET_BOARD_PLATFORM|$(BUILD_SHARED_LIBRARY)
+
+=> hardware/qcom/display/libcopybit:
+copybit.TARGET_BOARD_PLATFORM|
+
+=> hardware/qcom/display/liboverlay:
+system/lib/liboverlay.so (share)
+
+=> hardware/qcom/display/libgenlock:
+system/lib/libgenlock.so (share)
+
+=> hardware/qcom/display/libtilerenderer:
+system/lib/libtilerenderer.so (share)
+
+=> hardware/qcom/display/libqservice:
+system/lib/libqservice.so (share)
+
+=> hardware/qcom/gps/etc:
+
+=> hardware/qcom/gps/utils:
+system/lib/libgps.utils.so (share)
+
+=> hardware/qcom/gps/loc_api/libloc_api-rpc-50001/libloc_api-rpc-stub:
+system/lib/libloc_api_rpcgen.so (static)
+
+=> hardware/qcom/gps/loc_api/libloc_api-rpc-50001:
+
+=> hardware/qcom/gps/loc_api/libloc_api-rpc-50001/libloc_api-rpc-glue:
+system/lib/libloc_api-rpc-qc.so (share)
+
+=> hardware/qcom/gps/loc_api:
+
+=> hardware/qcom/gps/loc_api/loc_api_v02:
+system/lib/libloc_api_v02.so (share)
+
+=> hardware/qcom/gps/loc_api/libloc_api_50001:
+system/lib/libloc_adapter.so (share)
+system/lib/libloc_eng.so (share)
+gps.BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE|$(BUILD_SHARED_LIBRARY)
+
+=> hardware/qcom/gps/loc_api/libloc_api-rpc:
+system/lib/libloc_api-rpc.so (static)
+
+=> hardware/qcom/gps/loc_api/libloc_api:
+gps.BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE|$(BUILD_SHARED_LIBRARY)
+
+=> hardware/invensense/libsensors:
+system/lib/libinvensense_hal.so (share)
+
+=> hardware/invensense:
+
+=> hardware/invensense/libsensors_iio:
+system/lib/libinvensense_hal.so (share)
+libmplmpu (prebult)
+libmllite (prebult)
+
+=> hardware/invensense/mlsdk:
+system/lib/libmlplatform.so (share)
+system/lib/libmllite.so (share)
+
+=> hardware/ril/reference-ril:
+
+=> hardware/ril/rild:
+system/bin/rild
+system/bin/radiooptions
+
+=> hardware/ril/libril:
+system/lib/libril.so (share)
+system/lib/libril_static.so (static)
+
+=> hardware/ril/mock-ril:
+system/lib/libmock_ril.so (share)
+librilproto-java.jar (android,static)
+
+=> hardware/cm/audio:
+audio.primary.TARGET_BOOTLOADER_BOARD_NAME|$(BUILD_SHARED_LIBRARY)
+system/lib/libaudiopolicy_legacy2.so (static)
+audio_policy.TARGET_BOOTLOADER_BOARD_NAME|$(BUILD_SHARED_LIBRARY)
+
+=> hardware/broadcom/wlan/bcm4329/wpa_supplicant_8_lib:
+system/lib/lib_driver_cmd_wext.so (static)
+
+=> hardware/broadcom/wlan/bcm4329:
+
+=> hardware/broadcom/wlan/bcm4329/dhdutil:
+system/bin/dhdutil
+
+=> hardware/broadcom/wlan/bcm4329/config:
+dhcpcd.conf (prebult)
+
+=> hardware/broadcom/wlan/bcm4329/firmware:
+fw_bcm4329.bin (prebult)
+fw_bcm4329_apsta.bin (prebult)
+
+=> hardware/broadcom/wlan/bcmdhd/wpa_supplicant_8_lib:
+system/lib/lib_driver_cmd_bcmdhd.so (static)
+
+=> hardware/broadcom/wlan/bcmdhd:
+
+=> hardware/broadcom/wlan/bcmdhd/dhdutil:
+system/bin/dhdutil
+
+=> hardware/broadcom/wlan/bcmdhd/config:
+dhcpcd.conf (prebult)
+
+=> hardware/broadcom/wlan/bcmdhd/bcmdhd_net_iface:
+system/lib/libnetcmdiface.so (share)
+
+=> hardware/broadcom/wlan/bcmdhd/firmware:
+
+=> hardware/libhardware:
+system/lib/libhardware.so (share)
+
+=> hardware/libhardware/modules/audio:
+system/lib/audio.primary.default.so (share)
+system/lib/audio_policy.stub.so (share)
+
+=> hardware/libhardware/modules/gralloc:
+system/lib/gralloc.default.so (share)
+
+=> hardware/libhardware/modules/hwcomposer:
+system/lib/hwcomposer.default.so (share)
+
+=> hardware/libhardware/modules:
+
+=> hardware/libhardware/modules/nfc:
+system/lib/nfc.default.so (share)
+
+=> hardware/libhardware/modules/audio_remote_submix:
+system/lib/audio.r_submix.default.so (share)
+
+=> hardware/libhardware/modules/nfc-nci:
+system/lib/nfc_nci.default.so (share)
+
+=> hardware/libhardware/modules/power:
+system/lib/power.default.so (share)
+
+=> hardware/libhardware/modules/local_time:
+system/lib/local_time.default.so (share)
+
+=> hardware/libhardware/modules/usbaudio:
+system/lib/audio.usb.default.so (share)
+
+=> hardware/libhardware/tests:
+
+=> hardware/libhardware/tests/nusensors:
+system/bin/test-nusensors
+
+=> hardware/libhardware/tests/camera2:
+system/bin/camera2_test
+
+=> hardware/libhardware/tests/keymaster:
+system/bin/keymaster_test
+
+=> hardware/msm7k/libgralloc:
+system/lib/gralloc.msm7k.so (share)
+
+=> hardware/msm7k/libaudio:
+system/lib/libaudiopolicy.so (share)
+system/lib/libaudio.so (share)
+
+=> hardware/msm7k:
+
+=> hardware/msm7k/dspcrashd:
+system/bin/dspcrashd
+
+=> hardware/msm7k/liblights:
+lights.TARGET_BOARD_PLATFORM|$(BUILD_SHARED_LIBRARY)
+
+=> hardware/msm7k/libgralloc-qsd8k:
+gralloc.TARGET_BOARD_PLATFORM|$(BUILD_SHARED_LIBRARY)
+libgralloc_qsd8k_host.so (host,static)
+
+=> hardware/msm7k/libgralloc-qsd8k/tests:
+
+=> hardware/msm7k/librpc:
+system/lib/librpc.so (static)
+system/lib/librpc.so (share)
+
+=> hardware/msm7k/libaudio-qsd8k:
+system/lib/audio_policy.qsd8k.so (share)
+system/lib/audio.primary.qsd8k.so (share)
+
+=> hardware/msm7k/libcamera:
+system/lib/libcamera.so (share)
+
+=> hardware/msm7k/libaudio-qdsp5v2:
+system/lib/libaudiopolicy.so (share)
+system/lib/libaudio.so (share)
+
+=> hardware/ti/omap4xxx/libI420colorconvert:
+libI420colorconvert|BUILD_HEAPTRACKED_SHARED_LIBRARY
+
+=> hardware/ti/omap4xxx/test/CameraHal:
+camera_test|BUILD_HEAPTRACKED_EXECUTABLE
+
+=> hardware/ti/omap4xxx/camera:
+camera.TARGET_BOARD_PLATFORM|$(BUILD_HEAPTRACKED_SHARED_LIBRARY)
+camera.TARGET_BOARD_PLATFORM|$(BUILD_HEAPTRACKED_SHARED_LIBRARY)
+
+=> hardware/ti/omap4xxx/security/tf_daemon:
+system/bin/tf_daemon
+
+=> hardware/ti/omap4xxx/security:
+
+=> hardware/ti/omap4xxx/security/smc_pa_ctrl:
+system/bin/smc_pa_ctrl
+
+=> hardware/ti/omap4xxx/security/tee_client_api:
+system/lib/libtee_client_api_driver.so (static)
+
+=> hardware/ti/omap4xxx/security/tf_crypto_sst:
+system/lib/libtf_crypto_sst.so (share)
+
+=> hardware/ti/omap4xxx/ion:
+libion_ti|BUILD_HEAPTRACKED_SHARED_LIBRARY
+
+=> hardware/ti/omap4xxx:
+system/lib/libheaptracker.so (static)
+tm|BUILD_HEAPTRACKED_EXECUTABLE
+
+=> hardware/ti/omap4xxx/domx/mm_osal:
+libmm_osal|BUILD_HEAPTRACKED_SHARED_LIBRARY
+
+=> hardware/ti/omap4xxx/domx:
+
+=> hardware/ti/omap4xxx/domx/omx_proxy_component:
+libOMX.TI.DUCATI1.VIDEO.DECODER|BUILD_HEAPTRACKED_SHARED_LIBRARY
+libOMX.TI.DUCATI1.MISC.SAMPLE|BUILD_HEAPTRACKED_SHARED_LIBRARY
+libOMX.TI.DUCATI1.VIDEO.CAMERA|BUILD_HEAPTRACKED_SHARED_LIBRARY
+libOMX.TI.DUCATI1.VIDEO.H264E|BUILD_HEAPTRACKED_SHARED_LIBRARY
+libOMX.TI.DUCATI1.VIDEO.MPEG4E|BUILD_HEAPTRACKED_SHARED_LIBRARY
+libOMX.TI.DUCATI1.VIDEO.DECODER.secure|BUILD_HEAPTRACKED_SHARED_LIBRARY
+
+=> hardware/ti/omap4xxx/domx/domx:
+libdomx|BUILD_HEAPTRACKED_SHARED_LIBRARY
+
+=> hardware/ti/omap4xxx/domx/domx/memmgr_rpc/src:
+libmemmgr_rpc|BUILD_HEAPTRACKED_SHARED_LIBRARY
+
+=> hardware/ti/omap4xxx/domx/Ducati_binary:
+basename$(notdir$1)|$(BUILD_PHONY_PACKAGE)
+ti_omap4_ducati_bins|
+
+=> hardware/ti/omap4xxx/domx/omx_core:
+libOMX_Core|BUILD_HEAPTRACKED_SHARED_LIBRARY
+
+=> hardware/ti/omap4xxx/hwc:
+system/lib/hwcomposer.omap4.so (share)
+
+=> hardware/ti/omap4xxx/libtiutils:
+libtiutils|BUILD_HEAPTRACKED_SHARED_LIBRARY
+
+=> hardware/ti/omap4xxx/libstagefrighthw:
+libstagefrighthw|BUILD_HEAPTRACKED_SHARED_LIBRARY
+
+=> hardware/ti/wpan/tools/kfmapp:
+system/bin/kfmapp
+
+=> hardware/ti/wpan/tools/FM/FmTxApp:
+FmTxApp.apk
+
+=> hardware/ti/wpan/tools/FM:
+
+=> hardware/ti/wpan/tools/FM/FmRxApp:
+FmRxApp.apk
+
+=> hardware/ti/wpan/tools/FM/service/src/jni:
+system/lib/libfmradio.so (share)
+
+=> hardware/ti/wpan/tools/FM/service:
+FmService.apk
+
+=> hardware/ti/wpan/tools/FM/FmRadioIf:
+fmradioif.jar (android)
+com.ti.fm.fmradioif.xml (prebult)
+
+=> hardware/ti/wpan:
+
+=> hardware/ti/wpan/ti_st:
+
+=> hardware/ti/wpan/ti_st/uim-sysfs:
+system/bin/uim-sysfs
+
+=> hardware/ti/wpan/bluedroid_wilink:
+system/lib/libbt-vendor.so (share)
+
+=> hardware/ti/wlan/mac80211/ti-utils/wlconf:
+system/bin/wlconf
+
+=> hardware/ti/wlan/mac80211/ti-utils:
+system/bin/calibrator
+
+=> hardware/ti/wlan/mac80211/wpa_supplicant_lib:
+system/lib/lib_driver_cmd_wl12xx.so (static)
+
+=> hardware/ti/wlan/mac80211:
+
+=> hardware/ti/wlan/mac80211/config:
+hostapd.conf (prebult)
+dhcpcd.conf (prebult)
+TQS_D_1.7.ini (prebult)
+TQS_D_1.7_127x.ini (prebult)
+wifical.sh (prebult)
+
+=> hardware/ti/wlan/wl1271/wpa_supplicant_lib:
+system/lib/libCustomWifi.so (static)
+
+=> hardware/ti/wlan/wl1271:
+
+=> hardware/ti/wlan/wl1271/config:
+tiwlan.ini (prebult)
+dhcpcd.conf (prebult)
+
+=> hardware/ti/wlan/wl1271/CUDK/os/linux/src:
+system/lib/libtiOsLib.so (static)
+
+=> hardware/ti/wlan/wl1271/CUDK/os/linux:
+
+=> hardware/ti/wlan/wl1271/CUDK/os:
+
+=> hardware/ti/wlan/wl1271/CUDK/tiwlan_loader:
+system/bin/wlan_loader
+
+=> hardware/ti/wlan/wl1271/CUDK/configurationutility:
+system/bin/wlan_cu
+
+=> hardware/ti/wlan/wl1271/CUDK:
+
+=> hardware/ti/omap3/camera:
+camera.TARGET_BOARD_PLATFORM|$(BUILD_HEAPTRACKED_SHARED_LIBRARY)
+
+=> hardware/ti/omap3/dspbridge/ping:
+system/bin/ping.out
+
+=> hardware/ti/omap3/dspbridge/crashmon:
+system/bin/faultapp.out
+
+=> hardware/ti/omap3/dspbridge/scale:
+system/bin/scale.out
+system/bin/scale_dyn.out
+
+=> hardware/ti/omap3/dspbridge/cexec:
+system/bin/cexec.out
+
+=> hardware/ti/omap3/dspbridge/dynreg:
+system/bin/dynreg.out
+
+=> hardware/ti/omap3/dspbridge/dmmcopy:
+system/bin/dmmcopy.out
+
+=> hardware/ti/omap3/dspbridge:
+
+=> hardware/ti/omap3/dspbridge/qos:
+system/lib/libqos.so (static)
+
+=> hardware/ti/omap3/dspbridge/qostest:
+system/bin/qostest.out
+
+=> hardware/ti/omap3/dspbridge/libbridge:
+system/lib/libbridge.so (share)
+
+=> hardware/ti/omap3/dspbridge/inst2:
+system/bin/instutility.out
+
+=> hardware/ti/omap3/dspbridge/strmcopy:
+system/bin/strmcopy.out
+system/bin/strmcopy_dyn.out
+
+=> hardware/ti/omap3/dspbridge/zerocopymsg:
+system/bin/zerocopymsg.out
+
+=> hardware/ti/omap3/ion:
+libion|BUILD_HEAPTRACKED_SHARED_LIBRARY
+iontest|BUILD_HEAPTRACKED_EXECUTABLE
+
+=> hardware/ti/omap3:
+system/lib/libheaptracker.so (static)
+tm|BUILD_HEAPTRACKED_EXECUTABLE
+
+=> hardware/ti/omap3/omx/ti_omx_config_parser:
+system/lib/libVendor_ti_omx_config_parser.so (share)
+
+=> hardware/ti/omap3/omx/core_plugin:
+01_Vendor_ti_omx.cfg (prebult)
+
+=> hardware/ti/omap3/omx/core_plugin/omx_core_plugin:
+system/lib/libVendor_ti_omx.so (share)
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/nbamr_dec/src:
+system/lib/libOMX.TI.AMR.decode.so (share)
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/nbamr_dec:
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/wbamr_dec/src:
+system/lib/libOMX.TI.WBAMR.decode.so (share)
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/wbamr_dec:
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/wbamr_dec/tests:
+system/bin/WBAmrDecTest_common
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/wma_dec/src:
+system/lib/libOMX.TI.WMA.decode.so (share)
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/wma_dec:
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/wma_dec/tests:
+system/bin/WmaDecTest_common
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/g729_dec/src:
+system/lib/libOMX.TI.G729.decode.so (share)
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/g729_dec/tests:
+system/bin/G729DecTest
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/g722_enc/src:
+system/lib/libOMX.TI.G722.encode.so (share)
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/g722_enc:
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/g722_enc/tests:
+system/bin/G722EncTest
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/g711_enc/src:
+system/lib/libOMX.TI.G711.encode.so (share)
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/g711_enc/tests:
+system/bin/G711EncTest
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/g726_dec/src:
+system/lib/libOMX.TI.G726.decode.so (share)
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/g726_dec:
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/g726_dec/tests:
+system/bin/G726DecTest
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/ilbc_dec/src:
+system/lib/libOMX.TI.ILBC.decode.so (share)
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/ilbc_dec:
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/ilbc_dec/tests:
+system/bin/iLBCDecoderTest
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/wbamr_enc/src:
+system/lib/libOMX.TI.WBAMR.encode.so (share)
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/wbamr_enc:
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/wbamr_enc/tests:
+system/bin/WBAMREncoder_Test
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/aac_dec/src:
+system/lib/libOMX.TI.AAC.decode.so (share)
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/aac_dec:
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/ilbc_enc/src:
+system/lib/libOMX.TI.ILBC.encode.so (share)
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/ilbc_enc:
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/ilbc_enc/tests:
+system/bin/iLBCEncTest_common
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/aac_enc/src:
+system/lib/libOMX.TI.AAC.encode.so (share)
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/aac_enc:
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/aac_enc/tests:
+system/bin/AacEncoder_Test
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/g726_enc/src:
+system/lib/libOMX.TI.G726.encode.so (share)
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/g726_enc:
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/g726_enc/tests:
+system/bin/G726EncTest
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/nbamr_enc/src:
+system/lib/libOMX.TI.AMR.encode.so (share)
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/nbamr_enc:
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/nbamr_enc/tests:
+system/bin/NBAMREncoder_Test
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/mp3_dec/src:
+system/lib/libOMX.TI.MP3.decode.so (share)
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/mp3_dec:
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/g729_enc/src:
+system/lib/libOMX.TI.G729.encode.so (share)
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/g729_enc:
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/g729_enc/tests:
+system/bin/G729EncTest_common
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/g711_dec/src:
+system/lib/libOMX.TI.G711.decode.so (share)
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/g711_dec:
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/g711_dec/tests:
+system/bin/G711Decoder_Test
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/g722_dec/src:
+system/lib/libOMX.TI.G722.decode.so (share)
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/g722_dec:
+
+=> hardware/ti/omap3/omx/audio/src/openmax_il/g722_dec/tests:
+system/bin/G722Decoder_Test
+
+=> hardware/ti/omap3/omx/video/src/openmax_il/video_decode:
+system/lib/libOMX.TI.Video.Decoder.so (share)
+
+=> hardware/ti/omap3/omx/video/src/openmax_il/prepost_processor:
+system/lib/libOMX.TI.VPP.so (share)
+system/bin/VPPTest_common
+
+=> hardware/ti/omap3/omx/video/src/openmax_il/video_encode:
+system/lib/libOMX.TI.Video.encoder.so (share)
+
+=> hardware/ti/omap3/omx:
+
+=> hardware/ti/omap3/omx/system/src/openmax_il/perf:
+system/lib/libPERF.so (share)
+
+=> hardware/ti/omap3/omx/system/src/openmax_il/perf/reader:
+system/lib/PERF_reader.so (static)
+
+=> hardware/ti/omap3/omx/system/src/openmax_il/lcml/src:
+system/lib/libLCML.so (share)
+
+=> hardware/ti/omap3/omx/system/src/openmax_il/lcml:
+
+=> hardware/ti/omap3/omx/system/src/openmax_il/omx_policy_manager:
+system/bin/OMXPolicyManager
+
+=> hardware/ti/omap3/omx/system/src/openmax_il/resource_manager_proxy:
+system/lib/libOMX_ResourceManagerProxy.so (share)
+
+=> hardware/ti/omap3/omx/system/src/openmax_il/resource_manager/test:
+system/bin/rm_api_test
+
+=> hardware/ti/omap3/omx/system/src/openmax_il/resource_manager/src:
+system/bin/OMXResourceManager
+
+=> hardware/ti/omap3/omx/system/src/openmax_il/resource_manager:
+
+=> hardware/ti/omap3/omx/system/src/openmax_il/resource_manager/resource_activity_monitor:
+system/lib/libRAM.so (share)
+
+=> hardware/ti/omap3/omx/system/src/openmax_il/omx_core/src:
+system/lib/libOMX_Core.so (share)
+
+=> hardware/ti/omap3/omx/system/src/openmax_il/omx_core:
+
+=> hardware/ti/omap3/omx/image/src/openmax_il/jpeg_enc:
+system/lib/libOMX.TI.JPEG.encoder.so (share)
+system/bin/JPEGTestEnc_common
+
+=> hardware/ti/omap3/omx/image/src/openmax_il/jpeg_dec:
+system/lib/libOMX.TI.JPEG.decoder.so (share)
+system/bin/JpegTestCommon
+
+=> hardware/ti/omap3/liblights:
+lights.TARGET_BOARD_PLATFORM|$(BUILD_SHARED_LIBRARY)
+
+=> hardware/ti/omap3/hwc:
+system/lib/hwcomposer.omap3.so (share)
+
+=> hardware/ti/omap3/libexif:
+system/lib/libexifgnu.so (static)
+
+=> hardware/ti/omap3/libtiutils:
+libtiutils|BUILD_HEAPTRACKED_SHARED_LIBRARY
+
+=> hardware/ti/omap3/libstagefrighthw:
+system/lib/libstagefrighthw.so (share)
+
+=> hardware/samsung/macloader:
+system/bin/macloader
+
+=> hardware/samsung/exynos/multimedia:
+
+=> hardware/samsung/exynos/multimedia/utils:
+
+=> hardware/samsung/exynos/multimedia/utils/csc:
+
+=> hardware/samsung/exynos/multimedia/utils/csc/exynos4:
+system/lib/libseccscapi.so (static)
+
+=> hardware/samsung/exynos/multimedia/openmax/osal:
+system/lib/libsecosal.so (static)
+
+=> hardware/samsung/exynos/multimedia/openmax:
+
+=> hardware/samsung/exynos/multimedia/openmax/component/audio/dec/mp3:
+system/lib/libOMX.SEC.MP3.Decoder.so (share)
+
+=> hardware/samsung/exynos/multimedia/openmax/component/audio/dec:
+system/lib/libSEC_OMX_Adec.so (static)
+
+=> hardware/samsung/exynos/multimedia/openmax/component/video/enc/mpeg4:
+system/lib/libOMX.SEC.M4V.Encoder.so (share)
+
+=> hardware/samsung/exynos/multimedia/openmax/component/video/enc:
+system/lib/libSEC_OMX_Venc.so (static)
+
+=> hardware/samsung/exynos/multimedia/openmax/component/video/enc/h264:
+system/lib/libOMX.SEC.AVC.Encoder.so (share)
+
+=> hardware/samsung/exynos/multimedia/openmax/component/video/dec/vp8:
+system/lib/libOMX.SEC.VP8.Decoder.so (share)
+
+=> hardware/samsung/exynos/multimedia/openmax/component/video/dec/mpeg4:
+system/lib/libOMX.SEC.M4V.Decoder.so (share)
+
+=> hardware/samsung/exynos/multimedia/openmax/component/video/dec:
+system/lib/libSEC_OMX_Vdec.so (static)
+
+=> hardware/samsung/exynos/multimedia/openmax/component/video/dec/vc1:
+system/lib/libOMX.SEC.WMV.Decoder.so (share)
+
+=> hardware/samsung/exynos/multimedia/openmax/component/video/dec/h264:
+system/lib/libOMX.SEC.AVC.Decoder.so (share)
+
+=> hardware/samsung/exynos/multimedia/openmax/component/common:
+system/lib/libsecbasecomponent.so (static)
+system/lib/libSEC_OMX_Resourcemanager.so (share)
+
+=> hardware/samsung/exynos/multimedia/openmax/core:
+system/lib/libSEC_OMX_Core.so (share)
+
+=> hardware/samsung/exynos/multimedia/codecs/audio:
+
+=> hardware/samsung/exynos/multimedia/codecs/audio/exynos4:
+
+=> hardware/samsung/exynos/multimedia/codecs/audio/exynos4/srp/libsa_jni:
+system/lib/libsa_jni.so (share)
+
+=> hardware/samsung/exynos/multimedia/codecs/audio/exynos4/srp/ulp:
+system/lib/libsrpapi.so (static)
+
+=> hardware/samsung/exynos/multimedia/codecs/audio/exynos4/srp/alp:
+system/lib/libsrpapi.so (static)
+
+=> hardware/samsung/exynos/multimedia/codecs/video:
+
+=> hardware/samsung/exynos/multimedia/codecs/video/exynos4/mfc:
+system/lib/libsecmfcapi.so (static)
+system/lib/libsecmfcdecapi.so (share)
+system/lib/libsecmfcencapi.so (share)
+
+=> hardware/samsung/exynos/multimedia/codecs/video/exynos4:
+
+=> hardware/samsung/exynos/multimedia/codecs/video/exynos4/mfc_v4l2:
+system/lib/libsecmfcapi.so (static)
+
+=> hardware/samsung/exynos/multimedia/codecs:
+
+=> hardware/samsung/exynos/multimedia/libstagefrighthw:
+system/lib/libstagefrighthw.so (share)
+
+=> hardware/samsung/exynos3/s5pc110/libhdmi/test:
+system/bin/test1-hdmi
+system/bin/test2-hdmi
+
+=> hardware/samsung/exynos3/s5pc110/libhdmi:
+hdmi.TARGET_BOARD_PLATFORM|$(BUILD_SHARED_LIBRARY)
+
+=> hardware/samsung/exynos3/s5pc110/libs3cjpeg:
+system/lib/libs3cjpeg.so (share)
+
+=> hardware/samsung/exynos3/s5pc110:
+
+=> hardware/samsung/exynos3/s5pc110/libhwcomposer:
+hwcomposer.TARGET_BOARD_PLATFORM|$(BUILD_SHARED_LIBRARY)
+
+=> hardware/samsung/exynos3/s5pc110/power:
+power.TARGET_BOARD_PLATFORM|$(BUILD_SHARED_LIBRARY)
+
+=> hardware/samsung/exynos3/s5pc110/sec_mm:
+
+=> hardware/samsung/exynos3/s5pc110/sec_mm/sec_omx:
+
+=> hardware/samsung/exynos3/s5pc110/sec_mm/sec_omx/sec_codecs/video/mfc_c110/enc:
+system/lib/libsecmfcencapi.so (static)
+
+=> hardware/samsung/exynos3/s5pc110/sec_mm/sec_omx/sec_codecs/video/mfc_c110/dec:
+system/lib/libsecmfcdecapi.so (static)
+
+=> hardware/samsung/exynos3/s5pc110/sec_mm/sec_omx/sec_codecs/video/mfc_c110/csc:
+system/lib/libseccsc.so (static)
+
+=> hardware/samsung/exynos3/s5pc110/sec_mm/sec_omx/sec_codecs:
+
+=> hardware/samsung/exynos3/s5pc110/sec_mm/sec_omx/sec_osal:
+system/lib/libsecosal.so (static)
+
+=> hardware/samsung/exynos3/s5pc110/sec_mm/sec_omx/sec_omx_core:
+system/lib/libSEC_OMX_Core.so (share)
+
+=> hardware/samsung/exynos3/s5pc110/sec_mm/sec_omx/sec_omx_component/video/enc:
+system/lib/libSEC_OMX_Venc.so (static)
+
+=> hardware/samsung/exynos3/s5pc110/sec_mm/sec_omx/sec_omx_component/video/enc/mpeg4enc:
+system/lib/libOMX.SEC.M4V.Encoder.so (share)
+
+=> hardware/samsung/exynos3/s5pc110/sec_mm/sec_omx/sec_omx_component/video/enc/h264enc:
+system/lib/libOMX.SEC.AVC.Encoder.so (share)
+
+=> hardware/samsung/exynos3/s5pc110/sec_mm/sec_omx/sec_omx_component/video/dec:
+system/lib/libSEC_OMX_Vdec.so (static)
+
+=> hardware/samsung/exynos3/s5pc110/sec_mm/sec_omx/sec_omx_component/video/dec/mpeg4dec:
+system/lib/libOMX.SEC.M4V.Decoder.so (share)
+
+=> hardware/samsung/exynos3/s5pc110/sec_mm/sec_omx/sec_omx_component/video/dec/h264dec:
+system/lib/libOMX.SEC.AVC.Decoder.so (share)
+
+=> hardware/samsung/exynos3/s5pc110/sec_mm/sec_omx/sec_omx_component/common:
+system/lib/libsecbasecomponent.so (static)
+
+=> hardware/samsung/exynos3/s5pc110/libstagefrighthw:
+system/lib/libstagefrighthw.so (share)
+
+=> hardware/samsung:
+
+=> hardware/samsung/ril/libsecril-client-sap:
+system/lib/libsecril-client-sap.so (share)
+
+=> hardware/samsung/ril:
+
+=> hardware/samsung/ril/libsecril-client:
+system/lib/libsecril-client.so (share)
+
+=> hardware/samsung/ril/xmm6262/libril:
+system/lib/libril.so (share)
+system/lib/libril_static.so (static)
+
+=> hardware/samsung/ril/xmm6260/libril:
+system/lib/libril.so (share)
+system/lib/libril_static.so (static)
+
+=> hardware/samsung/exynos4/exynos4210:
+
+=> hardware/samsung/exynos4/exynos4210/liblights:
+lights.TARGET_BOARD_PLATFORM|$(BUILD_SHARED_LIBRARY)
+
+=> hardware/samsung/exynos4/nfc:
+nfc.TARGET_BOARD_PLATFORM|$(BUILD_SHARED_LIBRARY)
+
+=> hardware/samsung/exynos4/hal/libfimc:
+system/lib/libfimc.so (share)
+
+=> hardware/samsung/exynos4/hal/libfimg3x:
+system/lib/libfimg.so (share)
+
+=> hardware/samsung/exynos4/hal/libhdmi:
+
+=> hardware/samsung/exynos4/hal/libhdmi/SecHdmi:
+system/lib/libhdmi.so (share)
+
+=> hardware/samsung/exynos4/hal/libhdmi/libsForhdmi/libcec:
+system/lib/libcec.so (share)
+
+=> hardware/samsung/exynos4/hal/libhdmi/libsForhdmi:
+
+=> hardware/samsung/exynos4/hal/libhdmi/libsForhdmi/libddc:
+system/lib/libddc.so (share)
+
+=> hardware/samsung/exynos4/hal/libhdmi/libsForhdmi/libedid:
+system/lib/libedid.so (share)
+
+=> hardware/samsung/exynos4/hal/libhdmi/libhdmiservice:
+system/lib/libTVOut.so (share)
+system/lib/libhdmiclient.so (share)
+
+=> hardware/samsung/exynos4/hal/libs5pjpeg:
+system/lib/libs5pjpeg.so (share)
+
+=> hardware/samsung/exynos4/hal:
+
+=> hardware/samsung/exynos4/hal/libswconverter:
+system/lib/libswconverter.so (static)
+
+=> hardware/samsung/exynos4/hal/libfimg4x:
+system/lib/libfimg.so (share)
+
+=> hardware/samsung/exynos4/hal/libhwcomposer:
+hwcomposer.TARGET_BOARD_PLATFORM|$(BUILD_SHARED_LIBRARY)
+
+=> hardware/samsung/exynos4/hal/libgralloc_ump:
+gralloc.TARGET_BOARD_PLATFORM|$(BUILD_SHARED_LIBRARY)
+
+=> hardware/samsung/exynos4/hal/libhwjpeg:
+system/lib/libhwjpeg.so (share)
+
+=> hardware/samsung/exynos4/hal/libhwconverter:
+system/lib/libhwconverter.so (share)
+
+=> hardware/samsung/exynos4/hal/libcamera:
+camera.TARGET_BOARD_PLATFORM|$(BUILD_SHARED_LIBRARY)
+
+=> hardware/samsung/exynos4/hal/libsecion:
+system/lib/libsecion.so (share)
+
+=> hardware/samsung/exynos4/exynos4x12:
+
+=> hardware/samsung/exynos4/exynos4x12/liblights:
+lights.TARGET_BOARD_PLATFORM|$(BUILD_SHARED_LIBRARY)
+
+=> hardware/samsung_slsi/exynos5/mobicore/daemon:
+system/lib/libMcClient.so (share)
+system/bin/mcDriverDaemon
+
+=> hardware/samsung_slsi/exynos5/mobicore/daemon/Daemon/Server:
+
+=> hardware/samsung_slsi/exynos5/mobicore/daemon/Daemon:
+
+=> hardware/samsung_slsi/exynos5/mobicore/daemon/Daemon/Device:
+
+=> hardware/samsung_slsi/exynos5/mobicore/daemon/Daemon/Device/Platforms/Generic:
+
+=> hardware/samsung_slsi/exynos5/mobicore/daemon/Daemon/Device/Platforms:
+
+=> hardware/samsung_slsi/exynos5/mobicore/daemon/Registry:
+
+=> hardware/samsung_slsi/exynos5/mobicore/daemon/Kernel:
+
+=> hardware/samsung_slsi/exynos5/mobicore/daemon/Kernel/Platforms/Generic:
+
+=> hardware/samsung_slsi/exynos5/mobicore:
+
+=> hardware/samsung_slsi/exynos5/mobicore/common/LogWrapper:
+
+=> hardware/samsung_slsi/exynos5/librotator:
+system/lib/libexynosrotator.so (share)
+
+=> hardware/samsung_slsi/exynos5/libcamera2:
+system/lib/camera.exynos5.so (share)
+
+=> hardware/samsung_slsi/exynos5/libgscaler:
+system/lib/libexynosgscaler.so (share)
+
+=> hardware/samsung_slsi/exynos5/libion_exynos:
+system/lib/libion_exynos.so (share)
+
+=> hardware/samsung_slsi/exynos5/gralloc:
+system/lib/gralloc.exynos5.so (share)
+
+=> hardware/samsung_slsi/exynos5:
+
+=> hardware/samsung_slsi/exynos5/libv4l2:
+system/lib/libexynosv4l2.so (share)
+
+=> hardware/samsung_slsi/exynos5/libswconverter:
+system/lib/libswconverter.so (static)
+
+=> hardware/samsung_slsi/exynos5/libkeymaster:
+system/lib/keystore.exynos5.so (share)
+
+=> hardware/samsung_slsi/exynos5/libexynosutils:
+system/lib/libexynosutils.so (share)
+
+=> hardware/samsung_slsi/exynos5/exynos_omx:
+
+=> hardware/samsung_slsi/exynos5/exynos_omx/openmax:
+
+=> hardware/samsung_slsi/exynos5/exynos_omx/openmax/exynos_omx/osal:
+system/lib/libExynosOMX_OSAL.so (static)
+
+=> hardware/samsung_slsi/exynos5/exynos_omx/openmax/exynos_omx:
+
+=> hardware/samsung_slsi/exynos5/exynos_omx/openmax/exynos_omx/component/audio/dec/mp3:
+system/lib/libOMX.Exynos.MP3.Decoder.so (share)
+
+=> hardware/samsung_slsi/exynos5/exynos_omx/openmax/exynos_omx/component/audio/dec:
+system/lib/libExynosOMX_Adec.so (static)
+
+=> hardware/samsung_slsi/exynos5/exynos_omx/openmax/exynos_omx/component/video/enc/mpeg4:
+system/lib/libOMX.Exynos.MPEG4.Encoder.so (share)
+
+=> hardware/samsung_slsi/exynos5/exynos_omx/openmax/exynos_omx/component/video/enc:
+system/lib/libExynosOMX_Venc.so (static)
+
+=> hardware/samsung_slsi/exynos5/exynos_omx/openmax/exynos_omx/component/video/enc/h264:
+system/lib/libOMX.Exynos.AVC.Encoder.so (share)
+
+=> hardware/samsung_slsi/exynos5/exynos_omx/openmax/exynos_omx/component/video/dec/vp8:
+system/lib/libOMX.Exynos.VP8.Decoder.so (share)
+
+=> hardware/samsung_slsi/exynos5/exynos_omx/openmax/exynos_omx/component/video/dec/mpeg4:
+system/lib/libOMX.Exynos.MPEG4.Decoder.so (share)
+
+=> hardware/samsung_slsi/exynos5/exynos_omx/openmax/exynos_omx/component/video/dec:
+system/lib/libExynosOMX_Vdec.so (static)
+
+=> hardware/samsung_slsi/exynos5/exynos_omx/openmax/exynos_omx/component/video/dec/h264:
+system/lib/libOMX.Exynos.AVC.Decoder.so (share)
+
+=> hardware/samsung_slsi/exynos5/exynos_omx/openmax/exynos_omx/component/common:
+system/lib/libExynosOMX_Basecomponent.so (static)
+system/lib/libExynosOMX_Resourcemanager.so (share)
+
+=> hardware/samsung_slsi/exynos5/exynos_omx/openmax/exynos_omx/core:
+system/lib/libExynosOMX_Core.so (share)
+
+=> hardware/samsung_slsi/exynos5/exynos_omx/codecs:
+
+=> hardware/samsung_slsi/exynos5/exynos_omx/codecs/exynos_codecs/audio:
+
+=> hardware/samsung_slsi/exynos5/exynos_omx/codecs/exynos_codecs/audio/exynos5:
+
+=> hardware/samsung_slsi/exynos5/exynos_omx/codecs/exynos_codecs/audio/exynos5/srp/alp:
+system/lib/libsrpapi.so (static)
+
+=> hardware/samsung_slsi/exynos5/exynos_omx/codecs/exynos_codecs/video:
+
+=> hardware/samsung_slsi/exynos5/exynos_omx/codecs/exynos_codecs/video/exynos5:
+
+=> hardware/samsung_slsi/exynos5/exynos_omx/codecs/exynos_codecs/video/exynos5/mfc_v4l2:
+system/lib/libExynosVideoApi.so (static)
+
+=> hardware/samsung_slsi/exynos5/exynos_omx/codecs/exynos_codecs:
+
+=> hardware/samsung_slsi/exynos5/libsecurepath:
+system/lib/libsecurepath.so (static)
+
+=> hardware/samsung_slsi/exynos5/libhwjpeg:
+system/lib/libhwjpeg.so (share)
+
+=> hardware/samsung_slsi/exynos5/libcsc:
+system/lib/libcsc_helper.so (static)
+system/lib/libcsc.so (share)
+
+=> hardware/samsung_slsi/exynos5/libhwc:
+hwcomposer.TARGET_BOARD_PLATFORM|$(BUILD_SHARED_LIBRARY)
+
+=> hardware/samsung_slsi/exynos5/libstagefrighthw:
+system/lib/libstagefrighthw.so (share)
+
+=> hardware/libhardware_legacy/wifi:
+
+=> hardware/libhardware_legacy/audio:
+system/lib/libaudiohw_legacy.so (static)
+system/lib/libaudiopolicy_legacy.so (static)
+system/lib/audio_policy.default.so (share)
+
+=> hardware/libhardware_legacy:
+system/lib/libhardware_legacy.so (share)
+system/lib/libpower.so (static)
+system/lib/libpower.so (share)
+
+=> hardware/libhardware_legacy/qemu:
+
+=> hardware/libhardware_legacy/uevent:
+
+=> hardware/libhardware_legacy/vibrator:
+
+=> hardware/libhardware_legacy/power:
+
+=> hardware/libhardware_legacy/qemu_tracing:
+
+=> dalvik/dexgen:
+dexgen.jar (android,static)
+
+=> dalvik/tools/gdbjithelper:
+system/bin/gdbjithelper
+
+=> dalvik/tools:
+
+=> dalvik/tools/dmtracedump:
+out/host/linux-x86/bin/dmtracedump (host)
+out/host/linux-x86/bin/create_test_dmtrace (host)
+
+=> dalvik/tools/dexdeps/src:
+dexdeps.jar (host,share)
+(droid,doc)
+
+=> dalvik/tools/dexdeps:
+dexdeps|BUILD_SYSTEM/base_rules.mk
+
+=> dalvik/tools/hprof-conv:
+out/host/linux-x86/bin/hprof-conv (host)
+
+=> dalvik/dalvikvm:
+system/bin/dalvikvm
+
+=> dalvik/libdex:
+system/lib/libdex.so (static)
+libdex.so (host,static)
+
+=> dalvik/dexlist:
+out/host/linux-x86/bin/dexlist (host)
+dexlist|
+
+=> dalvik:
+
+=> dalvik/dx/src:
+dx.jar (host,share)
+dx (droid,doc)
+
+=> dalvik/dx:
+dx|BUILD_SYSTEM/base_rules.mk
+jasmin|BUILD_SYSTEM/base_rules.mk
+jasmin.jar|BUILD_SYSTEM/base_rules.mk
+
+=> dalvik/dx/junit-tests:
+dx-tests.jar (host,share)
+
+=> dalvik/dvz:
+system/bin/dvz
+
+=> dalvik/dexopt:
+system/bin/dexopt
+
+=> dalvik/vm:
+system/lib/libdvm.so (share)
+
+=> dalvik/vm/compiler/codegen/x86/libenc:
+system/lib/libenc.so (static)
+libenc.so (host,static)
+
+=> dalvik/dexdump:
+system/bin/dexdump
+system/lib/libdexdump_static.so (static)
+out/host/linux-x86/bin/dexdump (host)
+
+=> dalvik/unit-tests:
+test_module|$(BUILD_NATIVE_TEST)
+
+=> bionic/libstdc++:
+system/lib/libstdc++.so (share)
+system/lib/libstdc++.so (static)
+
+=> bionic/libthread_db:
+system/lib/libthread_db.so (static)
+system/lib/libthread_db.so (share)
+
+=> bionic:
+
+=> bionic/libc:
+system/lib/libbionic_ssp.so (static)
+system/lib/libc_netbsd.so (static)
+system/lib/libc_common.so (static)
+system/lib/libc_nomalloc.so (static)
+system/lib/libc.so (static)
+system/lib/libc.so (share)
+system/lib/libc_malloc_debug_leak.so (share)
+system/lib/libc_malloc_debug_qemu.so (share)
+
+=> bionic/libc/zoneinfo:
+zoneinfo.dat (prebult)
+zoneinfo.idx (prebult)
+zoneinfo.version (prebult)
+zoneinfo-host.dat (prebult)
+zoneinfo-host.idx (prebult)
+zoneinfo-host.version (prebult)
+
+=> bionic/libdl:
+system/lib/libdl.so (share)
+system/bin/dltest
+
+=> bionic/tests:
+system/bin/bionic-benchmarks
+bionic-unit-tests (native test)
+bionic-unit-tests-static (native test)
+bionic-unit-tests-glibc (host,native test)
+
+=> bionic/linker:
+linker|BUILD_SYSTEM/dynamic_binary.mk
+
+=> bionic/libm:
+system/lib/libm.so (static)
+system/lib/libm.so (share)
+
+=> development/build:
+
+=> development/tools/jdwpspy:
+out/host/linux-x86/bin/jdwpspy (host)
+
+=> development/tools/apkcheck/src:
+apkcheck.jar (host,share)
+
+=> development/tools/apkcheck:
+apkcheck|BUILD_SYSTEM/base_rules.mk
+
+=> development/tools/yuv420sp2rgb:
+out/host/linux-x86/bin/yuv420sp2rgb (host)
+
+=> development/tools/emulator/opengl:
+
+=> development/tools/emulator/opengl/shared/OpenglOsUtils:
+
+=> development/tools/emulator/opengl/shared/OpenglCodecCommon:
+
+=> development/tools/emulator/opengl/system/gralloc:
+
+=> development/tools/emulator/opengl/system/OpenglSystemCommon:
+
+=> development/tools/emulator/opengl/system/renderControl_enc:
+
+=> development/tools/emulator/opengl/system/GLESv1_enc:
+
+=> development/tools/emulator/opengl/system/GLESv1:
+
+=> development/tools/emulator/opengl/system/GLESv2:
+
+=> development/tools/emulator/opengl/system/GLESv2_enc:
+
+=> development/tools/emulator/opengl/system/egl:
+egl.cfg (prebult)
+
+=> development/tools/emulator/opengl/tests/ut_rendercontrol_enc:
+
+=> development/tools/emulator/opengl/tests/gles_android_wrapper:
+egl.cfg (prebult)
+gles_emul.cfg (prebult)
+
+=> development/tools/emulator/test-apps/GpsLocationTest:
+GpsLocationTest.apk
+
+=> development/tools/emulator/test-apps/ConnectivityTest:
+ConnectivityTest.apk
+
+=> development/tools/emulator/system/sensors:
+system/lib/sensors.vbox_x86.so (share)
+sensors.goldfish|
+
+=> development/tools/emulator/system/camera:
+system/lib/camera.vbox_x86.so (share)
+camera.goldfish|
+
+=> development/tools/emulator/system/lights:
+system/lib/lights.goldfish.so (share)
+
+=> development/tools/emulator/system/qemud:
+system/bin/qemud
+
+=> development/tools/emulator/system:
+
+=> development/tools/emulator/system/qemu-props:
+system/bin/qemu-props
+
+=> development/tools/emulator/system/gps:
+system/lib/gps.vbox_x86.so (share)
+gps.goldfish|
+
+=> development/tools/etc1tool:
+out/host/linux-x86/bin/etc1tool (host)
+
+=> development/tools/mkstubs:
+mkstubs.jar (host,share)
+
+=> development/tools/recovery_l10n:
+RecoveryLocalizer.apk
+
+=> development/tools/elftree:
+out/host/linux-x86/bin/elftree (host)
+
+=> development/tools/idegen:
+idegen.jar (host,share)
+
+=> development/tools/hosttestlib:
+hosttestlib.jar (host,share)
+
+=> development/tools/line_endings:
+out/host/linux-x86/bin/line_endings (host)
+
+=> development/testrunner:
+test_defs.xml (prebult)
+coverage_targets.xml (prebult)
+
+=> development/apps/WidgetPreview:
+WidgetPreview.apk
+
+=> development/apps/NinePatchLab:
+NinePatchLab.apk
+
+=> development/apps/SdkSetup:
+SdkSetup.apk
+
+=> development/apps/Fallback:
+Fallback.apk
+
+=> development/apps/GestureBuilder:
+GestureBuilder.apk
+
+=> development/apps/FontLab:
+FontLab.apk
+
+=> development/apps/CustomLocale:
+CustomLocale.apk
+
+=> development/apps/BuildWidget:
+BuildWidget.apk
+
+=> development/apps/BluetoothDebug:
+BluetoothDebug.apk
+
+=> development/apps/OBJViewer:
+OBJViewer|
+
+=> development/apps/DevelopmentSettings:
+DevelopmentSettings.apk
+
+=> development/apps/Development:
+Development.apk
+
+=> development/apps/launchperf:
+launchperf.apk
+
+=> development/ndk/platforms/android-8/samples/bitmap-plasma/jni:
+system/lib/plasma.so (share)
+
+=> development/ndk/platforms/android-9/samples/native-plasma/jni:
+system/lib/native-plasma.so (share)
+
+=> development/ndk/platforms/android-9/samples/native-audio/jni:
+system/lib/native-audio-jni.so (share)
+
+=> development/ndk/platforms/android-9/samples/native-activity/jni:
+system/lib/native-activity.so (share)
+
+=> development/ndk/platforms/android-9/samples/native-activity:
+system/lib/libnative-activity.so (share)
+NativeActivity.apk
+
+=> development/ndk/platforms/android-4/samples/san-angeles/jni:
+system/lib/sanangeles.so (share)
+
+=> development/ndk/platforms/android-5/samples/hello-gl2/jni:
+system/lib/libgl2jni.so (share)
+
+=> development/ndk/platforms/android-5/samples/hello-gl2:
+system/lib/libgl2jni.so (share)
+
+=> development/ndk/platforms/android-14/samples/native-media/jni:
+system/lib/native-media-jni.so (share)
+
+=> development/ndk/sources/android/native_app_glue:
+system/lib/android_native_app_glue.so (static)
+
+=> development/ndk/sources/android/libportable:
+system/lib/libportable.so (share)
+
+=> development/ndk:
+
+=> development/ndk/samples/two-libs/jni:
+system/lib/libtwolib-first.so (static)
+system/lib/libtwolib-second.so (share)
+
+=> development/ndk/samples/test-libstdc++/jni:
+system/bin/test-libstl
+
+=> development/ndk/samples/hello-jni/jni:
+system/lib/hello-jni.so (share)
+
+=> development/ndk/samples/hello-neon/jni:
+system/lib/helloneon.so (share)
+
+=> development/ndk/samples/module-exports/jni:
+system/lib/foo.so (static)
+system/lib/bar.so (share)
+system/lib/zoo.so (share)
+
+=> development/ndk/tests/prebuilt-library/jni:
+system/lib/foo.so (share)
+system/lib/foo-prebuilt.so (share)
+foo-user|
+
+=> development/ndk/tests/dlclose-destruction/jni:
+system/lib/libtest1.so (share)
+system/bin/test_dlclose_destruction
+
+=> development/cmds/monkey:
+monkey.jar (android)
+
+=> development/samples/Home:
+Home.apk
+
+=> development/samples/BluetoothHDP:
+BluetoothHDP.apk
+
+=> development/samples/BusinessCard:
+BusinessCard.apk
+
+=> development/samples/WiFiDirectDemo:
+WiFiDirectDemo.apk
+
+=> development/samples/LunarLander:
+LunarLander.apk
+
+=> development/samples/LunarLander/tests:
+LunarLanderTests.apk
+
+=> development/samples/FmRadioReceiver:
+FmRadioReceiver.apk
+
+=> development/samples/FixedGridLayout:
+FixedGridLayout.apk
+
+=> development/samples/FmRadioTransmitter:
+FmRadioTransmitter.apk
+
+=> development/samples/NotePad:
+NotePad.apk
+
+=> development/samples/SkeletonApp:
+SkeletonApp.apk
+
+=> development/samples/SkeletonApp/tests:
+SkeletonAppTests.apk
+
+=> development/samples/SpellChecker:
+
+=> development/samples/SpellChecker/HelloSpellChecker:
+HelloSpellChecker.apk
+
+=> development/samples/SpellChecker/SampleSpellCheckerService:
+SampleSpellCheckerService.apk
+
+=> development/samples/HelloActivity:
+HelloActivity.apk
+
+=> development/samples/HelloActivity/tests:
+HelloActivityTests.apk
+
+=> development/samples/HelloEffects:
+HelloEffects.apk
+
+=> development/samples/HoneycombGallery:
+HoneycombGallery.apk
+
+=> development/samples/JetBoy:
+JETBoy.apk
+
+=> development/samples/WiFiDirectServiceDiscovery:
+WiFiDirectServiceDiscovery.apk
+
+=> development/samples/AccelerometerPlay:
+AccelerometerPlay.apk
+
+=> development/samples/TtsEngine:
+TtsEngine.apk
+
+=> development/samples/Compass:
+Compass.apk
+
+=> development/samples/CubeLiveWallpaper:
+CubeLiveWallpapers.apk
+
+=> development/samples/UiAutomator:
+uiautomator.samples.jar (android)
+
+=> development/samples/SearchableDictionary:
+SearchableDictionary.apk
+
+=> development/samples/ContactManager:
+ContactManager.apk
+
+=> development/samples/Support13Demos:
+Support13Demos.apk
+
+=> development/samples/WiktionarySimple:
+WiktionarySimple.apk
+
+=> development/samples/ApiDemos:
+ApiDemos.apk
+
+=> development/samples/ApiDemos/tests:
+ApiDemosTests.apk
+
+=> development/samples/BackupRestore:
+BackupRestore.apk
+
+=> development/samples/training/NsdChat:
+NsdChat.apk
+
+=> development/samples/XmlAdapters:
+xmladapters.apk
+
+=> development/samples/Snake:
+Snake.apk
+
+=> development/samples/Snake/tests:
+SnakeTests.apk
+
+=> development/samples/AliasActivity:
+AliasActivity.apk
+
+=> development/samples/BasicGLSurfaceView:
+BasicGLSurfaceView.apk
+
+=> development/samples/SipDemo:
+SipDemo.apk
+
+=> development/samples/SupportAppNavigation:
+SupportAppNavigation.apk
+
+=> development/samples/BluetoothChat:
+BluetoothChat.apk
+
+=> development/samples/RandomMusicPlayer:
+RandomMusicPlayer.apk
+
+=> development/samples/WeatherListWidget:
+WeatherListWidget.apk
+
+=> development/samples/ToyVpn:
+ToyVpn.apk
+
+=> development/samples/RenderScript/Levels:
+LevelsRS.apk
+
+=> development/samples/RenderScript:
+
+=> development/samples/RenderScript/HelloCompute:
+RsHelloCompute.apk
+
+=> development/samples/BrowserPlugin/jni:
+system/lib/libsampleplugin.so (share)
+
+=> development/samples/BrowserPlugin:
+SampleBrowserPlugin.apk
+
+=> development/samples/Wiktionary:
+Wiktionary.apk
+
+=> development/samples/VoiceRecognitionService:
+VoiceRecognitionService.apk
+
+=> development/samples/Support4Demos:
+Support4Demos.apk
+
+=> development/samples/AndroidBeamDemo:
+AndroidBeamDemo.apk
+
+=> development/samples/SimpleJNI/jni:
+system/lib/libsimplejni.so (share)
+
+=> development/samples/SimpleJNI:
+SimpleJNI.apk
+
+=> development/samples/USB:
+
+=> development/samples/USB/AdbTest:
+AdbTest.apk
+
+=> development/samples/USB/MissileLauncher:
+MissileLauncher.apk
+
+=> development/samples/RSSReader:
+RSSReader.apk
+
+=> development/samples/StackWidget:
+StackWidget.apk
+
+=> development/samples/MySampleRss:
+MyRSSReader|
+
+=> development/samples/ActionBarCompat:
+ActionBarCompat.apk
+
+=> development/samples/HeavyWeight:
+HeavyWeight|
+
+=> development/samples/SampleSyncAdapter:
+SampleSyncAdapter.apk
+
+=> development/samples/AppNavigation:
+AppNavigation.apk
+
+=> development/samples/Obb:
+ObbApp.apk
+
+=> development/samples/KeyChainDemo:
+KeyChainDemo.apk
+
+=> development/samples/MultiResolution:
+MultiResolution.apk
+
+=> development/samples/VoicemailProviderDemo:
+VoicemailProviderDemo.apk
+
+=> development/samples/SoftKeyboard:
+SoftKeyboard.apk
+
+=> development/tutorials/NotepadCodeLab/Notepadv3:
+Notepadv3.apk
+
+=> development/tutorials/NotepadCodeLab/Notepadv2:
+Notepadv2.apk
+
+=> development/tutorials/NotepadCodeLab/Notepadv3Solution:
+Notepadv3Solution.apk
+
+=> development/tutorials/NotepadCodeLab/Notepadv1:
+Notepadv1.apk
+
+=> development/tutorials/NotepadCodeLab/Notepadv1Solution:
+Notepadv1Solution.apk
+
+=> development/tutorials/NotepadCodeLab/Notepadv2Solution:
+Notepadv2Solution.apk
+
+=> development/host:
+
+=> development/host/windows/prebuilt/usb:
+(host,prebult)
+
+=> libnativehelper:
+system/lib/libnativehelper.so (share)
+libnativehelper.so (host,share)
+
+=> gdk/sources/llvm-ndk-cc:
+libndkpc.so (host,static)
+out/host/linux-x86/bin/llvm-ndk-cc (host)
+out/host/linux-x86/bin/llvm-ndk-link (host)
+
+=> gdk:
+
+=> gdk/samples/PhotoEditor/jni:
+system/lib/libjni_photoeditor.so (share)
+
+=> gdk/samples/PhotoEditor:
+PhotoEditor.apk
+
+=> gdk/samples/hello-llvm/jni:
+system/lib/libhello_llvm.so (share)
+
+=> gdk/samples/bitmap-plasma-llvm/jni:
+system/lib/libplasma.so (share)
+
+=> gdk/libportable:
+system/lib/libportable.so (share)
+
+=> packages/providers/PartnerBookmarksProvider:
+PartnerBookmarksProvider.apk
+
+=> packages/providers/PartnerBookmarksProvider/tests:
+PartnerBookmarksProviderTest.apk
+
+=> packages/providers/ApplicationsProvider:
+ApplicationsProvider.apk
+
+=> packages/providers/ApplicationsProvider/tests:
+ApplicationsProviderTests.apk
+
+=> packages/providers/DownloadProvider:
+DownloadProvider.apk
+
+=> packages/providers/DownloadProvider/tests/public_api_access:
+DownloadPublicApiAccessTests.apk
+
+=> packages/providers/DownloadProvider/tests:
+DownloadProviderTests.apk
+
+=> packages/providers/DownloadProvider/tests/permission:
+DownloadProviderPermissionTests.apk
+
+=> packages/providers/DownloadProvider/ui:
+DownloadProviderUi.apk
+
+=> packages/providers/MediaProvider:
+MediaProvider.apk
+
+=> packages/providers/DrmProvider:
+DrmProvider.apk
+
+=> packages/providers/UserDictionaryProvider:
+UserDictionaryProvider.apk
+
+=> packages/providers/TelephonyProvider:
+TelephonyProvider.apk
+
+=> packages/providers/ContactsProvider:
+ContactsProvider.apk
+
+=> packages/providers/ContactsProvider/tests:
+ContactsProviderTests.apk
+
+=> packages/providers/CalendarProvider:
+CalendarProvider.apk
+
+=> packages/providers/CalendarProvider/tests:
+CalendarProviderTests.apk
+
+=> packages/apps/PackageInstaller:
+PackageInstaller.apk
+
+=> packages/apps/VideoEditor:
+VideoEditor.apk
+(multi,prebult)
+
+=> packages/apps/Settings:
+Settings.apk
+
+=> packages/apps/Settings/tests:
+SettingsTests.apk
+
+=> packages/apps/Trebuchet:
+Trebuchet.apk
+
+=> packages/apps/Trebuchet/tests:
+
+=> packages/apps/Trebuchet/tests/stress:
+TrebuchetRotationStressTest.apk
+
+=> packages/apps/CMUpdater:
+CMUpdater.apk
+(multi,prebult)
+
+=> packages/apps/Camera/jni:
+system/lib/libjni_mosaic.so (share)
+
+=> packages/apps/Camera:
+
+=> packages/apps/Camera/perftests/panorama:
+system/bin/panorama_bench
+
+=> packages/apps/Camera/tests:
+CameraTests.apk
+
+=> packages/apps/Stk:
+Stk.apk
+
+=> packages/apps/CMAccount:
+CMAccount.apk
+(multi,prebult)
+
+=> packages/apps/CMAccount/tests:
+CMAccountTests.apk
+
+=> packages/apps/Music:
+Music.apk
+
+=> packages/apps/Music/tests:
+MusicTests.apk
+
+=> packages/apps/KeyChain:
+KeyChain.apk
+
+=> packages/apps/KeyChain/tests:
+KeyChainTests.apk
+
+=> packages/apps/KeyChain/support:
+com.android.keychain.tests.support.jar (android,static)
+KeyChainTestsSupport.apk
+
+=> packages/apps/Bluetooth/jni:
+system/lib/libbluetooth_jni.so (share)
+
+=> packages/apps/Bluetooth:
+Bluetooth.apk
+
+=> packages/apps/Calculator:
+Calculator.apk
+(multi,prebult)
+
+=> packages/apps/Calculator/tests:
+CalculatorTests.apk
+
+=> packages/apps/Provision:
+Provision.apk
+
+=> packages/apps/DSPManager/cyanogen-dsp:
+system/lib/libcyanogen-dsp.so (share)
+audio_effects.conf (prebult)
+
+=> packages/apps/DSPManager:
+DSPManager.apk
+
+=> packages/apps/Nfc/nxp/jni:
+system/lib/libnfc_jni.so (share)
+
+=> packages/apps/Nfc/nxp:
+
+=> packages/apps/Nfc:
+Nfc.apk
+NfcNci.apk
+NfcLogTags.jar (android,static)
+
+=> packages/apps/Nfc/tests:
+NfcTests.apk
+
+=> packages/apps/Nfc/nci/jni:
+system/lib/libnfc_nci_jni.so (share)
+
+=> packages/apps/Nfc/nci:
+
+=> packages/apps/Contacts:
+Contacts.apk
+
+=> packages/apps/Contacts/tests:
+ContactsTests.apk
+
+=> packages/apps/Torch:
+Torch.apk
+
+=> packages/apps/MusicFX:
+MusicFX
+|BUILD_PACKAGE
+
+=> packages/apps/CellBroadcastReceiver:
+CellBroadcastReceiver.apk
+
+=> packages/apps/CellBroadcastReceiver/tests:
+CellBroadcastReceiverTests.apk
+
+=> packages/apps/Email:
+Email2.apk
+
+=> packages/apps/Email/emailcommon:
+com.android.emailcommon.jar (android,static)
+
+=> packages/apps/Email/tests:
+EmailTests.apk
+
+=> packages/apps/Tag:
+Tag.apk
+
+=> packages/apps/Tag/canon:
+TagCanon.apk
+
+=> packages/apps/Apollo:
+Apollo.apk
+
+=> packages/apps/Gallery2/jni:
+system/lib/libjni_eglfence.so (share)
+system/lib/libjni_filtershow_filters.so (share)
+
+=> packages/apps/Gallery2:
+Gallery2.apk
+Gallery2.apk
+
+=> packages/apps/Gallery2/gallerycommon:
+com.android.gallery3d.common2.jar (android,static)
+
+=> packages/apps/Gallery2/tests:
+Gallery2Tests.apk
+
+=> packages/apps/LockClock:
+LockClock.apk
+
+=> packages/apps/VoicePlus:
+VoicePlus.apk
+
+=> packages/apps/CMFileManager:
+CMFileManager.apk
+
+=> packages/apps/CMFileManager/tests:
+CMFileManagerTests.apk
+
+=> packages/apps/Calendar:
+Calendar.apk
+
+=> packages/apps/Calendar/tests:
+CalendarTests.apk
+
+=> packages/apps/Mms/apptests:
+MmsAppTests.apk
+
+=> packages/apps/Mms:
+Mms.apk
+
+=> packages/apps/Mms/tests/SmsAutoReply:
+SmsAutoReply.apk
+
+=> packages/apps/Mms/tests:
+MmsTests.apk
+
+=> packages/apps/CMWallpapers:
+CMWallpapers.apk
+
+=> packages/apps/DeskClock:
+DeskClock.apk
+
+=> packages/apps/DeskClock/tests:
+DeskClockTests.apk
+
+=> packages/apps/SoundRecorder:
+SoundRecorder.apk
+
+=> packages/apps/Browser:
+Browser.apk
+
+=> packages/apps/Browser/tests:
+BrowserTests.apk
+
+=> packages/apps/SpeechRecorder:
+SpeechRecorder.apk
+
+=> packages/apps/LegacyCamera/jni:
+system/lib/libjni_legacymosaic.so (share)
+
+=> packages/apps/LegacyCamera:
+LegacyCamera.apk
+
+=> packages/apps/LegacyCamera/tests:
+LegacyCameraTests.apk
+
+=> packages/apps/SpareParts:
+SpareParts.apk
+
+=> packages/apps/VoiceDialer:
+VoiceDialer.apk
+
+=> packages/apps/VoiceDialer/tests:
+VoiceDialerTests.apk
+
+=> packages/apps/Launcher2:
+Launcher2.apk
+
+=> packages/apps/Launcher2/tests:
+
+=> packages/apps/Launcher2/tests/stress:
+LauncherRotationStressTest.apk
+
+=> packages/apps/Gallery:
+Gallery.apk
+
+=> packages/apps/Gallery/tests:
+GalleryTests.apk
+
+=> packages/apps/CertInstaller:
+CertInstaller.apk
+
+=> packages/apps/Phone:
+com.android.phone.common.jar (android,static)
+Phone.apk
+
+=> packages/apps/Phone/tests:
+PhoneAppTests.apk
+
+=> packages/apps/QuickSearchBox:
+QuickSearchBox.apk
+
+=> packages/apps/QuickSearchBox/benchmarks:
+QuickSearchBoxBenchmarks.apk
+
+=> packages/apps/QuickSearchBox/tests/spammy:
+SpammySuggestions.apk
+
+=> packages/apps/QuickSearchBox/tests:
+QuickSearchBoxTests.apk
+
+=> packages/apps/QuickSearchBox/tests/naughty:
+NaughtySuggestions.apk
+
+=> packages/apps/QuickSearchBox/tests/slow:
+SlowSuggestions.apk
+
+=> packages/apps/QuickSearchBox/tests/partial:
+PartialSuggestions.apk
+
+=> packages/apps/HTMLViewer:
+HTMLViewer.apk
+
+=> packages/apps/BasicSmsReceiver:
+BasicSmsReceiver.apk
+
+=> packages/apps/BasicSmsReceiver/tests:
+BasicSmsReceiverTests.apk
+
+=> packages/apps/Protips:
+Protips.apk
+
+=> packages/apps/Exchange/exchange2:
+Exchange2.apk
+
+=> packages/apps/Exchange/exchange2/tests:
+Exchange2Tests.apk
+
+=> packages/apps/Exchange:
+Exchange|
+
+=> packages/apps/Exchange/tests:
+ExchangeTests|
+
+=> packages/inputmethods/LatinIME/tools/dicttool:
+dicttool_aosp.jar (host,share)
+
+=> packages/inputmethods/LatinIME/tools/dicttool/etc:
+(host,prebult)
+
+=> packages/inputmethods/LatinIME/tools:
+
+=> packages/inputmethods/LatinIME/tools/maketext:
+maketext.jar (host,share)
+
+=> packages/inputmethods/LatinIME/tools/maketext/etc:
+(host,prebult)
+
+=> packages/inputmethods/LatinIME/java:
+LatinIME.apk
+
+=> packages/inputmethods/LatinIME:
+
+=> packages/inputmethods/LatinIME/tests:
+LatinIMETests.apk
+
+=> packages/inputmethods/LatinIME/native/jni:
+system/lib/libjni_latinime_common_static.so (static)
+system/lib/libjni_latinime.so (share)
+
+=> packages/inputmethods/LatinIME/native:
+
+=> packages/inputmethods/PinyinIME/jni:
+system/lib/libjni_pinyinime.so (share)
+
+=> packages/inputmethods/PinyinIME:
+PinyinIME.apk
+
+=> packages/inputmethods/PinyinIME/lib:
+com.android.inputmethod.pinyin.lib.jar (android,static)
+
+=> packages/inputmethods/OpenWnn/libs/libwnnJpnDic:
+system/lib/libWnnJpnDic.so (share)
+
+=> packages/inputmethods/OpenWnn/libs:
+
+=> packages/inputmethods/OpenWnn/libs/libwnnDictionary:
+system/lib/libwnndict.so (share)
+
+=> packages/inputmethods/OpenWnn/libs/libwnnEngDic:
+system/lib/libWnnEngDic.so (share)
+
+=> packages/inputmethods/OpenWnn:
+OpenWnn.apk
+
+=> packages/experimental/BugReportSender:
+BugReportSender.apk
+
+=> packages/experimental/LoaderApp:
+LoaderApp.apk
+
+=> packages/experimental/RpcPerformance:
+RpcPerformance.apk
+
+=> packages/experimental/DreamTheater:
+DreamTheater.apk
+
+=> packages/experimental:
+
+=> packages/experimental/NotificationShowcase:
+NotificationShowcase.apk
+
+=> packages/experimental/ExampleImsFramework:
+ExampleImsFramework.apk
+
+=> packages/experimental/Bummer:
+Bummer.apk
+
+=> packages/experimental/StrictModeTest:
+StrictModeTest.apk
+
+=> packages/experimental/CameraPreviewTest:
+VideoChatCameraTestApp.apk
+
+=> packages/experimental/NotificationLog:
+NotificationLog.apk
+
+=> packages/experimental/procstatlog:
+system/bin/procstatlog
+
+=> packages/screensavers/PhotoTable:
+PhotoTable.apk
+
+=> packages/screensavers/Basic:
+BasicDreams.apk
+
+=> packages/screensavers/WebView:
+WebViewDream.apk
+
+=> packages/wallpapers/MusicVisualization:
+VisualizationWallpapers.apk
+
+=> packages/wallpapers/Galaxy4:
+Galaxy4.apk
+
+=> packages/wallpapers/HoloSpiral:
+HoloSpiralWallpaper.apk
+
+=> packages/wallpapers/Basic:
+LiveWallpapers.apk
+
+=> packages/wallpapers/PhaseBeam:
+PhaseBeam.apk
+
+=> packages/wallpapers/LivePicker:
+android.software.live_wallpaper.xml (prebult)
+LiveWallpapersPicker.apk
+
+=> packages/wallpapers/MagicSmoke:
+MagicSmokeWallpapers.apk
+
+=> packages/wallpapers/NoiseField:
+NoiseField.apk

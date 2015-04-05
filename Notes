@@ -97,6 +97,8 @@ ctrl + alt + f7 （退出 tty1）tty7 即为桌面
 
 find . -name "*.orig" | xargs rm -f
 
+find . -name "tmp_pack*" | xargs rm -f
+
 ===========================================================================================
 
 $ cd working_dir
@@ -114,3 +116,20 @@ $ sudo reboot
 
 安装 win+Ubuntu 双系统后开机启动时如无 win 启动项，升级 grup 即可
 进入 recovery，或进入 tty：sudo update-grub
+
+===========================================================================================
+
+$ git clone --depth 1 <url>
+$ repo init -u <url> --depth 1
+
+===========================================================================================
+
+no permissions	fastboot
+
+$ cd $pwd/fastboot
+$ sudo ./fastboot <command>
+
+===========================================================================================
+
+Shadowsocks
+$ sudo sslocal -s <service_ip> -p 12 -k <password> -m <method> -d start

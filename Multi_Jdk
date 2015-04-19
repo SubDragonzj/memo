@@ -1,0 +1,60 @@
+
+original post:
+http://www.3rdos.com/225.html
+
+---------------------------------------
+
+# install jdk1.6.0_32 to /opt
+
+$ sudo cp jdk-6u32-linux-x64.bin /opt
+
+$ chmod +x jdk-6u32-linux-x64.bin
+
+$ sudo ./jdk-6u32-linux-x64.bin
+
+
+# config jdk1.6.0_32
+
+$ gedit ~/.bashrc
+
+add:
+# for jdk1.6.0_32
+export JAVA_HOME=/opt/jdk1.6.0_32
+export JRE_HOME=${JAVA_HOME}/jre
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+export PATH=$PATH:${JAVA_HOME}/bin:${JRE_HOME}/bin
+
+then run command:
+$ source ~/.basrc
+
+---------------------------------------
+
+# multi jdk support
+
+$ gedit ~/.bashrc
+
+add:
+# multi jdk support
+export PATH=$PATH:${JAVA_HOME}/bin:${JRE_HOME}/bin
+
+then run command:
+$ source ~/.basrc
+
+$ sudo update-alternatives --install /usr/bin/javah javah /opt/jdk1.6.0_32/bin/javah 255
+$ sudo update-alternatives --install /usr/bin/javac javac /opt/jdk1.6.0_32/bin/javac 255
+$ sudo update-alternatives --install /usr/bin/java java /opt/jdk1.6.0_32/bin/java 255
+$ sudo update-alternatives --install /usr/bin/jar jar /opt/jdk1.6.0_32/bin/jar 255
+
+---------------------------------------
+
+# install openjdk-7-jdk for KitKat
+
+$ sudo apt-get update&&sudo apt-get install openjdk-7-jdk
+
+---------------------------------------
+
+# switch between jdk-6 & jdk-7
+Optionally, update the default Java version by running:
+
+$ sudo update-alternatives --config java
+$ sudo update-alternatives --config javac

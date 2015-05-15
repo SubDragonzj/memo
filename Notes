@@ -95,9 +95,10 @@ ctrl + alt + f7 （退出 tty1）tty7 即为桌面
 
 ===========================================================================================
 
-find . -name "*.orig" | xargs rm -f
+find . -name *.orig | xargs rm -f
 
-find . -name "tmp_pack*" | xargs rm -f
+# do not run this command before 'repo sync' done
+find . -name tmp_pack_* | xargs rm -f
 
 ===========================================================================================
 
@@ -133,3 +134,31 @@ $ sudo ./fastboot <command>
 
 Shadowsocks
 $ sudo sslocal -s <service_ip> -p 12 -k <password> -m <method> -d start
+
+===========================================================================================
+
+一分钟后关机
+$ sudo shutdown -h +1
+
+===========================================================================================
+
+This will extract the files in the archive_name.tar.gz archive in the current directory:
+$ tar -zxvf filename.tar.gz
+
+You can optionally extract the files to a existed specificed directory:	
+$ tar -zxvf filename.tar.gz -C /tmp/extract_here/
+
+===========================================================================================
+
+run chrome by command
+$ google-chrome-stable
+
+===========================================================================================
+
+DNS缓存可以加快网站IP的解析速度，所以大多数系统都支持DNS缓存。DNS的缓存时间是24小时，也就是每隔24小时DNS缓存将被自动清除。如果某些网站更新了DNS信息，而本机又没到自动清除的时间，这时，我们就要手动清除DNS缓存，最简单的方法如下。
+
+在终端中运行如下命令，以清除DNS缓存：
+
+$sudo /etc/init.d/dns-clean start
+
+===========================================================================================

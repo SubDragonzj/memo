@@ -1,0 +1,48 @@
+$  dpkg --get-selections | grep linux
+
+$ sudo apt-get remove --purge -y
+
+linux-headers-3.13.0-46
+linux-headers-3.13.0-46-generic
+linux-image-3.13.0-46-generic
+linux-image-extra-3.13.0-46-generic
+
+$ sudo apt-get remove --purge -y linux-image-3.13.0-46-generic
+
+$ sudo apt-get remove --purge -y linux-headers-3.13.0-46
+
+$ sudo update-grub
+
+
+
+note:
+ AndyInMokum
+
+You need to run this command in the terminal window:
+
+dpkg -l | grep linux-image
+
+The output will show what kernels you have installed. The following commands are for Debian/Ubuntu based distros, To remove unwanted kernels have a look at this example to see the command structure:
+
+CAUTION: DO NOT RUN THIS COMMAND UNLESS YOU WANT TO REMOVE THIS KERNEL.
+
+sudo apt-get remove –purge linux-image-3.13.0-45-generic linux-image-extra-3.13.0-45-generic
+
+If you have several redundant kernels, add them to the command. Please understand that this is only an example. After you have selected the kernel(s) and removed them, you can run:
+
+sudo apt-get clean && sudo apt-get autoclean && sudo apt-get autoremove -y
+
+This will tidy things up. I always keep the two kernels. The current one and the previous one to fall back to if it all goes wrong.
+
+
+
+要删除：
+linux-headers-3.13.0-51
+linux-headers-3.13.0-51-generic
+
+linux-image-3.13.0-51-generic
+linux-image-extra-3.13.0-51-generic
+linux-signed-image-3.13.0-51-generic
+只需：
+sudo apt-get remove --purge linux-headers-3.13.0-51
+sudo apt-get remove --purge linux-image-3.13.0-51-generic 

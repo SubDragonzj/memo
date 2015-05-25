@@ -7,158 +7,67 @@ https://help.ubuntu.com/community/BinaryDriverHowto/
 
 微博备忘：
 
-1，安装 win8+时，会要求提供一个安装密匙，与激活密匙不一样，这个是免费的，并且在微软官网公布
-【安装密钥是微软提供的，win8.1专业版32/64用专业版的安装密钥：XHQ8N-C3MCJ-RQXB6-WCHYG-C9WKB,企业版32/64用企业版的安装密钥：469CD-NDV8T-B6YVG-3T2P8-W4YQP】百度知道
+
+无线路由器拨号，打开192.168.1.1，网络参数--WAN口设置--（左下角）连接
 
 --------------------------------------------------------
 
-2，无线路由器拨号，打开192.168.1.1，网络参数--WAN口设置--（左下角）连接
+build.prop，加入```qemu.hw.mainkeys=0```即可开启虚拟按键，重启生效
 
 --------------------------------------------------------
 
-3，build.prop，加入```qemu.hw.mainkeys=0```即可开启虚拟按键，重启生效
-
---------------------------------------------------------
-
-4，KitKat experimentally supports openjdk7. On Ubuntu install ```openjdk-7-jdk```
+KitKat experimentally supports openjdk7. On Ubuntu install ```openjdk-7-jdk```
 and you must put ```export EXPERIMENTAL_USE_JAVA7=true``` in your bashrc in order to use it
 
 --------------------------------------------------------
 
-5，“【火车座次的小知识】个位数 0、4、5、9的火车票全是靠近窗户的。0、5是三人座靠窗的；4、9是两人座靠窗的。个位数是2、7、3、8是靠近过道的，2、7是三人座靠过道3、8二人座靠过道的。剩的两个数就是三人座中间的。 ”
+“【火车座次的小知识】个位数 0、4、5、9的火车票全是靠近窗户的。0、5是三人座靠窗的；4、9是两人座靠窗的。个位数是2、7、3、8是靠近过道的，2、7是三人座靠过道3、8二人座靠过道的。剩的两个数就是三人座中间的。 ”
 
 --------------------------------------------------------
 
-6，【Searchcode: 源代码搜索利器!!!】来自悉尼的代码搜索引擎汇聚了 Github, Bitbucket, Sourceforge...等多家开源站点超20万个项目、180亿行源代码，能以特殊字符、语言、仓库和源方式从90多种语言找到函数、API的真实代码
+【Searchcode: 源代码搜索利器!!!】来自悉尼的代码搜索引擎汇聚了 Github, Bitbucket, Sourceforge...等多家开源站点超20万个项目、180亿行源代码，能以特殊字符、语言、仓库和源方式从90多种语言找到函数、API的真实代码
 https://searchcode.com/
 
 --------------------------------------------------------
 
-7，How To Port CyanogenMod Android To Your Own Device
+How To Port CyanogenMod Android To Your Own Device
 http://wiki.cyanogenmod.org/w/Doc:_porting_intro
 
 --------------------------------------------------------
 
-8，“记录。很多教程说给lt22i刷机，是flashtool运行后，选择机型以及firmware。关机，30s后，长按音量减，就自动刷机。在刚刚刷完后，发现和教程有出入。我用的是最新版flashtool，关机，打开flashtool，选择机型和firmware，长按音量减，连接电脑，就会自动刷机，等待进度条走完即可拔下连接，重启开机”
+“记录。很多教程说给lt22i刷机，是flashtool运行后，选择机型以及firmware。关机，30s后，长按音量减，就自动刷机。在刚刚刷完后，发现和教程有出入。我用的是最新版flashtool，关机，打开flashtool，选择机型和firmware，长按音量减，连接电脑，就会自动刷机，等待进度条走完即可拔下连接，重启开机”
 
 --------------------------------------------------------
 
-9，查看当前连接无限路由器数量：登陆（默认用户名及帐号均为admin）http://192.168.1.1，无线设置--主机状态
+查看当前连接无限路由器数量：登陆（默认用户名及帐号均为admin）http://192.168.1.1，无线设置--主机状态
 
 --------------------------------------------------------
 
-10，启用 ccache 编译 rom：
+启用 ccache 编译 rom：
 cd src_dir&&prebuilts/misc/linux-x86/ccache/ccache -M 50G
 add ```export USE_CCACHE=1``` to ~/.bashrc
 
 --------------------------------------------------------
 
-11，如何升级 repo 脚本
+如何升级 repo 脚本
 $ cp ~/cm11/.repo/repo/repo ~/bin/repo
 
 --------------------------------------------------------
 
-12，make bacon -jN【For AMD, this is equivalent to the number of cores your processor has; For Intel, this is usually equivalent to twice the number of cores your processor has, due to HyperThreading】
+make bacon -jN【For AMD, this is equivalent to the number of cores your processor has; For Intel, this is usually equivalent to twice the number of cores your processor has, due to HyperThreading】
 
 --------------------------------------------------------
 
-13，为多个文件生成补丁【diff -uprN ~/origin/ ~/new/ > ~/xx.patch】
+为多个文件生成补丁【diff -uprN ~/origin/ ~/new/ > ~/xx.patch】
 
 --------------------------------------------------------
 
-14，部分初始设置定义在 src/frameworks/base/core/res/res/values/bools.xml
+部分初始设置定义在 src/frameworks/base/core/res/res/values/bools.xml
 
 --------------------------------------------------------
 
-15，adb logcat *:E > ~/log.txt
+adb logcat *:E > ~/log.txt
 
 ===========================================================================================
-
-$ uname -a
-Linux BambooIV 3.13.0-39-generic #66-Ubuntu SMP Tue Oct 28 13:30:27 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
 
 F2 进入 bios 设置第一启动
-===========================================================================================
-
-memo$ echo "sudo passwd" >> Notes
-
-sudo passwd
-
-===========================================================================================
-
-git config --global url."https://".insteadOf git://
-
-===========================================================================================
-
-ctrl + alt + f1 进入 tty1 #tty1~tty6
-ctrl + alt + f7 （退出 tty1）tty7 即为桌面
-
-===========================================================================================
-
-find . -name *.orig | xargs rm -f
-
-# do not run this command before 'repo sync' done
-find . -name tmp_pack_* | xargs rm -f
-
-===========================================================================================
-
-$ cd working_dir
-$ repo selfupdate
-
-===========================================================================================
-
-删除旧版本内核:
-$ sudo aptitude purge ~ilinux-image-.*\(\!\(`uname -r`\|generic-.*\)\)
-$ sudo update-grub
-$ sudo update-initramfs -u -k all
-$ sudo reboot
-
-===========================================================================================
-
-安装 win+Ubuntu 双系统后开机启动时如无 win 启动项，升级 grup 即可
-进入 recovery，或进入 tty：sudo update-grub
-
-===========================================================================================
-
-$ git clone --depth 1 <url>
-$ repo init -u <url> --depth 1
-
-===========================================================================================
-
-no permissions	fastboot
-
-$ cd $pwd/fastboot
-$ sudo ./fastboot <command>
-
-===========================================================================================
-
-Shadowsocks
-$ sudo sslocal -s <service_ip> -p 12 -k <password> -m <method> -d start
-
-===========================================================================================
-
-一分钟后关机
-$ sudo shutdown -h +1
-
-===========================================================================================
-
-This will extract the files in the archive_name.tar.gz archive in the current directory:
-$ tar -zxvf filename.tar.gz
-
-You can optionally extract the files to a existed specificed directory:	
-$ tar -zxvf filename.tar.gz -C /tmp/extract_here/
-
-===========================================================================================
-
-run chrome by command
-$ google-chrome-stable
-
-===========================================================================================
-
-DNS缓存可以加快网站IP的解析速度，所以大多数系统都支持DNS缓存。DNS的缓存时间是24小时，也就是每隔24小时DNS缓存将被自动清除。如果某些网站更新了DNS信息，而本机又没到自动清除的时间，这时，我们就要手动清除DNS缓存，最简单的方法如下。
-
-在终端中运行如下命令，以清除DNS缓存：
-
-$ sudo /etc/init.d/dns-clean start
-
-===========================================================================================

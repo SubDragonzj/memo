@@ -1,0 +1,117 @@
+
+
+$ uname -a
+Linux BambooIV 3.13.0-39-generic #66-Ubuntu SMP Tue Oct 28 13:30:27 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
+
+===========================================================================================
+
+memo$ echo "sudo passwd" >> Notes
+
+sudo passwd
+
+===========================================================================================
+
+git config --global url."https://".insteadOf git://
+
+===========================================================================================
+
+ctrl + alt + f1 进入 tty1 #tty1~tty6
+ctrl + alt + f7 （退出 tty1）tty7 即为桌面
+
+===========================================================================================
+
+find . -name *.orig | xargs rm -f
+
+# do not run this command before 'repo sync' done
+find . -name tmp_pack_* | xargs rm -f
+
+===========================================================================================
+
+$ cd working_dir
+$ repo selfupdate
+
+===========================================================================================
+
+删除旧版本内核:
+$ sudo aptitude purge ~ilinux-image-.*\(\!\(`uname -r`\|generic-.*\)\)
+$ sudo update-grub
+$ sudo update-initramfs -u -k all
+$ sudo reboot
+
+===========================================================================================
+
+安装 win+Ubuntu 双系统后开机启动时如无 win 启动项，升级 grup 即可
+进入 recovery，或进入 tty：sudo update-grub
+
+===========================================================================================
+
+$ git clone --depth 1 <url>
+$ repo init -u <url> --depth 1
+
+===========================================================================================
+
+no permissions	fastboot
+
+$ cd $pwd/fastboot
+$ sudo ./fastboot <command>
+
+===========================================================================================
+
+Shadowsocks
+$ sudo sslocal -s <service_ip> -p 12 -k <password> -m <method> -d start
+
+===========================================================================================
+
+一分钟后关机
+$ sudo shutdown -h +1
+
+===========================================================================================
+
+This will extract the files in the archive_name.tar.gz archive in the current directory:
+$ tar -zxvf filename.tar.gz
+
+You can optionally extract the files to a existed specificed directory:	
+$ tar -zxvf filename.tar.gz -C /tmp/extract_here/
+
+===========================================================================================
+
+run chrome by command
+$ google-chrome-stable
+
+===========================================================================================
+
+DNS缓存可以加快网站IP的解析速度，所以大多数系统都支持DNS缓存。DNS的缓存时间是24小时，也就是每隔24小时DNS缓存将被自动清除。如果某些网站更新了DNS信息，而本机又没到自动清除的时间，这时，我们就要手动清除DNS缓存，最简单的方法如下。
+
+在终端中运行如下命令，以清除DNS缓存：
+
+$ sudo /etc/init.d/dns-clean start
+
+===========================================================================================
+
+$ sudo passwd
+
+系统提示输入密码，即安装时的用户密码，然后，系统提示输入两次新密码，输入完毕后
+
+$ su
+
+即可进入 su，具备了相应的权限
+
+===========================================================================================
+
+swapness:
+$ sudo -i
+
+# dd if=/dev/zero of=/swap bs=1024M count=8
+
+# cd /
+
+# mkswap swap
+
+# swapon swap
+
+# gedit /etc/fstab
+add:
+# Custom Swapness
+/swap            swap            swap    default         0       0
+
+P.S. annotate origin swap path on fstab

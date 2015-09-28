@@ -1,0 +1,232 @@
+Git 使用记录
+=========================================================================================================
+
+# 如何创建新 repo
+
+在 github.com 上新建名称为 test 的 repo
+
+打开终端
+
+$ mkdir test&&cd test
+
+$ git init
+
+$ add README.md
+
+$ git commit -m "first commit"
+
+$ git remote add origin git@github.com:BambooIV/test.git
+
+$ git push -u origin master
+
+=========================================================================================================
+
+# 如何在 master branch 上创建另一个 branch
+
+$ git branch branch-a
+
+$ git push origin branch-a
+
+$ git checkout branch-a
+
+=========================================================================================================
+
+# 如何删除错误的或非计划中的 pull request
+
+打开 pull request 网页，拉到网页最底部，会看到一个 comment 框，评论框可以选择 『close pull request』 和 『Comment』
+
+=========================================================================================================
+
+如何只克隆某一指定分支
+
+$ git clone -b <branch-name> <remote_repo>
+
+$ git clone -b kk_mkt https://github.com/MoKee/android_device_xiaomi_msm8660-common
+
+=========================================================================================================
+
+ $ git fetch <remote_repo> branch
+ ($ git fetch https://github.com/CyanogenMod/android_system_core cm-11.0)
+ $ git cherry-pick hash
+
+=========================================================================================================
+ 
+ # skip git add
+ # the file that you want to commit must be modified before,it should not be nwely creat
+ 
+ $ git status
+ $ git commit -a -m "did what"
+ $ git push 
+
+=========================================================================================================
+
+git commit -m 后面提交的内容说明错误怎么办
+
+http://blog.csdn.net/tangkegagalikaiwu/article/details/8542827
+
+ $ git commit --amend
+
+just edit the commit
+
+ $ git push -f <remote_repo> branch
+
+
+“git使用amend选项提供了最后一次commit的反悔。但是对于历史提交呢，就必须使用rebase了。
+       git rebase -i HEAD~3
+       表示要修改当前版本的倒数第三次状态。
+        这个命令出来之后，会出来三行东东：
+        pick:*******
+        pick:*******
+        pick:*******
+        如果你要修改哪个，就把那行的pick改成edit，然后退出。
+ 
+        这时通过git log你可以发现，git的最后一次提交已经变成你选的那个了，这时再使用：
+        git commit --amend
+        来对commit进行修改。
+        修改完了之后，要回来对不对？
+        使用git rebase --continue"
+然后 git push 
+
+=========================================================================================================
+
+# git 配置
+
+http://blog.csdn.net/voice_shen/article/details/7522690
+
+1. git颜色配置
+使用git status，git diff，没有颜色显示。全是黑色字体，先前是红色字体
+
+使用默认颜色，配置如下：
+$ git config --global color.diff auto
+
+$ git config --global color.status auto
+
+$ git config --global color.branch auto
+
+
+
+2. 每次同步源码 repo init 都需要输入 gitbub 的用户名与关联邮箱，如下设置后就不用了
+
+$ git config --global user.name BambooIV
+$ git config --global user.email ningdisheng@gmail.com
+
+=========================================================================================================
+# werid 'git merge'
+
+# 乱来的 git merge
+
+同一个 repo，分支为 master 和 test，修改了 master 并提交后如何合并修改到 test？
+
+$ git checkout test
+$ git merge ha-sha
+$ git push
+
+=========================================================================================================
+
+# 如何处理错误的提交(最新的一次提交）
+
+$ git log
+
+会显示所有已提交到服务器的信息
+找到最新
+commit c58a32ceb678ab018df7f38df7178610ffbd186d
+
+跟第二新的
+commit e47ed3f1b845512823ac4097c5c9634425023aaa
+
+$ git reset --hard e47ed3f1b845512823ac4097c5c9634425023aaa
+（第二新）
+
+$ git push ...
+
+服务器跟本地源吗都会退回到第二新的状态，并且不会在服务器留下痕迹
+
+=========================================================================================================
+
+# git remote
+
+create repo named 'android_hardware_qcom_display-legacy'
+
+ $ git clone -b cm-11.0 git@github.com:Team-Hydra/android_hardware_qcom_display-legacy.git
+
+$ cd android_hardware_qcom_display-legacy
+
+$ git remote add cd-11.0 git@github.com:BambooIV/android_hardware_qcom_display-legacy.git
+
+$ git push -u cm-11.0 cm-11.0
+
+=========================================================================================================
+
+偶尔出现fetch error，多半是被墙的原因。修改/etc/hosts有可能可以缓解
+
+=========================================================================================================
+
+ 删除 .repo/local_manifest/local_manifest.xml  一个 repo 后再次 repo sync 出现如下错误：
+
+Fetching projects: 100% (410/410), done.  
+Traceback (most recent call last):
+  File "/home/bamboo/omni/.repo/repo/main.py", line 500, in <module>
+    _Main(sys.argv[1:])
+  File "/home/bamboo/omni/.repo/repo/main.py", line 476, in _Main
+    result = repo._Run(argv) or 0
+  File "/home/bamboo/omni/.repo/repo/main.py", line 155, in _Run
+    result = cmd.Execute(copts, cargs)
+  File "/home/bamboo/omni/.repo/repo/subcmds/sync.py", line 666, in Execute
+    if self.UpdateProjectList():
+  File "/home/bamboo/omni/.repo/repo/subcmds/sync.py", line 449, in UpdateProjectList
+    if project.IsDirty():
+  File "/home/bamboo/omni/.repo/repo/project.py", line 633, in IsDirty
+    '--refresh')
+  File "/home/bamboo/omni/.repo/repo/project.py", line 2483, in runner
+    p.stderr))
+error.GitError: device/xiaomi/msm8660-common update-index: fatal: Not a git repository (or any of the parent directories): .git
+
+
+删除 .repo/ project-objects/ & .repo/projects 内对应的 repo.git，再修改 .repo/project.list 去除所删除的 repo 路径即可
+疑似是新版本 repo 工具导致的 
+
+
+=========================================================================================================
+# git cherry-pick
+
+$ git clone https://github.com/BambooIV/android_hardware_qcom_media-legacy
+
+$ cd android_hardware_qcom_media-legacy
+
+$ git fetch https://github.com/CyanogenMod/android_hardware_qcom_media-caf cm-11.0
+
+$ git cherry-pick dab6ad4665dcfaaf1be426c4e35da61f735f7f09
+
+$ git push -f https://github.com/BambooIV/android_hardware_qcom_media-legacy cm-11.0
+
+可能需要手动解决 pick conflict
+
+刚刚新建立起来的分支必须要提交一次后才能 pick
+
+=========================================================================================================
+
+http://blog.csdn.net/zhangdaiscott/article/details/17438153
+Pull Request发送之后……
+一旦你从自己的主题branch（例如fix-unicode-error）推送了一条Pull Request，那么在这条Pull Request被关闭之前，再次向这个branch里push代码，所有的commits都会被自动追加到这个Pull Request后面（不需要再另开Pull Request）。
+
+这个功能尤其有用，比如你最初提交的Pull Request里存在某些问题，项目维护者要求你打回去修改；或者要求你给你的新feature添加一条相应的unit test（这种情况简直太常见了）。只要追加commits到你的这个主题branch中即可
+
+=========================================================================================================
+
+git revert commit <hash>
+就可以显示对应 commit 
+
+=========================================================================================================
+
+git format-patch -s a2507e07c03b642120fd496e10943ead84e76d0b
+
+就会把 commit（a2507e07c03b642120fd496e10943ead84e76d0b）后的所有提交导出为 .patch 文件
+
+
+
+git format-patch <the SHA1>
+git format-patch -<n> <SHA1> n .patch files 
+
+git diff > test.patch 
+
+=========================================================================================================

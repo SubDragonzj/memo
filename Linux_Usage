@@ -115,3 +115,24 @@ add:
 /swap            swap            swap    default         0       0
 
 P.S. annotate origin swap path on fstab
+
+===========================================================================================
+
+how to install Adobe Flash Player for FireFox on Linux/Ubuntu:
+1,download:
+https://get.adobe.com/flashplayer/?loc=cn
+chose .tar.gz
+
+2,open Terminal
+$ tar -xf filename.tar.gz
+$ sudo cp libflashplayer.so <BrowserPluginsLocation>   #For ubuntu 14.04 <BrowserPluginsLocation> path is : /usr/lib/firefox/browser/plugins
+                                                       # or /usr/lib/firefox-addons/plugins
+$ sudo cp -r usr/* /usr
+
+3,restart your browser
+
+===========================================================================================
+
+$ rm -rf /home/bamboo/.local/share/Trash/files/*
+
+

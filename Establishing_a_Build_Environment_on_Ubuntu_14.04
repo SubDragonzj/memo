@@ -1,0 +1,32 @@
+--------------------------
+
+$ sudo apt-get install git-core gnupg flex bison gperf build-essential \
+  zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 \
+  lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache \
+  libgl1-mesa-dev libxml2-utils xsltproc unzip
+------
+
+$ sudo apt-get install libncurses5-dev:i386   #Note
+$ sudo ln -s /usr/lib/i386-linux-gnu/mesa/libGL.so.1 /usr/lib/i386-linux-gnu/libGL.so
+------
+
+$ sudo apt-get update
+$ sudo apt-get install openjdk-7-jdk
+------
+
+$ wget -S -O - http://source.android.com/source/51-android.rules | sed "s/<username>/$USER/" | sudo tee >/dev/null /etc/udev/rules.d/51-android.rules; sudo udevadm control --reload-rules
+--------------------------
+
+$ mkdir ~/bin
+$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+$ chmod a+x ~/bin/repo
+Add 'export PATH=~/bin:$PATH' to your bashrc You may need to logout/login for path changes to take effect.
+------
+
+$ sudo apt-get install schedtool   #For 'mka bacon' on CyanogenMod
+------
+
+# enable ccache
+$ echo "export USE_CCACHE=1" >> .bashrc
+$ source ~/.bashrc
+$ prebuilts/misc/linux-x86/ccache/ccache -M 20G

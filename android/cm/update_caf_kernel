@@ -1,0 +1,9 @@
+
+update from tag 'LNX.LA.3.5.2.2-01410-8x74.0' to 'LNX.LA.3.5.2.2-05410-8x74.0'
+
+$ sudo apt-get install gitk
+
+$ cd msm   #kernel/msm dir
+$ gitk LNX.LA.3.5.2.2-01410-8x74.0..LNX.LA.3.5.2.2-05410-8x74.0
+
+'git cherry-pick' or 'git merge'

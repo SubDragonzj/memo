@@ -242,3 +242,8 @@ Enter same passphrase again:[Press enter for empty]
 
 $ cat ~/.ssh/id_rsa.pub
 Add it to GitHUb
+=========================================================================================================
+
+git tag -D tag_name
+
+git push origin :refs/tags/tag_name

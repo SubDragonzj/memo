@@ -86,6 +86,8 @@ DNS缓存可以加快网站IP的解析速度，所以大多数系统都支持DNS
 
 $ sudo /etc/init.d/dns-clean start
 
+$ sudo /etc/init.d/networking restart
+
 ===========================================================================================
 
 $ sudo passwd
@@ -135,4 +137,15 @@ $ sudo cp -r usr/* /usr
 
 $ rm -rf /home/bamboo/.local/share/Trash/files/*
 
+$ sudo update-grub
+
+$ sudo gedit /etc/resolv.conf
+$ sudo ifconfig eth0 198.145.29.80
+
+$ sudo gedit /etc/NetworkManager/NetworkManager.conf
+$ sudo service network-manager restart
+
+# remove libreoffice
+$ sudo apt-get remove --purge libreoffice-* -y
+$ sudo apt-get autoremove
 

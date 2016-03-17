@@ -4,3 +4,10 @@ make: *** No rule to make target `/out/host/linux-x86/bin/dtbToolCM', needed by 
 
 $ cd device/qcom&&git clone -b <branch_name> https://github.com/CyanogenMod/android_device_qcom_common common
 ----------------
+
+File not recognized: File truncated
+
+$ make clean
+$ cd ~/.ccache&&rm -rf *   #cleanup/disable ccache
+----------------
+

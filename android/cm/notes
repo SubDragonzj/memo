@@ -12,3 +12,16 @@ $ . build/envsetup.sh
 $ breakfast nx503a
 $ mka bacon -j4
 ----------------
+
+#miui patchrom apktool
+$ cd micode_src_dir
+$ . build/envsetup.sh
+$ apktool d target.apk
+----------------
+
+#miui patchrom deodex.sh
+$ cd micode_src_dir
+$ . build/envsetup.sh
+$ cd nx503a
+$ ../tools/deodex.sh stockrom.zip
+----------------

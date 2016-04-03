@@ -149,3 +149,6 @@ $ sudo service network-manager restart
 $ sudo apt-get remove --purge libreoffice-* -y
 $ sudo apt-get autoremove
 
+# tar
+$ tar -cf <file_name>.tar dir/
+

@@ -1,0 +1,7 @@
+1.  sudo add-apt-repository ppa:openjdk-r/ppa
+
+2.  sudo apt-get update
+
+3.  sudo apt-get install openjdk-7-jdk openjdk-7-jre
+
+check: java -version    javac -version

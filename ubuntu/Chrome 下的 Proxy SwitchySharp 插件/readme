@@ -1,0 +1,13 @@
+1. 下载 SwitchySharp.crx 插件完成后在浏览器 设置 >> 扩展，直接把该 .crx 文件拖入窗口然后安装即可。
+
+
+2 .然后打开 Proxy SwitchySharp 的设置，新建一个情景，命名为 Shadowsocks，并设置好端口，模式为 socks5 如图1：
+
+
+3. 再点切换规则，由于可能大概无法访问 Google，我们就启用切换规则，然后在 URL 模式里输入 *google* 统配好 Google 的所有域名，选择好模式匹配为通配符，情景模式为 Shadowsocks
+
+然后把在线规则列表打钩，输入 URL 为
+
+https://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt
+
+勾选 AutoProxy 兼容列表，然后点立即更新，更新完成后保存即可，如图：2

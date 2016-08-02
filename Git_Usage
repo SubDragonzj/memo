@@ -270,3 +270,9 @@ $ android/.repo/repo/main.py", line 500, in <module>
     _Main(sys.argv[1:]) 
 `rm ~/.repopickle_.gitconfig` should fix this issue.
 https://github.com/sapiippo/git-repo/issues/168
+----------
+
+ ! [remote rejected] mm -> mm (shallow update not allowed)
+caused by '--depth 1' option in git clone
+http://stackoverflow.com/questions/29463361/shallow-updated-not-allowed
+http://stackoverflow.com/questions/6941889/is-it-safe-to-shallow-clone-with-depth-1-create-commits-and-pull-updates-aga/21217267#21217267

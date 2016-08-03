@@ -1,13 +1,40 @@
 ----------------
 
+log:
 make: *** No rule to make target `/out/host/linux-x86/bin/dtbToolCM', needed by ‘/out/target/product/bacon/dt.img'.  Stop
 
+solution:
 $ cd device/qcom&&git clone -b <branch_name> https://github.com/CyanogenMod/android_device_qcom_common common
 ----------------
 
+log:
 File not recognized: File truncated
 
+solution:
 $ make clean
 $ cd ~/.ccache&&rm -rf *   #cleanup/disable ccache
 ----------------
 
+log:
+$ make: *** No rule to make target `/home/bamboo/ac/out/target/product/nx503a/obj/STATIC_LIBRARIES/lib_driver_cmd_bcmdhd_intermediates/export_includes', needed by `/home/bamboo/ac/out/target/product/nx503a/obj/EXECUTABLES/hostapd_intermediates/import_includes'.  Stop.
+make: *** Waiting for unfinished jobs....
+
+solution:
+git clone git@github.com:CyanogenMod/android_hardware_broadcom_wlan.git
+http://www.deyisupport.com/question_answer/dsp_arm/sitara_arm/f/25/t/82560.aspx
+----------------
+
+solution:
+Retrying by killing & starting a fresh background server ...
+No stop process & no curl commands. So flushing the port ...
+8073/tcp:            26926
+/home/bamboo/ac/out/host/linux-x86/bin/jack: line 131: 26926 Killed                  $SERVER_PRG $SERVER_PORT_SERVICE $SERVER_PORT_ADMIN $SERVER_COUNT $SERVER_NB_COMPILE $SERVER_TIMEOUT >> $SERVER_LOG 2>&1
+ERROR: Cannot launch Jack server
+make: *** [/home/bamboo/ac/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/with-local/classes.dex] Error 41
+
+solution:
+leads by lacking memory,which means we need to increase free memory
+http://blog.csdn.net/linuxxulin/article/details/26807513
+http://www.sokuv.com/qa/4223166/unable-fix-error-in-cyanogenmod-build-compilation-with-jack
+http://blog.csdn.net/hufeng882412/article/details/7861519
+http://www.voidcn.com/blog/bless1108/article/p-5732081.html

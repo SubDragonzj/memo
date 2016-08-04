@@ -26,6 +26,6 @@ $ cd nx503a
 $ ../tools/deodex.sh stockrom.zip
 ----------------
 
-# repo sync with CodeAurora repo program. Nooo GFW
+# repo sync with CodeAurora repo program. Within GFW but speed up syncing
 $ repo init -u https://android.googlesource.com/platform/manifest -b android-6.0.1_r63
 $ repo init -u https://android.googlesource.com/platform/manifest -b android-6.0.1_r63 --repo-url=git://codeaurora.org/tools/repo.git --repo-branch=caf-stable

@@ -1,27 +1,31 @@
 ----------------
 
-#enable ccache
+# enable ccache
 $ cd src_dir
 $ echo "export USE_CCACHE=1" >> ~/.bashrc&&source ~/.bashrc
 $ prebuilts/misc/linux-x86/ccache/ccache -M 16G
 ----------------
 
-#make bacon
+# make bacon
 $ cd src_dir
 $ . build/envsetup.sh
 $ breakfast nx503a
 $ mka bacon -j4
 ----------------
 
-#miui patchrom apktool
+# miui patchrom apktool
 $ cd micode_src_dir
 $ . build/envsetup.sh
 $ apktool d target.apk
 ----------------
 
-#miui patchrom deodex.sh
+# miui patchrom deodex.sh
 $ cd micode_src_dir
 $ . build/envsetup.sh
 $ cd nx503a
 $ ../tools/deodex.sh stockrom.zip
 ----------------
+
+# repo sync with CodeAurora repo program. Nooo GFW
+$ repo init -u https://android.googlesource.com/platform/manifest -b android-6.0.1_r63
+$ repo init -u https://android.googlesource.com/platform/manifest -b android-6.0.1_r63 --repo-url=git://codeaurora.org/tools/repo.git --repo-branch=caf-stable

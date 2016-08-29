@@ -58,3 +58,20 @@ Optionally, update the default Java version by running:
 
 $ sudo update-alternatives --config java
 $ sudo update-alternatives --config javac
+===============================================================
+
+openjdk-7-jdk + openjdk-8-jdk
+
+# Install jdk 7
+$ sudo apt-get update
+$ sudo apt-get install openjdk-7-jdk
+
+# INstall jdk 8
+$ sudo add-apt-repository ppa:webupd8team/java
+$ sudo apt-get update
+$ sudo apt-get install oracle-java8-installer
+
+# Update the default Java version
+$ sudo update-alternatives --config java
+$ sudo update-alternatives --config javac
+

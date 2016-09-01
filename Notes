@@ -81,3 +81,8 @@ $ cd ted
 $ git format-patch 29eb4a1edf0fbe902659463f2be6a85f7f4be872 -n  # initial commit hash
 
 $ cat *.patch > LOG.md
+-------------------
+
+"Could not apply the stored configuration for the monitor"
+http://askubuntu.com/questions/23869/could-not-apply-the-stored-configuration-for-the-monitor
+$ rm ~/.config/monitors.xml&&sudo reboot

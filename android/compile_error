@@ -24,7 +24,7 @@ git clone git@github.com:CyanogenMod/android_hardware_broadcom_wlan.git
 http://www.deyisupport.com/question_answer/dsp_arm/sitara_arm/f/25/t/82560.aspx
 ----------------
 
-solution:
+log:
 Retrying by killing & starting a fresh background server ...
 No stop process & no curl commands. So flushing the port ...
 8073/tcp:            26926
@@ -38,3 +38,12 @@ http://blog.csdn.net/linuxxulin/article/details/26807513
 http://www.sokuv.com/qa/4223166/unable-fix-error-in-cyanogenmod-build-compilation-with-jack
 http://blog.csdn.net/hufeng882412/article/details/7861519
 http://www.voidcn.com/blog/bless1108/article/p-5732081.html
+----------------
+
+log:
+bamboo@BambooIV:~/n$ make otapackage -j2
+make: *** No rule to make target `otapackage'.  Stop.
+
+solution:
+$ cp build/core/root.mk ./Makefile
+face this because I am using custom build system and do not copy root.mk

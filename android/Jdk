@@ -55,3 +55,24 @@ If you encounter version errors for Java, set its path as described in the Wrong
 To develop older versions of Android, download and install the corresponding version of the Java JDK:
 Java 6: for Gingerbread through KitKat
 Java 5: for Cupcake through Froyo
+
+-------------------
+
+# Install OpenJdk 8 on Ubuntu 14.04 LTS
+1,Download the .deb packages for 64-bit architecture from archive.ubuntu.com:
+    openjdk-8-jre-headless_8u45-b14-1_amd64.deb with SHA256 0f5aba8db39088283b51e00054813063173a4d8809f70033976f83e214ab56c0
+    openjdk-8-jre_8u45-b14-1_amd64.deb with SHA256 9ef76c4562d39432b69baf6c18f199707c5c56a5b4566847df908b7d74e15849
+    openjdk-8-jdk_8u45-b14-1_amd64.deb with SHA256 6e47215cf6205aa829e6a0a64985075bd29d1f428a4006a80c9db371c2fc3c4c
+
+2,Optionally, confirm the checksums of the downloaded files against the SHA256 string listed with each package above.
+For example, with the sha256sum tool:
+$ sha256sum {downloaded.deb file}
+
+3,Install the packages:
+$ sudo apt-get update
+
+Run dpkg for each of the .deb files you downloaded. It may produce errors due to missing dependencies:
+$ sudo dpkg -i {downloaded.deb file}
+
+To fix missing dependencies:
+$ sudo apt-get -f install

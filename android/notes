@@ -42,3 +42,19 @@ Including important comments (credits to respective authors)
 Note 1: In the "cherry-pick A..B" form, A should be older than B. If they're the wrong order the command will silently fail. – damian
 Note 2: Also, this will not cherry-pick A, but rather everything after A up to and including B. – J. B. Rainsberger
 Note 3: To include A just type git cherry-pick A^..B – sschaef
+----------------
+
+$ adb devices
+List of devices attached
+adb server version (32) doesn't match this client (36); killing...
+error: could not install *smartsocket* listener: Address already in use
+ADB server didn't ACK
+* failed to start daemon *
+error: cannot connect to daemon
+
+$ gedit ~/.bashrc
+add:
+# sdk
+export ANDROID_HOME=/home/bamboo/sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+$ source .bashrc

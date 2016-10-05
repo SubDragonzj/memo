@@ -56,3 +56,12 @@ GC overhead limit exceeded.
 solution:
 http://blog.csdn.net/pcsxk/article/details/52013904#t23
 Try increasing heap size with java option '-Xmx<size>'.
+-----------------
+
+log:
+make: *** No rule to make target `otapackage'.  Stop.
+
+#### make failed to build some targets  ####
+
+solution:
+cp build/core/root.mk Makefile

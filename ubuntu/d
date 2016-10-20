@@ -1,0 +1,3 @@
+#!/bin/sh
+rm -rf /home/bamboo/.local/share/Trash/files/*
+exit

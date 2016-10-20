@@ -1,0 +1,4 @@
+#!/bin/sh
+sudo mkdir -p /mnt/shared
+sudo mount -t vboxsf share /mnt/shared
+exit

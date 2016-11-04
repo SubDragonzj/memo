@@ -74,6 +74,7 @@ $ sudo apt-get install oracle-java8-installer
 # Update the default Java version
 $ sudo update-alternatives --config java
 $ sudo update-alternatives --config javac
+$ sudo update-alternatives --config javap
 ----------------
 
 # Uninstall

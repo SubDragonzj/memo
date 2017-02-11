@@ -279,3 +279,9 @@ http://stackoverflow.com/questions/6941889/is-it-safe-to-shallow-clone-with-dept
 ----------
 
 $ repo sync <project_path>   # repo sync specific project only
+----------
+
+url -> http://stackoverflow.com/questions/36046352/repo-sync-fails-to-initialize-cm13-work-tree
+error.GitError: cannot initialize work tree
+repo --trace sync -l
+find out the repo and remove it

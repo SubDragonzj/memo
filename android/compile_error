@@ -65,3 +65,19 @@ make: *** No rule to make target `otapackage'.  Stop.
 
 solution:
 cp build/core/root.mk Makefile
+-----------------
+
+# compile android6.0 with java8
+log:
+You are attempting to build with the incorrect version
+of java.
+ 
+Your version is: openjdk version "1.8.0_45-internal" OpenJDK Runtime Environment (build 1.8.0_45-internal-b14) OpenJDK 64-Bit Server VM (build 25.45-b02, mixed mode).
+The required version is: "1.7.x"
+ 
+Please follow the machine setup instructions at
+    https://source.android.com/source/initializing.html
+************************************************************
+build/core/main.mk:181: *** stop.  Stop.
+
+$ export EXPERIMENTAL_USE_JAVA8=true

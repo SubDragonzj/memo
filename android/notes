@@ -58,3 +58,10 @@ add:
 export ANDROID_HOME=/home/bamboo/sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 $ source .bashrc
+
+# flash recovery via dd
+$ adb root
+$ adb remount
+$ adb push ~/recovery.img /data
+$ adb shell dd if=data/recovery.img of=/dev/block/platform/msm_sdcc.1/by-name/recovery
+

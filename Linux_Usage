@@ -153,4 +153,12 @@ $ sudo apt-get autoremove
 $ tar -cf <file_name>.tar dir/
 
 # mount share dir on virtualbox
-sudo mount -t vboxsf share /mnt/share
+$ sudo mount -t vboxsf share /mnt/share
+
+# clean dns ccache
+$ sudo /etc/init.d/dns-clean start
+
+# remove Ubuntu(dual OS)
+https://www.tweaking4all.com/os-tips-and-tricks/remove-ubuntu-windows-uefi-dualboot/
+$ cd /boot/efi/EFI/
+$ sudo rm -rf ubuntu ​​​​ 

@@ -79,3 +79,12 @@ $ sudo dpkg -i openjdk-8-jdk_8u45-b14-1_amd64.deb
 
 To fix missing dependencies:
 $ sudo apt-get -f install
+-------------------
+
+# install OpenJDK 8 on Ubuntu 14.04
+$ sudo add-apt-repository ppa:openjdk-r/ppa
+$ sudo apt-get update
+$ sudo apt-get install openjdk-8-jdk
+
+# purge OpenJDK
+sudo apt-get purge openjdk-\* icedtea-\* icedtea6-\*

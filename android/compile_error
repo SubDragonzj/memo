@@ -81,3 +81,9 @@ Please follow the machine setup instructions at
 build/core/main.mk:181: *** stop.  Stop.
 
 $ export EXPERIMENTAL_USE_JAVA8=true
+************************************************************
+
+kernel/nubia/nx511j is not clean, please run 'make mrproper'
+http://blog.csdn.net/zhbpd/article/details/54863354
+
+remove .config file in kernel source

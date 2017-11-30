@@ -86,3 +86,8 @@ $ cat *.patch > LOG.md
 "Could not apply the stored configuration for the monitor"
 http://askubuntu.com/questions/23869/could-not-apply-the-stored-configuration-for-the-monitor
 $ rm ~/.config/monitors.xml&&sudo reboot
+-------------------
+
+no Internet connection after remove lantern
+to to System Settings -> Network -> Network proxy
+set Method as Automatic

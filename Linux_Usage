@@ -162,3 +162,12 @@ $ sudo /etc/init.d/dns-clean start
 https://www.tweaking4all.com/os-tips-and-tricks/remove-ubuntu-windows-uefi-dualboot/
 $ cd /boot/efi/EFI/
 $ sudo rm -rf ubuntu ​​​​ 
+
+http://blog.csdn.net/u010426270/article/details/52420231
+Error mounting /dev/sda6 at /media/bamboo/4A3EB7213EB7054B: Command-line `mount -t "ntfs" -o "uhelper=udisks2,nodev,nosuid,uid=1000,gid=1000,dmask=0077,fmask=0177" "/dev/sda6" "/media/bamboo/4A3EB7213EB7054B"' exited with non-zero exit status 14: The disk contains an unclean file system (0, 0).
+Metadata kept in Windows cache, refused to mount.
+Failed to mount '/dev/sda6': Operation not permitted
+The NTFS partition is in an unsafe state. Please resume and shutdown
+Windows fully (no hibernation or fast restarting), or mount the volume
+read-only with the 'ro' mount option.
+$ sudo ntfsfix /dev/sda6

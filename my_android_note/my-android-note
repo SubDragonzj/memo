@@ -1,0 +1,108 @@
+★ so文件依赖:  readelf -a camera.msm8953.so | grep NEEDED
+
+===============================================================================================================================================================================================
+
+★ 二进制文件查找关键字:  strings NON-HLOS.bin | grep "MPSS.TA.*"
+strings ./* | grep "TZ.BF.4.0.5*"
+strings ./* | grep "LA.UM.6.6.r1*"
+
+===============================================================================================================================================================================================
+
+★ export USE_CCACHE=1
+#export MK_AOSP_REMOTE=ustc
+
+===============================================================================================================================================================================================
+
+★ 解包system.new.dat.br
+/home/subdragonzj/android/tools/bro-tool/brotli --decompress system.new.dat.br -o system.new.dat
+./sdat2img.py system.transfer.list system.new.dat system.img
+
+sudo mount -o loop system.img rosy_7.12.14/
+sudo chmod -R 777 rosy_7.12.14/
+
+./simg2img system.img system.img.ext4
+./simg2img vendor.img vendor.img.ext4
+sudo mount -t ext4 -o loop system.img rosy_7.12.14/
+
+===============================================================================================================================================================================================
+
+★ linux测试硬盘读取速度
+hdparm -Tt /dev/sda
+
+===============================================================================================================================================================================================
+
+★ rosy内核编译错误(官方开源android N 相机驱动):
+报错:  drivers/media/platform/msm/camera_v2_rosy/isp/msm_isp_axi_util.c:1190:44: error: 'struct msm_vfe_axi_stream_request_cmd' has no member named 'memory_input'
+https://github.com/SubDragonzj/android_kernel_xiaomi_rosy/commit/a91aaad35e823f63b1b3df8dbb4c7e46a8b90e00#diff-4ee8cf9c7e043cabb6083381ddb67ff0
+
+===============================================================================================================================================================================================
+
+★ 替换目录下所有文件某个相同字符串:
+find -name './*' | xargs perl -pi -e 's|platform/msm/camera_v2|platform/msm/camera_v2_rosy|g'
+(将目录下所有文件中 platform/msm/camera_v2 替换为 platform/msm/camera_v2_rosy)
+
+===============================================================================================================================================================================================
+
+★ ossCameraHAL:
+blobs: 
+camera.msm8953.so
+libmm-qcamera.so
+libmmcamera_interface.so
+libmmjpeg_interface.so
+libqomx_core.so
+
+===============================================================================================================================================================================================
+
+★ adb
+subdragonzj@zx50:~$ adb devices 
+List of devices attached 
+????????????	no permissions
+sudo adb kill-server
+sudo adb start-server
+
+===============================================================================================================================================================================================
+
+★ beyond compare 4破解
+Linux/Ubuntu下beyond compare 4破解
+参考http://1x0.xyz/archives/Linuix_beyond_compare4_crack.html
+
+安装后执行以下命令：
+
+cd /usr/lib/beyondcompare/
+
+sudo sed -i "s/keexjEP3t4Mue23hrnuPtY4TdcsqNiJL-5174TsUdLmJSIXKfG2NGPwBL6vnRPddT7tH29qpkneX63DO9ECSPE9rzY1zhThHERg8lHM9IBFT+rVuiY823aQJuqzxCKIE1bcDqM4wgW01FH6oCBP1G4ub01xmb4BGSUG6ZrjxWHJyNLyIlGvOhoY2HAYzEtzYGwxFZn2JZ66o4RONkXjX0DF9EzsdUef3UAS+JQ+fCYReLawdjEe6tXCv88GKaaPKWxCeaUL9PejICQgRQOLGOZtZQkLgAelrOtehxz5ANOOqCaJgy2mJLQVLM5SJ9Dli909c5ybvEhVmIC0dc9dWH+/N9KmiLVlKMU7RJqnE+WXEEPI1SgglmfmLc1yVH7dqBb9ehOoKG9UE+HAE1YvH1XX2XVGeEqYUY-Tsk7YBTz0WpSpoYyPgx6Iki5KLtQ5G-aKP9eysnkuOAkrvHU8bLbGtZteGwJarev03PhfCioJL4OSqsmQGEvDbHFEbNl1qJtdwEriR+VNZts9vNNLk7UGfeNwIiqpxjk4Mn09nmSd8FhM4ifvcaIbNCRoMPGl6KU12iseSe+w+1kFsLhX+OhQM8WXcWV10cGqBzQE9OqOLUcg9n0krrR3KrohstS9smTwEx9olyLYppvC0p5i7dAx2deWvM1ZxKNs0BvcXGukR+/g" BCompare
+
+此时BCompare文件已被破解，打开软件会提示Trial Mode Error！表示成功，输入下面的密钥即可注册成功
+
+--- BEGIN LICENSE KEY ---
+GXN1eh9FbDiX1ACdd7XKMV7hL7x0ClBJLUJ-zFfKofjaj2yxE53xauIfkqZ8FoLpcZ0Ux6McTyNmODDSvSIHLYhg1QkTxjCeSCk6ARz0ABJcnUmd3dZYJNWFyJun14rmGByRnVPL49QH+Rs0kjRGKCB-cb8IT4Gf0Ue9WMQ1A6t31MO9jmjoYUeoUmbeAQSofvuK8GN1rLRv7WXfUJ0uyvYlGLqzq1ZoJAJDyo0Kdr4ThF-IXcv2cxVyWVW1SaMq8GFosDEGThnY7C-SgNXW30jqAOgiRjKKRX9RuNeDMFqgP2cuf0NMvyMrMScnM1ZyiAaJJtzbxqN5hZOMClUTE+++
+--- END LICENSE KEY -----
+
+===============================================================================================================================================================================================
+
+
+★获取timestamp
+date +%s -r 目录名/文件名
+
+===============================================================================================================================================================================================
+
+★ TWRP
+mka recoveryimage ALLOW_MISSING_DEPENDENCIES=true
+
+===============================================================================================================================================================================================
+
+★ 正则表达式删除某行某字符开始之前或者之后所有字符
+删除S 之后的所有字符用：s.*$
+删除S 之前的所有字符用：^([^s]*)s
+
+===============================================================================================================================================================================================
+
+★vim在每行行首或行尾添加/删除内容
+
+在每行行首添加相同的内容：
+:%s/^/要添加的内容
+
+在每行行尾添加相同的内容：
+:%s/$/要添加的内容
+
+===============================================================================================================================================================================================

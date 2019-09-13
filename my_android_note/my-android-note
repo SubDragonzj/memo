@@ -22,7 +22,8 @@ sudo chmod -R 777 rosy_7.12.14/
 
 ./simg2img system.img system.img.ext4
 ./simg2img vendor.img vendor.img.ext4
-sudo mount -t ext4 -o loop system.img rosy_7.12.14/
+sudo mount -t ext4 -o loop system.img.ext4 tmp/
+sudo chmod -R 777 tmp/
 
 ===============================================================================================================================================================================================
 
@@ -106,3 +107,64 @@ mka recoveryimage ALLOW_MISSING_DEPENDENCIES=true
 :%s/$/要添加的内容
 
 ===============================================================================================================================================================================================
+
+★禁用avb验证：
+fastboot --disable-verity flash vbmeta vbmeta.img
+fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img
+
+===============================================================================================================================================================================================
+
+★正则表达式删除含特定字符的行：
+删除含有fqname的行：
+^.*fqname.*\r?\n
+
+===============================================================================================================================================================================================
+
+★解压 xxx.img-ramdisk.gz：
+./unpackbootimg -i recovery-TWRP-3.2.3-0331-REDMI_NOTE7-CN-wzsx150.img -o unpack
+
+mkdir -p ramdisk
+cd ramdisk/
+lzma -dc ../unpack/recovery-TWRP-3.2.3-0331-REDMI_NOTE7-CN-wzsx150.img-ramdisk.gz | cpio -i
+
+./mkbootfs ramdisk | lzma > new.gz
+
+./mkbootimg --kernel unpack/recovery-TWRP-3.2.3-0331-REDMI_NOTE7-CN-wzsx150.img-zImage --ramdisk unpack/recovery-TWRP-3.2.3-0331-REDMI_NOTE7-CN-wzsx150.img-ramdisk.gz -o TWRP.img
+
+===============================================================================================================================================================================================
+
+★Android 清华镜像
+将 .repo/manifest.xml 把其中的 aosp 这个 remote 的 fetch 从 https://android.googlesource.com 改为 https://aosp.tuna.tsinghua.edu.cn/
+
+===============================================================================================================================================================================================
+
+★Android查看分区
+cat /proc/partitions： 查看分区数
+ls -l /dev/block/bootdevice/by-name/ :分区的名字
+cat /proc/mounts ：分区挂载的目录
+
+===============================================================================================================================================================================================
+
+★查看vbmeta.img信息
+./avbtool info_image --image vbmeta.img
+
+===============================================================================================================================================================================================
+
+git subtree add --prefix 目录 仓库 分支
+
+proxychains4 git subtree add --prefix drivers/staging/qcacld-3.0/ qcacld-3.0 LA.UM.7.3.r1-07800-sdm845.0 --squash
+ 
+proxychains4 git subtree add --prefix drivers/staging/qca-wifi-host-cmn/ qca-wifi-host-cmn LA.UM.7.3.r1-07800-sdm845.0 --squash
+
+proxychains4 git subtree add --prefix drivers/staging/fw-api/ fw-api LA.UM.7.3.r1-07800-sdm845.0 --squash
+
+proxychains4 git subtree add --prefix techpack/audio/ audio-kernel LA.UM.7.3.r1-07800-sdm845.0 --squash
+
+===============================================================================================================================================================================================
+
+★清理repo临时文件
+find . -name "tmp_pack*" | xargs rm -f
+
+===============================================================================================================================================================================================
+
+
